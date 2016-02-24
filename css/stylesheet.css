@@ -1,0 +1,45 @@
+article, aside, details, figcaption, figure, footer, header,
+main, nav, section { display: block; }
+
+*{
+    box-sizing: border-box;
+}
+
+aside, div, section, header, footer, nav {
+    display: block;
+}
+
+
+body, p {
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    /*cursor: default;*/
+}
+
+body{
+    background-image: url("../images/plaid-yellow.png");
+    background-position: center;
+}
+
+/************ MENU NAVIGATION *******************/
+nav img {
+    width: 90%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li{
+    display: inline-block;
+    width: 10%;
+}
+
+nav h1{
+    font-size: 100%;
+
+}
