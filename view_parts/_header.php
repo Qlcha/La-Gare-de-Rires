@@ -15,18 +15,28 @@ if(!empty($_SESSION["user"])) {
         src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <!-- fonts  -->
+    <link href='https://fonts.googleapis.com/css?family=Dosis:400,700,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,400italic' rel='stylesheet' type='text/css'>
+    <!--end fonts  -->
+
 </head>
 <body><!--
 --><header><!--
+--><ul><li class="lang"><a href="index.php">Eng</a></li>
+        <li class="lang"><a href="index.php">Fr</a></li>
+    </ul><!--
 --><nav><!--
---><ul><li><a href="index.php"><img src="images/Train.png" alt="logo LaGareDeRires"></a>
-            <h1>La Gare de Rires</h1></li>
+--><ul><li><a href="index.php"><img src="images/Train.png" alt="logo LaGareDeRires"><h1>La Gare de Rires</h1></a>
+            </li>
                 <li><a href="equipe.php">Notre équipe</a></li><!--
                 --><li><a href="gallery.php">Gallerie</a></li><!--
                 --><li><a href="guestbook.php">Guestbook</a></li><!--
-                --><li><a href="documents.php">Documens</a></li><!--
+                --><li><a href="documents.php">Documents</a></li><!--
                 --><li><a href="contact.php">Contact</a></li><!--
                 -->
             </ul>
         </nav>
+    <h2>Sur la voie de l'avenir</h2>
     </header>
