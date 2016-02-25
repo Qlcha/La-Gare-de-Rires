@@ -5,6 +5,6 @@
     <input type="search" name="recherche" placeholder="Recherche">
     <input type="submit" value="valider">
 </form>
-<p>&copy; CN " La gare de rires" 2016</p>
+<p> &copy; CN " La gare de rires" 2016 </p>
 </body>
 </html>
