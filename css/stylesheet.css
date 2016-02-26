@@ -160,6 +160,7 @@ text-align: center;
     color: crimson;
 
 }
+
 #equipe article p{
     line-height: 28px;
     margin-left: 2%;
@@ -167,6 +168,10 @@ text-align: center;
 #equipe article p:first-of-type{
     text-align: center;
     margin-top: 5%;
+}
+
+#equipe article p:last-of-type{
+    margin-bottom: 5%;
 }
 /********* FIN PAGE ÉQUIPE *********/
 
