@@ -2,7 +2,10 @@
 require_once 'view_parts/_header.php';
 ?>
 <section id="equipe">
+
     <article>
+        <h2>Christina</h2>
+
     <img src="images/dame_equipe.jpg" alt="photo_christina" class="photo"/>
     <p> Bonjour , </p>
     <p> Mon nom est Christina Taddeo et ce sera ma quatrième en tant qu'éducateur dans la pouponnière </p>
@@ -14,10 +17,12 @@ require_once 'view_parts/_header.php';
     <p> J'anticipe le plaisir de me retrouver avec nos enfants et avec vous les parents.
         Je souhaite qu'ensemble nous ayons expérience inoubliable de la première année de votre enfant à la garderie.
     </p>
-    <h2>Christina</h2>
+
     </article>
 
     <article>
+        <h2>Lamia</h2>
+
     <img src="images/dame_equipe.jpg" alt="photo_lamia" class="photo"/>
     <p> Bonjour , </p>
     <p> Je me présente, je m'appelle Lamia Guernah. Je suis une éducatrice qualifiée et j'ai obtenu ma certifiaction à l'Université de Montréal </p>
@@ -37,10 +42,12 @@ require_once 'view_parts/_header.php';
         </p>
         <p>Je vous convie donc à venir me rencontrer afin de faire plus amples connaissances.</p>
         <p>Au plaisir !</p>
-    <h2>Lamia</h2>
+
     </article>
 
     <article>
+        <h2>Jennifer</h2>
+
         <img src="images/dame_equipe.jpg" alt="photo_jennifer" class="photo"/>
         <p>Bonjour ,</p>
         <p>
@@ -52,10 +59,12 @@ require_once 'view_parts/_header.php';
             une realation éducationnelle avec vos enfants tout au long de leur cheminement.
         </p>
         <p>Au plaisir !</p>
-        <h2>Jennifer</h2>
+
     </article>
 
     <article>
+        <h2>Diane</h2>
+
         <img src="images/dame_equipe.jpg" alt="photo_diane" class="photo"/>
         <p>Bonjour à tous ,</p>
         <p>
@@ -73,10 +82,11 @@ require_once 'view_parts/_header.php';
         <p>N'hésitez pas à communiquer avec nous si vous avez des questions au sujet de votre enfant.</p>
         <p>Au plaisir !</p>
 
-        <h2>Diane</h2>
     </article>
 
     <article>
+        <h2>Élisabeth</h2>
+
         <img src="images/dame_equipe.jpg" alt="photo_elisabeth" class="photo"/>
         <p>Bonjour ,</p>
         <p>
@@ -88,10 +98,11 @@ require_once 'view_parts/_header.php';
 
         <p>Je vous assure de mon entière collaboration. N'hésitez à venir me rencontrer</p>
 
-        <h2>Élisabeth</h2>
     </article>
 
     <article>
+        <h2>Diane</h2>
+
         <img src="images/dame_equipe.jpg" alt="photo_diane" class="photo"/>
         <p>Bonjour à tous et à toutes,</p>
         <p>
@@ -106,10 +117,11 @@ require_once 'view_parts/_header.php';
         <p>C'est avec un immense plaisir que j'ai retrouvé mes tout petits il y a deux ans.</p>
         <p>Je puis vous assurer de mon entière collaboration et surtout n'hésitez pas à venir me rencontrer.</p>
 
-        <h2>Diane</h2>
     </article>
 
     <article>
+        <h2>Pauline</h2>
+
         <img src="images/dame_equipe.jpg" alt="photo_pauline" class="photo"/>
         <p>Bonjour ,</p>
         <p>
@@ -124,10 +136,11 @@ require_once 'view_parts/_header.php';
         <p>J'anticipe le plaisir de travailler avec vos enfants tout au long de l'année.</p>
         <p>N'hésitez pas à venir me parler de vos préoccupations concernant votre enfant.</p>
 
-        <h2>Pauline</h2>
     </article>
 
     <article>
+        <h2>Pina</h2>
+
         <img src="images/dame_equipe.jpg" alt="photo_pina" class="photo"/>
         <p>Bonjour à tous et à toutes ,</p>
         <p>
@@ -143,10 +156,11 @@ require_once 'view_parts/_header.php';
             un super année remplis de défis et de plaisirs.
         </p>
 
-        <h2>Pina</h2>
     </article>
 
     <article>
+        <h2>Chantal</h2>
+
         <img src="images/dame_equipe.jpg" alt="photo_chantal" class="photo"/>
         <p>Bonjour ,</p>
         <p>
@@ -171,11 +185,11 @@ require_once 'view_parts/_header.php';
             à venir nous rencontrer notre porte sera toujours ouverte.
         </p>
 
-        <h2>Chantal</h2>
     </article>
 
-
     <article>
+        <h2>Joy</h2>
+
         <img src="images/dame_equipe.jpg" alt="photo_joy" class="photo"/>
         <p>Bonjour ,</p>
         <p>
@@ -194,10 +208,11 @@ require_once 'view_parts/_header.php';
             Je vous souhaite un heureux séjour parmi nous.
         </p>
 
-        <h2>Joy</h2>
     </article>
 
     <article>
+        <h2>Alain</h2>
+
         <img src="images/dame_equipe.jpg" alt="photo_alain" class="photo"/>
         <p>Bonjour ,</p>
         <p>
@@ -218,10 +233,11 @@ require_once 'view_parts/_header.php';
             Pour plus amples renseignements, je vous invite à venir me rencontrer.
         </p>
 
-        <h2>Alain</h2>
     </article>
 
     <article>
+        <h2>Sylvia</h2>
+
         <img src="images/dame_equipe.jpg" alt="photo_sylvia" class="photo"/>
         <p>Bonjour a tous ,</p>
         <p>
@@ -246,10 +262,11 @@ require_once 'view_parts/_header.php';
             votre enfant au cours de l'année.
         </p>
 
-        <h2>Sylvia</h2>
     </article>
 
     <article>
+        <h2>Ryan</h2>
+
         <img src="images/dame_equipe.jpg" alt="photo_ryan" class="photo"/>
         <p>Bonjour ,</p>
         <p>
@@ -273,7 +290,6 @@ require_once 'view_parts/_header.php';
         </p>
         <p>Bonne année scolaire à tous !</p>
 
-        <h2>Ryan</h2>
     </article>
 </section>
 
