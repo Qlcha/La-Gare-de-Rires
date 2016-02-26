@@ -3,7 +3,7 @@ require_once 'view_parts/_header.php';
 ?>
 <section class="equipe">
     <article>
-    <img src="images/dame_equipe.jpg" alt="photo_christiana" class="photo"/>
+    <img src="images/dame_equipe.jpg" alt="photo_christina" class="photo"/>
     <p> Bonjour </p>
     <p> Mon nom est Christina Taddeo et ce sera ma quatrième en tant qu'éducateur dans la pouponnière </p>
     <p> Après avoir complété un DEC au collège Dawson en Cinéma & Communications,
@@ -41,7 +41,7 @@ require_once 'view_parts/_header.php';
     </article>
 
     <article>
-        <img src="images/dame_equipe.jpg" alt="photo_jennifer"/>
+        <img src="images/dame_equipe.jpg" alt="photo_jennifer" class="photo"/>
         <p>Bonjour</p>
         <p>
             Mon nom est Jennifer Zablocki. J'ai obtenu mon DEC eb Éducation de la petite enfance au Collège Vanier.
@@ -56,7 +56,7 @@ require_once 'view_parts/_header.php';
     </article>
 
     <article>
-        <img src="images/dame_equipe.jpg" alt="photo_diane"/>
+        <img src="images/dame_equipe.jpg" alt="photo_diane" class="photo"/>
         <p>Bonjour à tous </p>
         <p>
            Je me présente, mon nom est Diane Marchand je suis à l'emploi du CPE La Gare de Rires depuis janvier 2000.
@@ -77,7 +77,7 @@ require_once 'view_parts/_header.php';
     </article>
 
     <article>
-        <img src="images/dame_equipe.jpg" alt="photo_elisabeth"/>
+        <img src="images/dame_equipe.jpg" alt="photo_elisabeth" class="photo"/>
         <p>Bonjour</p>
         <p>
            Je m'appelle Élisabeth Moreira.
@@ -92,7 +92,7 @@ require_once 'view_parts/_header.php';
     </article>
 
     <article>
-        <img src="images/dame_equipe.jpg" alt="photo_diane"/>
+        <img src="images/dame_equipe.jpg" alt="photo_diane" class="photo"/>
         <p>Bonjour à tous et à toutes,</p>
         <p>
            Mon nom est Diane Dobrzanski et je fais maintenant partit de l'équipe des Pandas depuis maintenant 2 ans..
@@ -110,11 +110,11 @@ require_once 'view_parts/_header.php';
     </article>
 
     <article>
-        <img src="images/dame_equipe.jpg" alt="photo_jennifer"/>
-        <p>Bonjour</p>
+        <img src="images/dame_equipe.jpg" alt="photo_pauline" class="photo"/>
+        <p>Bonjour ,</p>
         <p>
-            Mon nom est Pauline Sabatini. Encore une fois cette année, je suis l'éducatrice de langue angalise dans la salle des Pandas
-            en collaboration avec Diane Dobrzanski.
+          Mon nom est Pauline Sabatini. Encore une fois cette année, je suis l'éducatrice de langue anglaise
+            dans la salle des Pandas en collaboration avec Diane Dobrrzanski.
         </p>
         <p>Je travaille au CPE  La Gare de rires depuis maintenant 5 ans.
             En 1983, j'ai terminé un BAC ès Art (Majeur en Éducation de la petite enfance à l'université Concordia).
@@ -128,20 +128,152 @@ require_once 'view_parts/_header.php';
     </article>
 
     <article>
-        <img src="images/dame_equipe.jpg" alt="photo_pina"/>
+        <img src="images/dame_equipe.jpg" alt="photo_pina" class="photo"/>
         <p>Bonjour à tous et à toutes</p>
         <p>
-
+         Mon nom est Pina DiLuca. J'ai un DEC en Éducation de la Petite Enfance du CEGEP Marie Victorin.
         </p>
-        <p>Je travaille au CPE  La Gare de rires depuis maintenant 5 ans.
-            En 1983, j'ai terminé un BAC ès Art (Majeur en Éducation de la petite enfance à l'université Concordia).
-            Depuis j'ai toujours travaillé dans le domaine de l'éducation à l'enfance.
+        <p>
+            J'ai également à mon actif deux certificats universitaires ( Université Concordia ): le premier en
+            Gestion et le deuxième en Démarrage d'une petite Entreprise.
         </p>
 
-        <p>J'anticipe le plaisir de travailler avec vos enfants tout au long de l'année.</p>
-        <p>N'hésitez pas à venir me parler de vos préoccupations concernant votre enfant.</p>
+        <p>Je travaille avec le CPE La Gare de Rires depuis 1992 et depuis j'ai travaillé avec tous les groupes d'âge.</p>
+        <p>J'anticipe le plaisir de travailler auprès de vos enfants et je suis persuadé que nous passerons
+            un super année remplis de défis et de plaisirs.
+        </p>
 
-        <h2>Pauline</h2>
+        <h2>Pina</h2>
+    </article>
+
+    <article>
+        <img src="images/dame_equipe.jpg" alt="photo_chantal" class="photo"/>
+        <p>Bonjour ,</p>
+        <p>
+            Je voudrais saisir cette occasion pour vous parler un peu de mon parcours professionnel.
+            J'ai terminé mes études au Collège Vanier en Éducation de la petite enfance en février 2002.
+            J'ai fait mon dernier stage au CPE La Garde de Rires. Par la suite on m'a offert un poste contractuel.
+            En 2004, je suis devenue une employée permanente et depuis j'ai travaillé avec la plupart des groupes d'âges.
+        </p>
+        <p>
+         Votre enfant est sur le point de s'embarquer dans une aventure passionnante d'apprentissage dans
+            laquelle vous êtes invités à le rejoindre. Votre enfant participera à une gamme complète
+            d'activités telles que les jeux libres, jouer en plein air, écouter des histoires, participer à des jeux
+            dramatiques, découvrir les arts artisanaux et beaucoup plus.
+        </p>
+
+        <p>
+            Mon objectif est de fournir un environnement sût et chaleureux pour chaque enfant.
+            Offrir des soins remplis de tendresse qui mettent l'accent sur chacun des enfants en tant qu'individu unique et merveilleux.
+        </p>
+        <p>
+            Je souhaite que votre année passée en notre compagnie soit un moment très agréable. N'hésitez pas
+            à venir nous rencontrer notre porte sera toujours ouverte.
+        </p>
+
+        <h2>Chantal</h2>
+    </article>
+
+
+    <article>
+        <img src="images/dame_equipe.jpg" alt="photo_joy" class="photo"/>
+        <p>Bonjour ,</p>
+        <p>
+          Mon nom est Joy Angelakos. J'ai obtenu un diplôme en Éducation de la petite enfance au collège Vanier.
+            Je suis dans le domaine de l'éducation depuis plus de 25 ans.
+        </p>
+        <p>
+            Je suis à l'emploi du CPE La Gare de Rires depuis 1986. Toutes ces années, je les ai passées à travailler
+            avec les groupes plus vieux, plus spécifiquement les 4 et 5 ans.
+        </p>
+
+        <p>
+            J'anticipe le plaisir d'acceuillir vos enfants afin de les préparer pour la Maternelle.
+        </p>
+        <p>
+            Je vous souhaite un heureux séjour parmi nous.
+        </p>
+
+        <h2>Joy</h2>
+    </article>
+
+    <article>
+        <img src="images/dame_equipe.jpg" alt="photo_alain" class="photo"/>
+        <p>Bonjour ,</p>
+        <p>
+            Je m'appelle Alain Labelle et je suis un éducateur certifié. Je suis au CPE La Gare de Rires
+            depuis janvier 2001 à titre d'éducateur francophone. Cette année, j'ai rejoint le groupe des Pandas
+            en collaboration avec Pina DiLuca et Chantal Reed.
+        </p>
+        <p>
+            Développer le respect de soiet des autres chez les enfants sont pour moi des valeurs de bases sures
+            qui permettront aux enfants de développer des relations sociales et qui permettront de s'ouvrir sur
+            le monde extérieur en toute confiance.
+        </p>
+
+        <p>La réalisation dont je suis le plus fier, c'est d'avoir travaillé avec un groupe d'enfants de 18 mois
+            alors aux couches et des les avoir amené jusqu'à leur graduation..
+        </p>
+        <p>
+            Pour plus amples renseignements, je vous invite à venir me rencontrer.
+        </p>
+
+        <h2>Alain</h2>
+    </article>
+
+    <article>
+        <img src="images/dame_equipe.jpg" alt="photo_sylvia" class="photo"/>
+        <p>Bonjour a tous ,</p>
+        <p>
+            Je présente, mon nom est Sylvia Labelle Roy. Je suis éducatrice au CEP La Gare de Rires depuis mai 1991,
+            Durant toutes ces années j'ai eu la chance de travailler avec plusieurs groupes d'âge, en particulier avec les poupons
+            et les enfants de 4-5 ans.
+            </p>
+        <p>
+            J'ai un baccalauréat en Éducation préscolaire et élémentaire. J'ai enseigné pour la Commmission scolaire Marie Victorin
+            et j'ai remplacé occasionnellement dans les écoles de la Commission des Grandes Seigneuries lors de mes congés.
+        </p>
+
+        <p>
+            Je suis également maman de trois beaux enfants. Je pense donc avoir beaucoup d'expériences avec les enfants
+            de tous les âges.
+        </p>
+        <p>
+            Je m'attends à une belle année remplie de plaisirs, de rires,
+            défis et surtout de beaux échanges avec vous les parents et votre petit trésor.
+        </p>
+        <p>N'hésitez pas à exprimer vos préoccupations ou tout commentaire concernant
+            votre enfant au cours de l'année.
+        </p>
+
+        <h2>Sylvia</h2>
+    </article>
+
+    <article>
+        <img src="images/dame_equipe.jpg" alt="photo_ryan" class="photo"/>
+        <p>Bonjour,</p>
+        <p>
+            Mon nom est Ryan Reyes et je suis le cuisinier du CEP La Gare de Rires depuis octobre 2006.
+        </p>
+        <p>
+           Je suis diplômé de l'insitut d'hôtellerie du Québec en Cuisine d'établissement.
+        </p>
+
+        <p>
+            En collaboration avec la diététicienne du CLSC et de la Direction, je bâtis les menus qui vous
+            sont présentés à chaque année.
+        </p>
+        <p>
+            De plus, je cuisine les gâteaux de fêtes des enfants tous au long de l'année.
+            Je prépare également les buffets qui vous sont présentés lors des fetes et reunions.
+            Je prépare les piques-niques lors des sorties au parc et de chacune des sorties.
+        </p>
+        <p>
+            Si vous désirez à votre tour cuisiner mes plats, n'hésitez pas à me demander la recette.
+        </p>
+        <p>Bonne année scolaire à tous !</p>
+
+        <h2>Ryan</h2>
     </article>
 </section>
 
