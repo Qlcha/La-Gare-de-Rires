@@ -1,4 +1,4 @@
-<div>footer ici</div>
+
 <form action="#">
     <!--<input type="text" name="message" placeholder="Laisser nous un message">-->
     <textarea rows="5" cols="30" placeholder="Laisser nous un message"></textarea>

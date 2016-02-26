@@ -1,10 +1,10 @@
 <?php
 require_once 'view_parts/_header.php';
 ?>
-<section class="equipe">
+<section id="equipe">
     <article>
     <img src="images/dame_equipe.jpg" alt="photo_christina" class="photo"/>
-    <p> Bonjour </p>
+    <p> Bonjour , </p>
     <p> Mon nom est Christina Taddeo et ce sera ma quatrième en tant qu'éducateur dans la pouponnière </p>
     <p> Après avoir complété un DEC au collège Dawson en Cinéma & Communications,
         j'ai décidé de m'orienter en Éducation de la petite enfance au Cégep Vanier.
@@ -19,7 +19,7 @@ require_once 'view_parts/_header.php';
 
     <article>
     <img src="images/dame_equipe.jpg" alt="photo_lamia" class="photo"/>
-    <p> Bonjour </p>
+    <p> Bonjour , </p>
     <p> Je me présente, je m'appelle Lamia Guernah. Je suis une éducatrice qualifiée et j'ai obtenu ma certifiaction à l'Université de Montréal </p>
     <p>
         J'ai travaillé dans différents centres de la petite enfance à Montréal et j'ai travaillé avec les groupes d'âge,
@@ -42,7 +42,7 @@ require_once 'view_parts/_header.php';
 
     <article>
         <img src="images/dame_equipe.jpg" alt="photo_jennifer" class="photo"/>
-        <p>Bonjour</p>
+        <p>Bonjour ,</p>
         <p>
             Mon nom est Jennifer Zablocki. J'ai obtenu mon DEC eb Éducation de la petite enfance au Collège Vanier.
             J'ai également un DEC en Cinéma et Communication au Collège Dawson.
@@ -57,7 +57,7 @@ require_once 'view_parts/_header.php';
 
     <article>
         <img src="images/dame_equipe.jpg" alt="photo_diane" class="photo"/>
-        <p>Bonjour à tous </p>
+        <p>Bonjour à tous ,</p>
         <p>
            Je me présente, mon nom est Diane Marchand je suis à l'emploi du CPE La Gare de Rires depuis janvier 2000.
         </p>
@@ -78,7 +78,7 @@ require_once 'view_parts/_header.php';
 
     <article>
         <img src="images/dame_equipe.jpg" alt="photo_elisabeth" class="photo"/>
-        <p>Bonjour</p>
+        <p>Bonjour ,</p>
         <p>
            Je m'appelle Élisabeth Moreira.
             J'ai travaillé à la pouponnière pendant 17 ans.
@@ -129,7 +129,7 @@ require_once 'view_parts/_header.php';
 
     <article>
         <img src="images/dame_equipe.jpg" alt="photo_pina" class="photo"/>
-        <p>Bonjour à tous et à toutes</p>
+        <p>Bonjour à tous et à toutes ,</p>
         <p>
          Mon nom est Pina DiLuca. J'ai un DEC en Éducation de la Petite Enfance du CEGEP Marie Victorin.
         </p>
@@ -251,7 +251,7 @@ require_once 'view_parts/_header.php';
 
     <article>
         <img src="images/dame_equipe.jpg" alt="photo_ryan" class="photo"/>
-        <p>Bonjour,</p>
+        <p>Bonjour ,</p>
         <p>
             Mon nom est Ryan Reyes et je suis le cuisinier du CEP La Gare de Rires depuis octobre 2006.
         </p>
