@@ -1,4 +1,7 @@
 <?php
+require_once '_defines.php';
+require_once 'data/_main_data.php';
+$site_data[PAGE_ID] = 'Notre équipe';
 require_once 'view_parts/_header.php';
 ?>
 <section id="equipe">
@@ -224,7 +227,7 @@ require_once 'view_parts/_header.php';
 
     </article>
 
-    <article>
+    <article >
         <h2>Sylvia</h2>
 
         <img src="images/dame_equipe.jpg" alt="photo_sylvia" class="photo"/>

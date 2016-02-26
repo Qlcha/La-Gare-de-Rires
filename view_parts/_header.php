@@ -6,7 +6,7 @@ if(!empty($_SESSION["user"])) {
 <html>
 <head lang="fr">
     <meta charset="UTF-8">
-    <title><?= SITE_NAME . ' - ' . $site_data[PAGE_ID]?></title>
+    <title><?php echo ucfirst($site_data[PAGE_ID])?></title>
 
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <link rel="stylesheet" href="css/stylesheet.css"/>
@@ -39,5 +39,8 @@ if(!empty($_SESSION["user"])) {
                 -->
             </ul>
         </nav>
-    <h2>Sur la voie de l'avenir</h2>
+    <div id="slogan"><!--
+    --><h2>Sur la voie de l'avenir...</h2><!--
+    --><div><a href="connexion.php" class="button" id="button_connexion">Connextion</a></div>
+    </div>
     </header>
