@@ -1,6 +1,7 @@
 <div>footer ici</div>
 <form action="#">
-    <input type="text" name="message" placeholder="Laisser nous un message">
+    <!--<input type="text" name="message" placeholder="Laisser nous un message">-->
+    <textarea rows="5" cols="30" placeholder="Laisser nous un message"></textarea>
     <input type="submit" value="envoyer">
     <input type="search" name="recherche" placeholder="Recherche">
     <input type="submit" value="valider">
