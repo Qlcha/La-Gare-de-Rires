@@ -24,9 +24,10 @@ if(!empty($_SESSION["user"])) {
 </head>
 <body><!--
 --><header><!--
---><ul><li class="lang"><a href="index.php">Eng</a></li>
-        <li class="lang"><a href="index.php">Fr</a></li>
-    </ul><!--
+--><ul><!--
+       --><li class="lang"><a href="index.php">Eng</a></li><!--
+       --><li class="lang"><a href="index.php">Fr</a></li><!--
+       --></ul><!--
 --><nav><!--
 --><ul><li><a href="index.php"><img src="images/Train.png" alt="logo LaGareDeRires"><h1>La Gare de Rires</h1></a>
             </li>
