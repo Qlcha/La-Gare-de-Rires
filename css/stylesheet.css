@@ -43,12 +43,57 @@ ul {
     padding: 0;
     margin: 0;
 }
+
+/******************** BUTTONS & INPUTS*******************/
+
+.button  {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #888888;
+    color: crimson;
+    padding: 0px 10px;
+    font-size: 90%;
+    font-weight: bold;
+    border: 1px solid brown;
+    margin-top: 5px;
+    width: 80%;
+}
+
+.button:hover {
+    background-color: crimson;
+    color: antiquewhite;
+}
+
+.button:active{
+    border-radius: 10px;
+    color: crimson;
+    background-color: antiquewhite;
+}
+
+.input {
+    border-radius: 5px;
+    padding: 5px;
+    width: 80%;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
 /********** ENG  /   FR   *************************/
 .lang{
     display: inline-block;
     width: 49%;
     padding-left: 20px;
     font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px crimson;
+}
+
+.lang a{
+    color: white;
+    width: 100%;
 }
 
 .lang:last-of-type{
@@ -56,7 +101,7 @@ ul {
 }
 /************ MENU NAVIGATION *******************/
 nav img {
-    width: 2.5%;
+    width: 8%;
     padding: 3px 5px 0 ;
 
 }
@@ -90,86 +135,27 @@ header h2{
     display: none;
 }
 
-/********* DÉBUT FOOTER *********/
-/*
-#footer form{
-    margin-left: 55%;
-}
-*/
 
-/********* DÉBUT PAGE ÉQUIPE *********/
-#equipe article .photo{
-float: left;
-    margin-right: 5%;
-    margin-left: 2%;
-    border: 1px solid black;
-    /*bordure arrondie*/
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    -ms-border-radius:5px;
-    -o-border-radius:5px;
-    border-radius: 5px;
-   /* ombre portée*/
-    -moz-box-shadow: 4px 4px 4px #888888;
-    -webkit-box-shadow: 4px 4px 4px #888888;
-    box-shadow: 4px 4px 4px #888888;
+
+/********* FOOTER *********************************/
+
+footer {
+    background-color:rgba(250,235,215,0.7);
+    border-top: 1px solid brown;
+    border-bottom: 1px solid brown;
+    margin-top: 50px;
+    text-align: center;
 }
 
-#equipe article{
-    clear: both;
-    margin-top: 5%;
-    border-bottom: 1px solid black;
+footer input{
+    display: block;
+    margin: 0 auto;
+}
+footer form {
+    padding-top: 20px;
 }
 
-#equipe article:nth-of-type(1){
-    height: 620px;
+footer p{
+padding-top: 10px;
+    color: crimson;
 }
-#equipe article:nth-of-type(2){
-    height: 870px;
-}
-#equipe article:nth-of-type(3){
-    height: 540px;
-}
-#equipe article:nth-of-type(4){
-    height: 780px;
-}
-#equipe article:nth-of-type(5){
-    height: 460px;
-}
-#equipe article:nth-of-type(6){
-   height: 590px;
-}
-#equipe article:nth-of-type(7){
-    height: 545px;
-}
-#equipe article:nth-of-type(8){
-    height: 570px;
-}
-#equipe article:nth-of-type(9){
-    height: 870px;
-}
-#equipe article:nth-of-type(10){
-    height: 520px;
-}
-#equipe article:nth-of-type(11){
-    height: 670px;
-}
-#equipe article:nth-of-type(12){
-    height: 800px;
-}
-#equipe article:last-of-type{
-    border-bottom: none;
-    height: 650px;
-}
-
-#equipe article p{
-    line-height: 25px;
-}
-#equipe article h2{
-    margin-top: 1.5%;
-}
-#equipe article h2{
-    margin-left: 35%;
-}
-/********* FIN PAGE ÉQUIPE *********/
-
