@@ -6,7 +6,7 @@ require_once 'view_parts/_header.php';
     <article>
         <h2>Christina</h2>
 
-    <img src="images/dame_equipe.jpg" alt="photo_christina" class="photo"/>
+    <img src="images/educatrice.jpg" alt="photo_christina" class="photo"/>
     <p> Bonjour , </p>
     <p> Mon nom est Christina Taddeo et ce sera ma quatrième en tant qu'éducateur dans la pouponnière </p>
     <p> Après avoir complété un DEC au collège Dawson en Cinéma & Communications,
@@ -23,7 +23,7 @@ require_once 'view_parts/_header.php';
     <article>
         <h2>Lamia</h2>
 
-    <img src="images/dame_equipe.jpg" alt="photo_lamia" class="photo"/>
+    <img src="images/educatrice.jpg"  alt="photo_lamia" class="photo"/>
     <p> Bonjour , </p>
     <p> Je me présente, je m'appelle Lamia Guernah. Je suis une éducatrice qualifiée et j'ai obtenu ma certifiaction à l'Université de Montréal </p>
     <p>
@@ -48,7 +48,7 @@ require_once 'view_parts/_header.php';
     <article>
         <h2>Jennifer</h2>
 
-        <img src="images/dame_equipe.jpg" alt="photo_jennifer" class="photo"/>
+        <img src="images/educatrice.jpg"  alt="photo_jennifer" class="photo"/>
         <p>Bonjour ,</p>
         <p>
             Mon nom est Jennifer Zablocki. J'ai obtenu mon DEC eb Éducation de la petite enfance au Collège Vanier.
@@ -65,7 +65,7 @@ require_once 'view_parts/_header.php';
     <article>
         <h2>Diane</h2>
 
-        <img src="images/dame_equipe.jpg" alt="photo_diane" class="photo"/>
+        <img src="images/educatrice.jpg"  alt="photo_diane" class="photo"/>
         <p>Bonjour à tous ,</p>
         <p>
            Je me présente, mon nom est Diane Marchand je suis à l'emploi du CPE La Gare de Rires depuis janvier 2000.
@@ -87,7 +87,7 @@ require_once 'view_parts/_header.php';
     <article>
         <h2>Élisabeth</h2>
 
-        <img src="images/dame_equipe.jpg" alt="photo_elisabeth" class="photo"/>
+        <img src="images/educatrice.jpg"  alt="photo_elisabeth" class="photo"/>
         <p>Bonjour ,</p>
         <p>
            Je m'appelle Élisabeth Moreira.
@@ -103,7 +103,7 @@ require_once 'view_parts/_header.php';
     <article>
         <h2>Diane</h2>
 
-        <img src="images/dame_equipe.jpg" alt="photo_diane" class="photo"/>
+        <img src="images/educatrice.jpg" " alt="photo_diane" class="photo"/>
         <p>Bonjour à tous et à toutes,</p>
         <p>
            Mon nom est Diane Dobrzanski et je fais maintenant partit de l'équipe des Pandas depuis maintenant 2 ans..
@@ -122,7 +122,7 @@ require_once 'view_parts/_header.php';
     <article>
         <h2>Pauline</h2>
 
-        <img src="images/dame_equipe.jpg" alt="photo_pauline" class="photo"/>
+        <img src="images/educatrice.jpg"  alt="photo_pauline" class="photo"/>
         <p>Bonjour ,</p>
         <p>
           Mon nom est Pauline Sabatini. Encore une fois cette année, je suis l'éducatrice de langue anglaise
@@ -141,7 +141,7 @@ require_once 'view_parts/_header.php';
     <article>
         <h2>Pina</h2>
 
-        <img src="images/dame_equipe.jpg" alt="photo_pina" class="photo"/>
+        <img src="images/educatrice.jpg"  alt="photo_pina" class="photo"/>
         <p>Bonjour à tous et à toutes ,</p>
         <p>
          Mon nom est Pina DiLuca. J'ai un DEC en Éducation de la Petite Enfance du CEGEP Marie Victorin.
@@ -161,7 +161,7 @@ require_once 'view_parts/_header.php';
     <article>
         <h2>Chantal</h2>
 
-        <img src="images/dame_equipe.jpg" alt="photo_chantal" class="photo"/>
+        <img src="images/educatrice.jpg"  alt="photo_chantal" class="photo"/>
         <p>Bonjour ,</p>
         <p>
             Je voudrais saisir cette occasion pour vous parler un peu de mon parcours professionnel.
@@ -190,7 +190,7 @@ require_once 'view_parts/_header.php';
     <article>
         <h2>Joy</h2>
 
-        <img src="images/dame_equipe.jpg" alt="photo_joy" class="photo"/>
+        <img src="images/educatrice.jpg"  alt="photo_joy" class="photo"/>
         <p>Bonjour ,</p>
         <p>
           Mon nom est Joy Angelakos. J'ai obtenu un diplôme en Éducation de la petite enfance au collège Vanier.
@@ -213,7 +213,7 @@ require_once 'view_parts/_header.php';
     <article>
         <h2>Alain</h2>
 
-        <img src="images/dame_equipe.jpg" alt="photo_alain" class="photo"/>
+        <img src="images/educatrice.jpg"  alt="photo_alain" class="photo"/>
         <p>Bonjour ,</p>
         <p>
             Je m'appelle Alain Labelle et je suis un éducateur certifié. Je suis au CPE La Gare de Rires
@@ -238,7 +238,7 @@ require_once 'view_parts/_header.php';
     <article>
         <h2>Sylvia</h2>
 
-        <img src="images/dame_equipe.jpg" alt="photo_sylvia" class="photo"/>
+        <img src="images/educatrice.jpg"  alt="photo_sylvia" class="photo"/>
         <p>Bonjour a tous ,</p>
         <p>
             Je présente, mon nom est Sylvia Labelle Roy. Je suis éducatrice au CEP La Gare de Rires depuis mai 1991,
@@ -267,7 +267,7 @@ require_once 'view_parts/_header.php';
     <article>
         <h2>Ryan</h2>
 
-        <img src="images/dame_equipe.jpg" alt="photo_ryan" class="photo"/>
+        <img src="images/educatrice.jpg"  alt="photo_ryan" class="photo"/>
         <p>Bonjour ,</p>
         <p>
             Mon nom est Ryan Reyes et je suis le cuisinier du CEP La Gare de Rires depuis octobre 2006.
