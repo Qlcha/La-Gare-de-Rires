@@ -164,6 +164,7 @@ text-align: center;
 #equipe article p{
     line-height: 28px;
     margin-left: 2%;
+    text-align: center;
 }
 #equipe article p:first-of-type{
     text-align: center;
