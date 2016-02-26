@@ -134,8 +134,23 @@ nav h1{
 header h2{
     display: none;
 }
-
-
+/********* DÉBUT PAGE ÉQUIPE *********/
+#equipe article .photo{
+float: left;
+    margin-right: 5%;
+    margin-left: 2%;
+    border: 1px solid black;
+    /*bordure arrondie*/
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    border-radius: 5px;
+   /* ombre portée*/
+    -moz-box-shadow: 4px 4px 4px #888888;
+    -webkit-box-shadow: 4px 4px 4px #888888;
+    box-shadow: 4px 4px 4px #888888;
+}
 
 /********* FOOTER *********************************/
 
