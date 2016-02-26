@@ -89,14 +89,6 @@ nav h1{
 header h2{
     display: none;
 }
-
-/********* DÉBUT FOOTER *********/
-/*
-#footer form{
-    margin-left: 55%;
-}
-*/
-
 /********* DÉBUT PAGE ÉQUIPE *********/
 #equipe article .photo{
 float: left;
