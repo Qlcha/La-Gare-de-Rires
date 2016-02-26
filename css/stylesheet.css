@@ -43,44 +43,6 @@ ul {
     padding: 0;
     margin: 0;
 }
-
-/******************** BUTTONS & INPUTS*******************/
-
-.button  {
-    font-family: 'Indie Flower', cursive;
-    text-align: center;
-    background-color: antiquewhite;
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px #888888;
-    color: crimson;
-    padding: 0px 10px;
-    font-size: 90%;
-    font-weight: bold;
-    border: 1px solid brown;
-    margin-top: 5px;
-    width: 80%;
-}
-
-.button:hover {
-    background-color: crimson;
-    color: antiquewhite;
-}
-
-.button:active{
-    border-radius: 10px;
-    color: crimson;
-    background-color: antiquewhite;
-}
-
-.input {
-    border-radius: 5px;
-    padding: 5px;
-    width: 80%;
-    font-family: 'Raleway', sans-serif;
-}
-
-
-
 /********** ENG  /   FR   *************************/
 .lang{
     display: inline-block;
@@ -88,20 +50,43 @@ ul {
     padding-left: 20px;
     font-weight: bold;
     color: white;
-    text-shadow: 2px 2px 2px crimson;
-}
-
-.lang a{
-    color: white;
-    width: 100%;
 }
 
 .lang:last-of-type{
     text-align: right;
+    padding-right: 20px;
 }
+
+/************************** BUTTONS et INPUTS ***********************/
+
+input {
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.input {
+    font-family: 'Raleway', sans-serif;
+    width: 90%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.button {
+    border-radius: 5px;
+    border: 1px solid brown;
+    box-shadow: 2px 2px 2px crimson;
+    width: 50%;
+    font-family: 'Indie Flower', cursive;
+    color: crimson;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
 /************ MENU NAVIGATION *******************/
 nav img {
-    width: 8%;
+    width: 2.5%;
     padding: 3px 5px 0 ;
 
 }
@@ -134,6 +119,8 @@ nav h1{
 header h2{
     display: none;
 }
+
+
 /********* DÉBUT PAGE ÉQUIPE *********/
 #equipe article .photo{
 float: left;
@@ -152,25 +139,78 @@ float: left;
     box-shadow: 4px 4px 4px #888888;
 }
 
-/********* FOOTER *********************************/
+#equipe article{
+    clear: both;
+    margin-top: 5%;
+    border-bottom: 1px solid black;
+}
 
+#equipe article:nth-of-type(1){
+    height: 620px;
+}
+#equipe article:nth-of-type(2){
+    height: 870px;
+}
+#equipe article:nth-of-type(3){
+    height: 540px;
+}
+#equipe article:nth-of-type(4){
+    height: 780px;
+}
+#equipe article:nth-of-type(5){
+    height: 460px;
+}
+#equipe article:nth-of-type(6){
+   height: 590px;
+}
+#equipe article:nth-of-type(7){
+    height: 545px;
+}
+#equipe article:nth-of-type(8){
+    height: 570px;
+}
+#equipe article:nth-of-type(9){
+    height: 870px;
+}
+#equipe article:nth-of-type(10){
+    height: 520px;
+}
+#equipe article:nth-of-type(11){
+    height: 670px;
+}
+#equipe article:nth-of-type(12){
+    height: 800px;
+}
+#equipe article:last-of-type{
+    border-bottom: none;
+    height: 650px;
+}
+
+#equipe article p{
+    line-height: 25px;
+}
+#equipe article h2{
+    margin-top: 1.5%;
+}
+#equipe article h2{
+    margin-left: 35%;
+}
+/********* FIN PAGE ÉQUIPE *********/
+
+/******************** FOOTER *********************/
 footer {
     background-color:rgba(250,235,215,0.7);
+    margin-top: 20px;
     border-top: 1px solid brown;
-    border-bottom: 1px solid brown;
-    margin-top: 50px;
     text-align: center;
+    color: crimson;
 }
 
-footer input{
-    display: block;
-    margin: 0 auto;
-}
 footer form {
+    margin-top: 20px  ;
+}
+
+footer p {
     padding-top: 20px;
 }
 
-footer p{
-padding-top: 10px;
-    color: crimson;
-}
