@@ -86,7 +86,10 @@ input {
 nav img {
     width: 10%;
     padding: 3px 5px 0 ;
+}
 
+nav h1{
+    font-family: 'Indie Flower', cursive;
 }
 
 nav li:first-of-type {

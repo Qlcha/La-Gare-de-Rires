@@ -20,7 +20,7 @@ require_once 'view_parts/_header.php';
         <p><strong>Collation du matin : </strong>CEREALES MULTI GRAIN, POMMES & LAIT</p>
         <p><strong>Dîner : </strong>GALETTES DE THON JARDINIERE, LEGUMES FRAIS & SALADE AUX EPINARDS; CANTELOUP & LAIT</p>
         <p><strong>Collation aprés-midi : </strong>BAGELS MULTI-GRAIN AVEC FROMAGE CHEDDAR, POMMES, LAIT</p>
-        <a href="menu_3_semaines.php" class="button">Consulter le Calendrier</a>
+        <a href="menu_3_semaines.php" class="button">Consulter le Menu</a>
 
     </section>
     <section id="activite" class="du_jour">
