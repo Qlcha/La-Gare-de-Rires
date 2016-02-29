@@ -128,3 +128,5 @@ require_once 'view_parts/_header.php';
     </table>
 
 </div>
+
+<?php require_once 'view_parts/_footer.php'; ?>

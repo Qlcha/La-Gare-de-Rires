@@ -4,7 +4,7 @@ require_once 'data/_main_data.php';
 $site_data[PAGE_ID] = 'Contactez-nous';
 require_once 'view_parts/_header.php';
 ?>
-<?php require_once 'view_parts/_footer.php'; ?>
+
 <div class="content_block">
 <h3>Les numéros importants</h3>
     <table>
@@ -72,3 +72,5 @@ require_once 'view_parts/_header.php';
         </tr>
     </table>
 </div>
+
+<?php require_once 'view_parts/_footer.php'; ?>

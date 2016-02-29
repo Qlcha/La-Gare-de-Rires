@@ -9,5 +9,6 @@
     </form>
     <p> &copy; CN " La gare de rires" 2016 </p>
 </footer>
+</div>
 </body>
 </html>

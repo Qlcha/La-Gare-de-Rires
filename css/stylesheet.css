@@ -25,6 +25,7 @@ body, p {
 
 h1,h2,h3,h4,h5,h6{
     margin: 0;
+    font-family: 'Indie Flower', cursive;
 }
 
 a{
@@ -34,7 +35,7 @@ a{
 }
 
 body{
-    background-image: url("../images/plaid-yellow.png");
+    background-image: url("../images/bricks2.png");
     background-position: center;
 }
 
@@ -45,9 +46,8 @@ ul {
 }
 
 .content_block {
-    background-color:rgba(250,235,215,0.7);
-    border: 1px solid brown;
-    border-radius: 5px;
+    background-color:rgba(255,255,255,0.7);
+    border: 2px solid grey;
     margin: 10px;
 }
 
@@ -94,14 +94,21 @@ nav h1{
 
 nav li:first-of-type {
     padding: 0;
-    border-top: 1px solid brown;
+    border-top: 1px solid grey;
 }
+
+nav li:first-of-type:hover {
+    background-color:rgba(255,255,255,0.7);
+}
+
 nav li{
     text-align: center;
-    border-bottom: 1px solid brown;
-    background-color:rgba(250,235,215,0.7);
+    border-bottom: 2px solid grey;
+    background-color:rgba(255,255,255,0.7);
     padding: 3px 0 3px 0;
     font-size: 120%;
+    font-weight: bold;
+    font-family: 'Indie Flower', cursive;
 }
 
 nav li a{
@@ -109,7 +116,7 @@ nav li a{
 }
 
 nav li:hover {
-    background-color: antiquewhite;
+    background-color: rgba(206, 255, 5, 0.4);
 }
 nav h1{
     font-size: 110%;
@@ -118,35 +125,21 @@ nav h1{
     color: black;
 }
 
-#slogan {
-    margin: 20px;
-}
-
-#slogan h2{
-/*    display: none;*/
-    display: inline-block;
-    color: darkblue;
-    font-family: 'Indie Flower', cursive;
-    width: 80%;
-}
-
-#slogan div {
-    display: inline-block;
-    width: 20%;
-    text-align: right;
-}
-
 #button_connexion {
-background-color: cadetblue;
+background-color: brown;
+    color: #cfff04;
+   border: 2px solid #cfff04;
+    box-shadow: none;
+    border-radius: 10px;
+
 }
 
 /************************INDEX*********************************/
 /*****ENG / FR   ***/
 .lang{
     display: inline-block;
-    width: 50%;
-    padding-left: 20px;
     font-weight: bold;
+    font-size: 130%;
 }
 
 .lang a{
@@ -155,15 +148,28 @@ background-color: cadetblue;
     display: block;
 }
 
+
+.lang a:hover{
+    color: #cfff04;
+}
+
+.lang:first-of-type{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
 .lang:last-of-type{
     text-align: right;
-    padding-right: 20px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
 }
 /**********************************************************/
 
 /**************** MENU & ACTIVITÉ section****************************/
 .du_jour h3{
-    text-align: center;
+   color: crimson;
 }
 
 .du_jour {
@@ -173,14 +179,25 @@ background-color: cadetblue;
 .du_jour .button{
     display: block;
     text-align: center;
-    background-color: #fff5a7;
-   margin: 10px 25% 10px 25%;
-    width: 50%;
+    background-color: #cfff04;
+   margin: 0 auto;
+    width: 70%;
     padding: 10px;
 }
 
-#repas p:nth-of-type(2){
-    padding: 5px 0 5px 0;
+#repas li{
+    text-transform: lowercase;
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+#repas li:nth-of-type(odd){
+    font-weight: bold;
+}
+
+#repas li:nth-of-type(even){
+    padding-bottom: 20px;
+    font-style: italic;
 }
 
 #news p:first-of-type{
@@ -204,7 +221,14 @@ background-color: cadetblue;
 
 #phylosophy h3{
     font-family: 'Indie Flower', cursive;
-    font-size: 200%;
+    font-size: 150%;
+    text-align: center;
+}
+
+#phylosophy span {
+    font-size: 120%;
+    color: darkblue;
+    display: block;
 }
 
 #phylosophy p{
@@ -254,7 +278,7 @@ text-align: center;
 
 /******************** FOOTER *********************/
 footer {
-    background-color:rgba(250,235,215,0.7);
+    background-color:rgba(255,255,255,0.7);
     margin-top: 20px;
     border-top: 1px solid brown;
     text-align: center;
@@ -267,4 +291,106 @@ footer form {
 
 footer p {
     padding-top: 20px;
+}
+
+
+/********************** MEDIA QUERIES *********************/
+
+/*************TABLETTE**************/
+@media screen and (min-width: 768px){
+        nav {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        text-align: center;
+        height: 90px;
+        vertical-align: middle;
+        border-left: 1px solid grey;
+        width: 110px;
+        font-size: 100%;
+    }
+
+    nav li:first-of-type {
+        padding: 0;
+        width: 170px;
+        border: none;
+        border-bottom: 2px solid grey;
+       border-left: 1px solid grey;
+        vertical-align: top;
+
+
+    }
+
+    nav li:last-of-type{
+        border-right: 1px solid grey;;
+    }
+
+
+    nav li a{
+        font-weight: bold;
+        display: block;
+        height: 100%;
+        padding-top: 30px;
+    }
+
+    nav li:first-of-type a{
+        padding: 0;
+    }
+
+nav h1{
+    display: block;
+    font-size: 110%;
+
+}
+
+    nav img {
+        width: 70px;
+        padding-top: 10px;
+    }
+
+    #du_jour .button{
+        margin: 0;
+
+    }
+
+}
+
+
+
+
+/*************DESKTOP**************/
+@media screen and (min-width: 1024px){
+    #principal {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    #update {
+
+    }
+
+    #du_jour, #news{
+    display: inline-block;
+        vertical-align: middle;
+}
+
+#du_jour {
+    width: 40%;
+}
+
+#news{
+    width: 55%;
+}
+
+.du_jour .button{
+    font-size: 90%;
+  /*  width: 40%;*/
+    padding: 2px;
+}
+
+
+
 }

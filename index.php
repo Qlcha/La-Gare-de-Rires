@@ -5,6 +5,7 @@ $site_data[PAGE_ID] = 'Bienvenue à la Gare de Rires';
 require_once 'view_parts/_header.php';
 ?>
 
+<div id="update">
 <section class="content_block" id="news">
     <p>jj / mm / 2016</p>
     <h3>Titre du post</h3>
@@ -14,12 +15,18 @@ require_once 'view_parts/_header.php';
         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
         laborum.</p>
 </section>
-<aside class="content_block">
+<aside class="content_block" id="du_jour">
     <section id="repas" class="du_jour">
         <h3>Repas du jour:</h3>
-        <p><strong>Collation du matin : </strong>CEREALES MULTI GRAIN, POMMES & LAIT</p>
-        <p><strong>Dîner : </strong>GALETTES DE THON JARDINIERE, LEGUMES FRAIS & SALADE AUX EPINARDS; CANTELOUP & LAIT</p>
-        <p><strong>Collation aprés-midi : </strong>BAGELS MULTI-GRAIN AVEC FROMAGE CHEDDAR, POMMES, LAIT</p>
+        <ul>
+            <li>Collation du matin :</li>
+            <li>CEREALES MULTI GRAIN, POMMES & LAI</li>
+            <li>Dîner :</li>
+            <li>GALETTES DE THON JARDINIERE, LEGUMES FRAIS & SALADE AUX EPINARDS; CANTELOUP & LAIT</li>
+            <li>Collation aprés-midi : </li>
+            <li>BAGELS MULTI-GRAIN AVEC FROMAGE CHEDDAR, POMMES, LAIT</li>
+        </ul>
+
         <a href="menu_3_semaines.php" class="button">Consulter le Menu</a>
 
     </section>
@@ -28,10 +35,10 @@ require_once 'view_parts/_header.php';
         <a href="download/calendrier.pdf" class="button">Consulter le Calendrier</a>
     </section>
 </aside>
-
+</div>
 
 <section id="phylosophy">
-    <h3>Notre philosophie...</h3>
+    <h3>Notre philosophie :    <span>  Sur la voie de l'avenir...</span></h3>
     <p>Votre CPE a beaucoup à vous offrir, autant dans l'éducation social de votre enfant que dans les multiples
         activités
         que nous partagerons avec vous au cours de l'année.</p>
@@ -52,7 +59,6 @@ require_once 'view_parts/_header.php';
 </section>
 
 
-<!-- <div> <? /*= $site_data[PAGE_ID] */ ?></div>-->
 
 <?php require_once 'view_parts/_footer.php'; ?>
 

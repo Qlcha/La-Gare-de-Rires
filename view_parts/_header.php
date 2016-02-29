@@ -23,15 +23,17 @@ if(!empty($_SESSION["user"])) {
 
 </head>
 <body><!--
---><header><!--
 --><ul><!--
        --><li class="lang"><a href="index.php">Eng</a></li><!--
        --><li class="lang"><a href="index.php">Fr</a></li><!--
        --></ul><!--
+--><div id="principal"><!--
+--><header><!--
+
 --><nav><!--
---><ul><li><a href="index.php"><img src="images/Train.png" alt="logo LaGareDeRires"><h1>La Gare de Rires</h1></a>
-            </li>
-                <li><a href="equipe.php">Notre équipe</a></li><!--
+--><ul><li><a href="index.php"><img src="images/Train.png" alt="logo LaGareDeRires"><!--
+                        --><h1>La Gare de Rires</h1></a></li><!--
+                --><li><a href="equipe.php">Notre équipe</a></li><!--
                 --><li><a href="gallery.php">Gallerie</a></li><!--
                 --><li><a href="guestbook.php">Guestbook</a></li><!--
                 --><li><a href="documents.php">Documents</a></li><!--
@@ -39,8 +41,7 @@ if(!empty($_SESSION["user"])) {
                 -->
             </ul>
         </nav>
-    <div id="slogan"><!--
-    --><h2>Sur la voie de l'avenir...</h2><!--
-    --><div><a href="connexion.php" class="button" id="button_connexion">Connextion</a></div>
-    </div>
+
+ <div><a href="connexion.php" class="button" id="button_connexion">Connextion</a></div>
+
     </header>
