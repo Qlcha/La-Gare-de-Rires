@@ -42,6 +42,22 @@ if(!empty($_SESSION["user"])) {
             </ul>
         </nav>
 
- <div><a href="connexion.php" class="button" id="button_connexion">Connextion</a></div>
+ <div>
+    <!-- <?php /*if(empty($_SESSION["user"])){ */?>
+         <form class="navbar-form navbar-right" method="post" id="loginForm" action="Connecter.php">
+         <div class="form-group">
+             <input type="text" name="email" placeholder="Email"
+                    value="" class="form-control " />
+         </div>
+         <div class="form-group">
+             <input type="password" name="pass" placeholder="Password"
+                    value=""
+                    class="form-control " />
+         </div>
+
+     </form>
+     --><?php /*} */?>
+     <a href="connexion.php" class="button" id="button_connexion">Connexion</a>
+ </div>
 
     </header>
