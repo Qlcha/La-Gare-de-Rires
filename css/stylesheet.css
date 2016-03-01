@@ -115,8 +115,10 @@ nav li a{
     display: block;
 }
 
-nav li:hover {
-    background-color: rgba(206, 255, 5, 0.4);
+nav li a:hover {
+   /* background-color: rgba(206, 255, 5, 0.4);*/
+    color: #cfff04;
+    text-shadow: 1px 1px 1px red;
 }
 nav h1{
     font-size: 110%;
@@ -166,6 +168,52 @@ background-color: brown;
     right: 20px;
 }
 /**********************************************************/
+
+/************************* TABLES ******************************/
+.table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 20px;
+    font-size: 90%;
+}
+
+.table td, .table th{
+    border: 1px solid black;
+}
+
+.menu td{
+    text-transform: lowercase;
+    padding: 10px;
+}
+
+#menu_3_semaines h2{
+    color: red;
+    font-family: 'Indie Flower', cursive;
+   text-align: center;
+}
+
+.menu caption{
+    font-family: 'Indie Flower', cursive;
+    padding: 5px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+#table_users{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#table_users td, #table_users th{
+ font-size: 80%;
+}
+
+/************************ ADMIN *************************/
+#pdf_upload {
+    margin: 50px 0 50px 0;
+}
+
 
 /**************** MENU & ACTIVITÉ section****************************/
 .du_jour h3{
@@ -276,6 +324,9 @@ text-align: center;
 }
 
 /********* FIN PAGE ÉQUIPE *********/
+
+
+
 
 /******************** FOOTER *********************/
 footer {

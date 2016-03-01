@@ -10,6 +10,11 @@ if(!empty($_SESSION["user"])) {
 
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <link rel="stylesheet" href="css/stylesheet.css"/>
+
+    <link rel="stylesheet" href="fancyapps/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="fancyapps/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="fancyapps/source/jquery.fancybox.css" type="text/css" media="screen" />
+
     <!--[if lt IE 9]>
     <script
         src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
