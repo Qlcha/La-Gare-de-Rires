@@ -193,6 +193,7 @@ background-color: brown;
 
 #repas li:nth-of-type(odd){
     font-weight: bold;
+    font-size: 75%;
 }
 
 #repas li:nth-of-type(even){
@@ -278,9 +279,7 @@ text-align: center;
 
 /******************** FOOTER *********************/
 footer {
-    background-color:rgba(255,255,255,0.7);
     margin-top: 20px;
-    border-top: 1px solid brown;
     text-align: center;
     color: crimson;
 }
@@ -350,12 +349,40 @@ nav h1{
         width: 70px;
         padding-top: 10px;
     }
-
     #du_jour .button{
-        margin: 0;
-
+        width: 220px;
     }
 
+    #button_connexion{
+       padding: 0 10px 0 10px;
+        margin: 0;
+    }
+
+ footer form {
+        vertical-align: top;
+        margin: 20px;
+    }
+
+ footer form .button, footer form input{
+     display: inline;
+     vertical-align: top;
+     margin-top: 0 ;
+ }
+
+   .input {
+        width: 50%; !important;
+
+    }
+   .button {
+      width: 100px ; !important;
+       margin: 20px;
+       font-size: 90%;
+       padding: 0;
+    }
+
+   footer{
+       text-align: left;
+   }
 }
 
 
@@ -387,7 +414,7 @@ nav h1{
 
 .du_jour .button{
     font-size: 90%;
-  /*  width: 40%;*/
+    width: 150px;
     padding: 2px;
 }
 
