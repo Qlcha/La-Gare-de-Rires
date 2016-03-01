@@ -13,10 +13,14 @@ require_once 'view_parts/_header.php';
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
         laborum.</p>
 </section>
-<aside class="content_block" id="du_jour">
-    <section id="repas" class="du_jour">
+<aside id="du_jour">
+    <section id="repas" class="du_jour content_block"">
         <h3>Repas du jour:</h3>
         <ul>
             <li>Collation du matin :</li>
@@ -27,10 +31,10 @@ require_once 'view_parts/_header.php';
             <li>BAGELS MULTI-GRAIN AVEC FROMAGE CHEDDAR, POMMES, LAIT</li>
         </ul>
 
-        <a href="menu_3_semaines.php" class="button">Consulter le Menu</a>
+        <a href="menu_3_semaines.php" class="button">Consulter le Menu</a> </section>
 
-    </section>
-    <section id="activite" class="du_jour">
+
+    <section id="activite" class="du_jour content_block">
         <h3>Activité du jour:</h3>
         <a href="download/calendrier.pdf" class="button">Consulter le Calendrier</a>
     </section>
