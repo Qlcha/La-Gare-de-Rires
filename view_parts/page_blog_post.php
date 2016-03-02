@@ -3,7 +3,8 @@
 
 try
 {
-    $bdd=new PDO("mysql:host=".HOST_NAME.";dbname=".DATABASE_NAME,USER_NAME,PASSEWORD);
+    $bdd = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', '');
+
 }
 catch(Exception $e)
 {
@@ -12,9 +13,10 @@ catch(Exception $e)
 
 // Insertion du message à l'aide d'une requête préparée
 
-$req = $bdd->prepare('INSERT INTO message(prénom , commentaire , date_ca) VALUES(?, ?, NOW())');
+$req = $bdd->prepare('INSERT INTO lagarederires(prénom , commentaire ) VALUES(?, ?))');
 
 // execution du message
 $req->execute(array($_POST['prénom'], $_POST['commentaire']));
-
+// Redirection du visiteur vers la page blog
+/*header('Location: page_blog.php')*/;
 ?>
