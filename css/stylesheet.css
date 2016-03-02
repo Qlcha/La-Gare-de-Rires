@@ -509,16 +509,13 @@ display: inline-block;
     }
 
 }
-/*************DESKTOP**************/
+/*************DESKTOP***********/
 @media screen and (min-width: 1024px){
     #principal {
         width: 1000px;
         margin: 0 auto;
     }
 
-    #update {
-
-    }
 
     #du_jour, #news{
     display: inline-block;
