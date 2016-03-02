@@ -77,10 +77,10 @@ require_once 'view_parts/_header.php';
         Je souhaite qu'ensemble nous ayons expérience inoubliable de la première année de votre enfant à la garderie.
     </p>
 
+    </article>
 
-        </article>
-    <article>
-        <h3>Lamia</h3>
+    <article class="content_block">
+        <h2>Lamia</h2>
 
     <img src="images/educatrice.jpg" alt="photo_lamia" class="photo"/>
     <p> Je me présente, je m'appelle Lamia Guernah. Je suis une éducatrice qualifiée et j'ai obtenu ma certifiaction à l'Université de Montréal </p>
@@ -121,9 +121,8 @@ require_once 'view_parts/_header.php';
         <p>Au plaisir !</p>
             </article>
 
-
-        <article>
-        <h3>Diane</h3>
+    <article class="content_block">
+        <h2>Diane</h2>
 
         <img src="images/educatrice2.jpg" alt="photo_diane" class="photo"/>
         <p>
@@ -158,10 +157,10 @@ require_once 'view_parts/_header.php';
 
         <p>Je vous assure de mon entière collaboration. N'hésitez à venir me rencontrer</p>
 
-            </article>
+    </article>
 
-        <article>
-        <h3>Diane</h3>
+    <article class="content_block">
+        <h2>Diane</h2>
 
         <img src="images/educatrice5.jpg" alt="photo_diane" class="photo"/>
         <p>
@@ -196,10 +195,10 @@ require_once 'view_parts/_header.php';
         <p>J'anticipe le plaisir de travailler avec vos enfants tout au long de l'année.</p>
         <p>N'hésitez pas à venir me parler de vos préoccupations concernant votre enfant.</p>
 
-            </article>
+    </article>
 
-        <article>
-        <h3>Pina</h3>
+    <article class="content_block">
+        <h2>Pina</h2>
 
         <img src="images/educatrice7.jpg" alt="photo_pina" class="photo"/>
         <p>
@@ -245,10 +244,10 @@ require_once 'view_parts/_header.php';
             à venir nous rencontrer notre porte sera toujours ouverte.
         </p>
 
-            </article>
+    </article>
 
-        <article>
-        <h3>Joy</h3>
+    <article class="content_block">
+        <h2>Joy</h2>
 
         <img src="images/educatrice10.jpg" alt="photo_joy" class="photo"/>
         <p>
@@ -293,10 +292,10 @@ require_once 'view_parts/_header.php';
             Pour plus amples renseignements, je vous invite à venir me rencontrer.
         </p>
 
-            </article>
+    </article>
 
-        <article>
-        <h3>Sylvia</h3>
+    <article class="content_block">
+        <h2>Sylvia</h2>
 
         <img src="images/educatrice11.jpg" alt="photo_sylvia" class="photo"/>
 

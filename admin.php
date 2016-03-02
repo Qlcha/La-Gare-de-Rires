@@ -1,4 +1,3 @@
-
 <?php
 require_once '_defines.php';
 require_once 'data/_main_data.php';
@@ -6,24 +5,23 @@ $site_data[PAGE_ID] = 'Espace Admin';
 require_once 'view_parts/_header.php';
 ?>
 
-
 <div class="content_block">
     <section>
         <h2>Post d'Administrateur / Nouvelle / Update</h2>
         <form action="#">
-            <textarea>Easy (and free!) You should check out our premium features.</textarea>
+            <textarea name="message_admin" placeholder="Post d'admin ici" class="input" rows="5"></textarea>
             <input type="submit" value="post" class="button">
         </form>
     </section>
 
-<section id="pdf_upload">
+    <section>
         <h2>Mise à jour de Calendrier</h2>
         <input type="file" id="fichier_calendrier">
     </section>
 
     <section>
         <h2>Utilisateurs inscrits au site</h2>
-        <table class="table" id="table_users">
+        <table>
             <tr>
                 <th>No.</th>
                 <th>Prénom</th>

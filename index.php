@@ -24,7 +24,7 @@ require_once 'view_parts/_header.php';
         <h3>Repas du jour:</h3>
         <ul>
             <li>Collation du matin :</li>
-            <li>CEREALES MULTI GRAIN, POMMES & LAIT</li>
+            <li>CEREALES MULTI GRAIN, POMMES & LAI</li>
             <li>Dîner :</li>
             <li>GALETTES DE THON JARDINIERE, LEGUMES FRAIS & SALADE AUX EPINARDS; CANTELOUP & LAIT</li>
             <li>Collation aprés-midi : </li>
@@ -36,8 +36,7 @@ require_once 'view_parts/_header.php';
 
     <section id="activite" class="du_jour content_block">
         <h3>Activité du jour:</h3>
-        <a class="fancybox button" data-fancybox-type="iframe" href="download/calendrier.pdf">Consulter le Calendrier</a>
-
+        <a href="download/calendrier.pdf" class="button">Consulter le Calendrier</a>
     </section>
 </aside>
 </div>
