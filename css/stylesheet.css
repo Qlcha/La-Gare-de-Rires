@@ -59,6 +59,8 @@ input , textarea {
     border-radius: 5px;
     display: block;
     margin: 0 auto;
+    background-color:rgba(255,255,255,0.7);
+    text-decoration: underline;
 }
 
 .input {
@@ -81,7 +83,11 @@ input , textarea {
     padding: 10px;
 }
 
-
+input.button {
+    border-style: none;
+    font-size: 120%;
+    padding: 0;
+}
 /************ HEADER & MENU NAVIGATION *******************/
 nav img {
     width: 10%;
@@ -113,6 +119,7 @@ nav li{
 
 nav li a{
     display: block;
+    text-decoration: none;
 }
 
 nav li a:hover {
@@ -287,6 +294,37 @@ background-color: black;
     color: crimson;
 }
 
+
+
+/*********************** ADMIN ******************/
+
+#admin_content_block {
+    padding: 20px;
+}
+
+#admin_content_block form .button{
+    display: block;
+    margin: 0 auto;
+    font-size: 150%;
+}
+
+#admin_content_block form label{
+    font-family: 'Indie Flower', cursive;
+    color: crimson;
+    font-weight: bold;
+}
+
+#title_add {
+    border-radius: 0;
+    display: inline;
+    margin: 0;
+    width: 500px;
+}
+
+#pdf_upload {
+    margin: 50px 0 50px 0;
+}
+
 /********* DÉBUT PAGE ÉQUIPE *********/
 #equipe .content_block img{
       width: 70%;
@@ -432,9 +470,15 @@ nav h1{
         width: 50%; !important;
        margin: 0;
 
+    input.button{
+        margin: 0;
     }
-   .button {
-      width: 100px ; !important;
+
+    input.button:active {
+        color: black;
+    }
+
+    .button {
        margin: 20px;
        font-size: 90%;
        padding: 0;
