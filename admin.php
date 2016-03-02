@@ -14,11 +14,11 @@ var_dump($_POST);
 ?>
 
 
-<div class="content_block">
+<div class="content_block" id="admin_content_block">
     <section>
         <h2>Post d'Administrateur / Nouvelle / Update</h2>
         <form action="#" method="post">
-            <label for="title_add"></label>
+            <label for="title_add">Titre du post: </label>
             <input type="text" name="title_add" id="title_add">
             <textarea id="post_admin" name="post_add">Easy (and free!) You should check out our premium features.</textarea>
             <input type="submit" value="post" class="button">
@@ -26,12 +26,12 @@ var_dump($_POST);
     </section>
 
 <section id="pdf_upload">
-        <h2>Mise à jour de Calendrier</h2>
+        <h2>Mise à jour de Calendrier: </h2>
         <input type="file" id="fichier_calendrier">
     </section>
 
     <section>
-        <h2>Utilisateurs inscrits au site</h2>
+        <h2>Utilisateurs inscrits au site:</h2>
         <table class="table" id="table_users">
             <tr>
                 <th>No.</th>

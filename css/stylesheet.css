@@ -28,9 +28,7 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Indie Flower', cursive;
 }
 
-a{
-    text-decoration: none;
-    color: crimson;
+a{    color: crimson;
     /*cursor: default;*/
 }
 
@@ -56,9 +54,10 @@ ul {
 /************************** BUTTONS et INPUTS ***********************/
 
 input {
-    border-radius: 5px;
     display: block;
     margin: 0 auto;
+    background-color:rgba(255,255,255,0.7);
+    text-decoration: underline;
 }
 
 .input {
@@ -69,19 +68,18 @@ input {
 }
 
 .button {
-    border-radius: 5px;
-    border: 1px solid brown;
-    box-shadow: 2px 2px 2px crimson;
-    width: 50%;
     font-family: 'Indie Flower', cursive;
     color: crimson;
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
-    padding: 10px;
 }
 
-
+input.button {
+    border-style: none;
+    font-size: 120%;
+    padding: 0;
+}
 /************ HEADER & MENU NAVIGATION *******************/
 nav img {
     width: 10%;
@@ -94,25 +92,23 @@ nav h1{
 
 nav li:first-of-type {
     padding: 0;
-    border-top: 1px solid grey;
 }
 
-nav li:first-of-type:hover {
-    background-color:rgba(255,255,255,0.7);
+nav li:first-of-type a:hover {
+    text-shadow: none;
 }
 
 nav li{
     text-align: center;
-    border-bottom: 2px solid grey;
-    background-color:rgba(255,255,255,0.7);
     padding: 3px 0 3px 0;
-    font-size: 120%;
+    font-size: 150%;
     font-weight: bold;
     font-family: 'Indie Flower', cursive;
 }
 
 nav li a{
     display: block;
+    text-decoration: none;
 }
 
 nav li a:hover {
@@ -209,12 +205,6 @@ background-color: black;
  font-size: 80%;
 }
 
-/************************ ADMIN *************************/
-#pdf_upload {
-    margin: 50px 0 50px 0;
-}
-
-
 /**************** MENU & ACTIVITÉ section****************************/
 .du_jour h3{
    color: crimson;
@@ -227,10 +217,8 @@ background-color: black;
 .du_jour .button{
     display: block;
     text-align: center;
-    background-color: #cfff04;
+   /* background-color: #cfff04;*/
    margin: 0 auto;
-    width: 70%;
-    padding: 10px;
 }
 
 #repas li{
@@ -287,18 +275,43 @@ background-color: black;
     color: crimson;
 }
 
+
+
+/*********************** ADMIN ******************/
+
+#admin_content_block {
+    padding: 20px;
+}
+
+#admin_content_block form .button{
+    display: block;
+    margin: 0 auto;
+    font-size: 150%;
+}
+
+#admin_content_block form label{
+    font-family: 'Indie Flower', cursive;
+    color: crimson;
+    font-weight: bold;
+}
+
+#title_add {
+    border-radius: 0;
+    display: inline;
+    margin: 0;
+    width: 500px;
+}
+
+#pdf_upload {
+    margin: 50px 0 50px 0;
+}
+
 /********* DÉBUT PAGE ÉQUIPE *********/
 #equipe .content_block img{
       width: 70%;
     margin-left: 15%;
     margin-right: 15%;
     border: 1px solid black;
-    /*bordure arrondie*/
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    -ms-border-radius:5px;
-    -o-border-radius:5px;
-    border-radius: 5px;
    /* ombre portée*/
     -moz-box-shadow: 4px 4px 4px #888888;
     -webkit-box-shadow: 4px 4px 4px #888888;
@@ -366,8 +379,7 @@ footer p {
         text-align: center;
         height: 90px;
         vertical-align: middle;
-        border-left: 1px solid grey;
-        width: 110px;
+        width: 150px;
         font-size: 100%;
     }
 
@@ -375,23 +387,18 @@ footer p {
         padding: 0;
         width: 170px;
         border: none;
-        border-bottom: 2px solid grey;
-       border-left: 1px solid grey;
+
         vertical-align: top;
 
 
     }
-
-    nav li:last-of-type{
-        border-right: 1px solid grey;;
-    }
-
 
     nav li a{
         font-weight: bold;
         display: block;
         height: 100%;
         padding-top: 30px;
+        font-size: 140%;
     }
 
     nav li:first-of-type a{
@@ -400,16 +407,13 @@ footer p {
 
 nav h1{
     display: block;
-    font-size: 110%;
+    font-size: 90%;
 
 }
 
     nav img {
         width: 70px;
         padding-top: 10px;
-    }
-    #du_jour .button{
-        width: 220px;
     }
 
     #button_connexion{
@@ -431,10 +435,17 @@ nav h1{
    .input {
         width: 50%; !important;
        margin: 0;
-
     }
-   .button {
-      width: 100px ; !important;
+
+    input.button{
+        margin: 0;
+    }
+
+    input.button:active {
+        color: black;
+    }
+
+    .button {
        margin: 20px;
        font-size: 90%;
        padding: 0;
@@ -532,8 +543,6 @@ display: inline-block;
 
 .du_jour .button{
     font-size: 90%;
-    width: 150px;
-    padding: 2px;
 }
 
 }
