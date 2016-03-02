@@ -410,18 +410,19 @@ nav h1{
     }
 
  footer form {
-        vertical-align: top;
         margin: 20px;
     }
 
- footer form .button, footer form input{
-     display: inline;
-     vertical-align: top;
-     margin-top: 0 ;
+ footer label{
+     font-family: 'Indie Flower', cursive;
+     font-weight: bold;
+     color:black;
+     display: block;
  }
 
    .input {
         width: 50%; !important;
+       margin: 0;
 
     }
    .button {
@@ -436,8 +437,15 @@ nav h1{
    }
 }
 
+#equipe .content_block img {
+   height: 300px;
+    width: inherit;
+}
 
-
+#equipe article p{
+    font-size: 90%;
+    line-height: 20px;
+}
 
 /*************DESKTOP**************/
 @media screen and (min-width: 1024px){

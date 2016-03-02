@@ -24,7 +24,7 @@ require_once 'view_parts/_header.php';
         <h3>Repas du jour:</h3>
         <ul>
             <li>Collation du matin :</li>
-            <li>CEREALES MULTI GRAIN, POMMES & LAI</li>
+            <li>CEREALES MULTI GRAIN, POMMES & LAIT</li>
             <li>Dîner :</li>
             <li>GALETTES DE THON JARDINIERE, LEGUMES FRAIS & SALADE AUX EPINARDS; CANTELOUP & LAIT</li>
             <li>Collation aprés-midi : </li>

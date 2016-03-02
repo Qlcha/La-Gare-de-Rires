@@ -26,6 +26,11 @@ if(!empty($_SESSION["user"])) {
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,400italic' rel='stylesheet' type='text/css'>
     <!--end fonts  -->
 
+
+    <!--  SCRIPT FOR TEXT EDITOR-->
+    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+    <script>tinymce.init({ selector:'textarea' });</script>
+
 </head>
 <body><!--
 --><ul><!--

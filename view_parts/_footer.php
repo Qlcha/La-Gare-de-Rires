@@ -1,6 +1,12 @@
 <footer class="content_block">
+    <h2>Contactez-Nous</h2>
     <form action="#">
-        <textarea name="message" placeholder="Laisser nous un message" class="input" rows="5"></textarea>
+<label for="name">Nom: </label>
+        <input type="text" class="input" name="name" placeholder="Votre nom">
+        <label for="name">E-mail: </label>
+        <input type="email" class="input" name="email" placeholder="courriel@courriel.com">
+        <label for="message">Message: </label>
+        <textarea name="message" placeholder="Votre message ici" class="input" rows="5"></textarea>
         <input type="submit" value="envoyer" class="button">
     </form>
 
