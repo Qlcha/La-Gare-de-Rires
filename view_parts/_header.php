@@ -29,7 +29,7 @@ if(!empty($_SESSION["user"])) {
 
     <!--  SCRIPT FOR TEXT EDITOR-->
     <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-    <script>tinymce.init({ selector:'textarea' });</script>
+    <script>tinymce.init({ selector:'#post_admin' });</script>
 
 </head>
 <body><!--

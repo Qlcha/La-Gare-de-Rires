@@ -11,7 +11,7 @@ require_once 'view_parts/_header.php';
     <section>
         <h2>Post d'Administrateur / Nouvelle / Update</h2>
         <form action="#">
-            <textarea>Easy (and free!) You should check out our premium features.</textarea>
+            <textarea id="post_admin">Easy (and free!) You should check out our premium features.</textarea>
             <input type="submit" value="post" class="button">
         </form>
     </section>
