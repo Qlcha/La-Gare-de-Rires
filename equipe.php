@@ -34,7 +34,37 @@ require_once 'view_parts/_header.php';
     </article>
 
     <article class="content_block">
-        <h2>Christina</h2>
+        <h2>Ryan</h2>
+
+        <img src="images/Ryin.jpg" alt="photo_ryan" class="photo"/>
+        <p>
+            Mon nom est Ryan Reyes et je suis le cuisinier du CEP La Gare de Rires depuis octobre 2006.
+        </p>
+        <p>
+            Je suis diplômé de l'insitut d'hôtellerie du Québec en Cuisine d'établissement.
+        </p>
+
+        <p>
+            En collaboration avec la diététicienne du CLSC et de la Direction, je bâtis les menus qui vous
+            sont présentés à chaque année.
+        </p>
+        <p>
+            De plus, je cuisine les gâteaux de fêtes des enfants tous au long de l'année.
+            Je prépare également les buffets qui vous sont présentés lors des fetes et reunions.
+            Je prépare les piques-niques lors des sorties au parc et de chacune des sorties.
+        </p>
+        <p>
+            Si vous désirez à votre tour cuisiner mes plats, n'hésitez pas à me demander la recette.
+        </p>
+        <p>Bonne année scolaire à tous !</p>
+
+    </article>
+
+
+    <section class="content_block">
+        <h2>Les petits découvreurs</h2>
+        <article>
+        <h3>Christina</h3>
 
     <img src="images/educatrice3.jpg" alt="photo_christina" class="photo"/>
     <p> Mon nom est Christina Taddeo et ce sera ma quatrième en tant qu'éducateur dans la pouponnière </p>
@@ -47,10 +77,10 @@ require_once 'view_parts/_header.php';
         Je souhaite qu'ensemble nous ayons expérience inoubliable de la première année de votre enfant à la garderie.
     </p>
 
-    </article>
 
-    <article class="content_block">
-        <h2>Lamia</h2>
+        </article>
+    <article>
+        <h3>Lamia</h3>
 
     <img src="images/educatrice.jpg" alt="photo_lamia" class="photo"/>
     <p> Je me présente, je m'appelle Lamia Guernah. Je suis une éducatrice qualifiée et j'ai obtenu ma certifiaction à l'Université de Montréal </p>
@@ -72,9 +102,12 @@ require_once 'view_parts/_header.php';
         <p>Au plaisir !</p>
 
     </article>
+        </section>
 
-    <article class="content_block">
-        <h2>Jennifer</h2>
+    <section class="content_block">
+        <h2>Les petits courieux</h2>
+        <article>
+        <h3>Jennifer</h3>
 
         <img src="images/educatrice1.jpg" alt="photo_jennifer" class="photo"/>
         <p>
@@ -86,11 +119,11 @@ require_once 'view_parts/_header.php';
             une realation éducationnelle avec vos enfants tout au long de leur cheminement.
         </p>
         <p>Au plaisir !</p>
+            </article>
 
-    </article>
 
-    <article class="content_block">
-        <h2>Diane</h2>
+        <article>
+        <h3>Diane</h3>
 
         <img src="images/educatrice2.jpg" alt="photo_diane" class="photo"/>
         <p>
@@ -107,11 +140,13 @@ require_once 'view_parts/_header.php';
         </p>
         <p>N'hésitez pas à communiquer avec nous si vous avez des questions au sujet de votre enfant.</p>
         <p>Au plaisir !</p>
+            </article>
+    </section>
 
-    </article>
-
-    <article class="content_block">
-        <h2>Élisabeth</h2>
+    <section class="content_block">
+        <h2>Les aventuriers</h2>
+        <article>
+        <h3>Élisabeth</h3>
 
         <img src="images/educatrice4.jpg" alt="photo_elisabeth" class="photo"/>
         <p>
@@ -123,10 +158,10 @@ require_once 'view_parts/_header.php';
 
         <p>Je vous assure de mon entière collaboration. N'hésitez à venir me rencontrer</p>
 
-    </article>
+            </article>
 
-    <article class="content_block">
-        <h2>Diane</h2>
+        <article>
+        <h3>Diane</h3>
 
         <img src="images/educatrice5.jpg" alt="photo_diane" class="photo"/>
         <p>
@@ -140,11 +175,13 @@ require_once 'view_parts/_header.php';
 
         <p>C'est avec un immense plaisir que j'ai retrouvé mes tout petits il y a deux ans.</p>
         <p>Je puis vous assurer de mon entière collaboration et surtout n'hésitez pas à venir me rencontrer.</p>
+            </article>
+    </section>
 
-    </article>
-
-    <article class="content_block">
-        <h2>Pauline</h2>
+    <section class="content_block">
+        <h2>Les explorateurs</h2>
+        <article>
+        <h3>Pauline</h3>
 
         <img src="images/educatrice6.jpg" alt="photo_pauline" class="photo"/>
         <p>
@@ -159,10 +196,10 @@ require_once 'view_parts/_header.php';
         <p>J'anticipe le plaisir de travailler avec vos enfants tout au long de l'année.</p>
         <p>N'hésitez pas à venir me parler de vos préoccupations concernant votre enfant.</p>
 
-    </article>
+            </article>
 
-    <article class="content_block">
-        <h2>Pina</h2>
+        <article>
+        <h3>Pina</h3>
 
         <img src="images/educatrice7.jpg" alt="photo_pina" class="photo"/>
         <p>
@@ -177,11 +214,13 @@ require_once 'view_parts/_header.php';
         <p>J'anticipe le plaisir de travailler auprès de vos enfants et je suis persuadé que nous passerons
             un super année remplis de défis et de plaisirs.
         </p>
+            </article>
+    </section>
 
-    </article>
-
-    <article class="content_block">
-        <h2>Chantal</h2>
+    <section class="content_block">
+        <h2>Les voyageurs</h2>
+        <article>
+        <h3>Chantal</h3>
 
         <img src="images/educatrice8.jpg" alt="photo_chantal" class="photo"/>
         <p>
@@ -206,10 +245,10 @@ require_once 'view_parts/_header.php';
             à venir nous rencontrer notre porte sera toujours ouverte.
         </p>
 
-    </article>
+            </article>
 
-    <article class="content_block">
-        <h2>Joy</h2>
+        <article>
+        <h3>Joy</h3>
 
         <img src="images/educatrice10.jpg" alt="photo_joy" class="photo"/>
         <p>
@@ -227,11 +266,13 @@ require_once 'view_parts/_header.php';
         <p>
             Je vous souhaite un heureux séjour parmi nous.
         </p>
+            </article>
 
-    </article>
+    </section>
 
-    <article class="content_block">
-        <h2>Alain</h2>
+    <section class="content_block">
+        <article>
+        <h3>Alain</h3>
 
         <img src="images/Alain.jpg" alt="photo_alain" class="photo"/>
         <p>
@@ -252,10 +293,10 @@ require_once 'view_parts/_header.php';
             Pour plus amples renseignements, je vous invite à venir me rencontrer.
         </p>
 
-    </article>
+            </article>
 
-    <article class="content_block">
-        <h2>Sylvia</h2>
+        <article>
+        <h3>Sylvia</h3>
 
         <img src="images/educatrice11.jpg" alt="photo_sylvia" class="photo"/>
 
@@ -280,35 +321,9 @@ require_once 'view_parts/_header.php';
         <p>N'hésitez pas à exprimer vos préoccupations ou tout commentaire concernant
             votre enfant au cours de l'année.
         </p>
+            </article>
+    </section>
 
-    </article>
-
-    <article class="content_block">
-        <h2>Ryan</h2>
-
-        <img src="images/Ryin.jpg" alt="photo_ryan" class="photo"/>
-        <p>
-            Mon nom est Ryan Reyes et je suis le cuisinier du CEP La Gare de Rires depuis octobre 2006.
-        </p>
-        <p>
-           Je suis diplômé de l'insitut d'hôtellerie du Québec en Cuisine d'établissement.
-        </p>
-
-        <p>
-            En collaboration avec la diététicienne du CLSC et de la Direction, je bâtis les menus qui vous
-            sont présentés à chaque année.
-        </p>
-        <p>
-            De plus, je cuisine les gâteaux de fêtes des enfants tous au long de l'année.
-            Je prépare également les buffets qui vous sont présentés lors des fetes et reunions.
-            Je prépare les piques-niques lors des sorties au parc et de chacune des sorties.
-        </p>
-        <p>
-            Si vous désirez à votre tour cuisiner mes plats, n'hésitez pas à me demander la recette.
-        </p>
-        <p>Bonne année scolaire à tous !</p>
-
-    </article>
 
 
 
