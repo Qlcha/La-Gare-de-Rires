@@ -1,7 +1,7 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-    require_once 'page_blog_post.php';
+    require_once 'page_blog.php';
 }
 
 ?>
@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 <form action="page_blog_post.php" method="post">
     <p>
         <label for="prénom">Prénom</label> : <input type="text" name="prénom" id="prénom" /><br />
-        <label for="message">Message</label> :  <textarea cols="10" rows="8" class="form-control" id="commentaire" name="commentaire" ></textarea>
+        <label for="message">Message</label> :  <textarea cols="50" rows="8" id="commentaire" name="commentaire" ></textarea>
 
         <input type="submit" value="Envoyer" />
     </p>
@@ -41,15 +41,13 @@ catch(Exception $e)
 
 // Récupération des 20 derniers messages
 
-$reponse = $bdd->query('SELECT prénom, commentaire FROM lagarederires ORDER BY ID DESC LIMIT 0, 20');
-//var_dump($reponse);
+$reponse = $bdd->query('SELECT prénom, commentaire FROM message ORDER BY ID DESC LIMIT 0, 20');
+
 // Affichage de chaque message (toutes les données sont protégées par htmlspecialchars)
-
-
 
 while ($donnees = $reponse->fetch()) {
 
-    echo '<p>'.htmlspecialchars($donnees['prénom'].' a commenté : ').htmlspecialchars($donnees['commentaire']). '</p>';
+    echo '<p><strong>'.htmlspecialchars($donnees['prénom'].' a commenté : ').htmlspecialchars($donnees['commentaire']). '</strong></p>';
 
 }
 
