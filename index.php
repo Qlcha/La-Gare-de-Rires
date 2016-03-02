@@ -36,7 +36,7 @@ require_once 'view_parts/_header.php';
 
     <section id="activite" class="du_jour content_block">
         <h3>Activité du jour:</h3>
-        <a href="download/calendrier.pdf" class="button">Consulter le Calendrier</a>
+        <a class="fancybox button" data-fancybox-type="iframe" href="download/calendrier.pdf">Consulter le Calendrier</a>
     </section>
 </aside>
 </div>
