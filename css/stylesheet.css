@@ -355,26 +355,36 @@ nav h1{
     display: block;
 }
 
-#contact td{
+#contact li{
     color: red;
-    font-size: 85%;
-   }
-
-#tel_list td{
-
+font-size: 90%;
 }
 
-#tel_list tr:first-of-type td {
+#tel_list li.strong {
+    padding-top: 10px;
+}
+
+#tel_list strong{
+    font-weight: normal;
+}
+
+#tel_list li span {
     display: block;
-    text-align: center;
 }
 
-/*
-#tel_list tr:nth-of-type(2) td {
-    display: block;
+#tel_list li{
     text-align: center;
+    font-weight: bold;
 }
-*/
+
+#conseil_administration li{
+    display: inline-block;
+    width: 50%;
+}
+
+#conseil_administration li:nth-of-type(even){
+    font-weight: bold;
+}
 
 /******************** FOOTER *********************/
 footer {
@@ -564,6 +574,45 @@ footer p {
 
     #documents section a:last-of-type {
         padding-bottom: 20px;
+    }
+
+    #contact li{
+        font-size: 100%;
+    }
+
+    #tel_list li{
+        text-align: left;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #tel_list ul {
+        width: 70%;
+    }
+
+    #tel_list li {
+        width:65%
+    }
+
+    #tel_list li span {
+        display: inline;
+        padding-left: 15px;
+    }
+
+    #tel_list li.strong {
+width:35%;
+        padding-top: 0;
+        margin-bottom: 10px;
+
+    }
+
+       #conseil_administration li:nth-of-type(odd){
+           width: 35%;
+    }
+
+    #conseil_administration li:nth-of-type(even) {
+        width: 65%;
+        padding-top: 10px;
     }
 
 }

@@ -6,71 +6,64 @@ require_once 'view_parts/_header.php';
 ?>
 
 <div class="content_block" id="contact">
-<h3>Les numéros importants</h3>
-    <table id="tel_list">
-        <tr>
-            <td> CPE "La Gare de Rires": </td>
-            <td>tel generale: 514 399-6087</td>
-            <td>address: 935, de la Gauchetière O. 6 étage, H3B 2M9</td>
-        </tr>
-        <tr>
-            <td>Kim Menna, directrice</td>
-            <td>514 399-6087   / ext. 8</td>
-        </tr>
-        <tr>
-            <td>Ryan Reyes, le cuisinier</td>
-            <td>ext. 7</td>
-        </tr>
-        <tr>
-            <td>La pouponnière, Pauine et Élisabeth</td>
-            <td>ext. 1</td>
-        </tr>
-        <tr>
-            <td>Les petits explorateurs, Sylvia et Joy</td>
-            <td>ext. 3</td>
-        </tr>
-        <tr>
-            <td>Les curieux, Pina et Jennifer</td>
-            <td>ext. 4</td>
-        </tr>
-        <tr>
-            <td>Les aventuriers, Lamia et Diane</td>
-            <td>ext. 5</td>
-        </tr>
-        <tr>
-            <td>Les voyageur, Cristina et Chantal</td>
-            <td>ext. 6</td>
-        </tr>
-    </table>
+<h3>Les numéros importants :</h3>
+    <ul id="tel_list"><!--
+       --><li class="strong"> <strong>CPE "La Gare de Rires" :</strong> </li><!--
+       --><li>514 399-6087;
+       <span>address: 935, de la Gauchetière O.</span>
+            <span>6 étage, H3B 2M9</span></li><!--
+
+       --><li class="strong"><strong>Kim Menna, directrice</strong></li><!--
+       --><li>ext. 8   où  514 399-6087</li><!--
+
+       --><li class="strong"><strong>Ryan Reyes, le cuisinier : </strong></li><!--
+       --><li>ext. 7</li><!--
+
+       --><li class="strong"><strong>La pouponnière, Pauine et Élisabeth : </strong></li><!--
+       --><li>ext. 1</li><!--
+
+       --><li class="strong"><strong>Les petits explorateurs, Sylvia et Joy : </strong></li><!--
+       --><li>ext. 3</li><!--
+
+       --><li class="strong"><strong>Les curieux, Pina et Jennifer : </strong></li><!--
+       --><li>ext. 4</li><!--
+
+       --><li class="strong"><strong>Les aventuriers, Lamia et Diane : </strong></li><!--
+       --><li>ext. 5</li><!--
+
+       --><li class="strong"><strong>Les voyageur, Cristina et Chantal :</strong></li><!--
+       --><li>ext. 6</li><!--
+       --></ul>
 
 
-    <h3>Votre CPE est constitué d'un Conseil d'administration</h3>
-    <table>
-        <tr>
-            <td>Président :</td>
-            <td>Abaynesta Gilkes</td>
-        </tr>
-        <tr>
-            <td>Vice-Présiden :</td>
-            <td>Maurizzio Pandozzi</td>
-        </tr>
-        <tr>
-            <td>Secrétaire :</td>
-            <td>Paula Molinas</td>
-        </tr>
-        <tr>
-            <td>Trésorier :</td>
-            <td>Jean-François Migneault</td>
-        </tr>
-        <tr>
-            <td>Administrateur :</td>
-            <td>Christopher Couture</td>
-        </tr>
-        <tr>
-            <td>Représenant CN :</td>
-            <td>Jennifer Power</td>
-        </tr>
-    </table>
+    <h3>Conseil d'administration du CPE :</h3>
+    <ul id="conseil_administration"><!--
+
+       --><li>Président :</li><!--
+
+       --><li>Abaynesta Gilkes</li><!--
+
+       --><li>Vice-Présiden :</li><!--
+
+       --><li>Maurizzio Pandozzi</li><!--
+
+       --><li>Secrétaire :</li><!--
+
+       --><li>Paula Molinas</li><!--
+
+       --><li>Trésorier :</li><!--
+
+       --><li>Jean-François Migneault</li><!--
+
+       --><li>Administrateur :</li><!--
+
+       --><li>Christopher Couture</li><!--
+
+       --><li>Représenant CN :</li><!--
+
+       --><li>Jennifer Power</li><!--
+
+       --></ul>
 </div>
 
 <?php require_once 'view_parts/_footer.php'; ?>
