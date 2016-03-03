@@ -28,9 +28,7 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Indie Flower', cursive;
 }
 
-a{
-    text-decoration: none;
-    color: crimson;
+a{    color: crimson;
     /*cursor: default;*/
 }
 
@@ -55,8 +53,7 @@ ul {
 
 /************************** BUTTONS et INPUTS ***********************/
 
-input , textarea {
-    border-radius: 5px;
+input {
     display: block;
     margin: 0 auto;
     background-color:rgba(255,255,255,0.7);
@@ -71,16 +68,11 @@ input , textarea {
 }
 
 .button {
-    border-radius: 5px;
-    border: 1px solid brown;
-    box-shadow: 2px 2px 2px crimson;
-    width: 50%;
     font-family: 'Indie Flower', cursive;
     color: crimson;
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
-    padding: 10px;
 }
 
 input.button {
@@ -100,19 +92,16 @@ nav h1{
 
 nav li:first-of-type {
     padding: 0;
-    border-top: 1px solid grey;
 }
 
-nav li:first-of-type:hover {
-    background-color:rgba(255,255,255,0.7);
+nav li:first-of-type a:hover {
+    text-shadow: none;
 }
 
 nav li{
     text-align: center;
-    border-bottom: 2px solid grey;
-    background-color:rgba(255,255,255,0.7);
     padding: 3px 0 3px 0;
-    font-size: 120%;
+    font-size: 150%;
     font-weight: bold;
     font-family: 'Indie Flower', cursive;
 }
@@ -123,7 +112,7 @@ nav li a{
 }
 
 nav li a:hover {
-   /* background-color: rgba(206, 255, 5, 0.4);*/
+    /* background-color: rgba(206, 255, 5, 0.4);*/
     color: #cfff04;
     text-shadow: 1px 1px 1px red;
 }
@@ -135,9 +124,9 @@ nav h1{
 }
 
 #button_connexion {
-background-color: black;
+    background-color: black;
     color: #cfff04;
-   border: 2px solid #cfff04;
+    border: 2px solid #cfff04;
     box-shadow: none;
     border-radius: 10px;
 
@@ -196,7 +185,7 @@ background-color: black;
 #menu_3_semaines h2{
     color: red;
     font-family: 'Indie Flower', cursive;
-   text-align: center;
+    text-align: center;
 }
 
 .menu caption{
@@ -213,18 +202,12 @@ background-color: black;
 }
 
 #table_users td, #table_users th{
- font-size: 80%;
+    font-size: 80%;
 }
-
-/************************ ADMIN *************************/
-#pdf_upload {
-    margin: 50px 0 50px 0;
-}
-
 
 /**************** MENU & ACTIVITÉ section****************************/
 .du_jour h3{
-   color: crimson;
+    color: crimson;
 }
 
 .du_jour {
@@ -234,10 +217,8 @@ background-color: black;
 .du_jour .button{
     display: block;
     text-align: center;
-    background-color: #cfff04;
-   margin: 0 auto;
-    width: 70%;
-    padding: 10px;
+    /* background-color: #cfff04;*/
+    margin: 0 auto;
 }
 
 #repas li{
@@ -327,17 +308,11 @@ background-color: black;
 
 /********* DÉBUT PAGE ÉQUIPE *********/
 #equipe .content_block img{
-      width: 70%;
+    width: 70%;
     margin-left: 15%;
     margin-right: 15%;
     border: 1px solid black;
-    /*bordure arrondie*/
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    -ms-border-radius:5px;
-    -o-border-radius:5px;
-    border-radius: 5px;
-   /* ombre portée*/
+    /* ombre portée*/
     -moz-box-shadow: 4px 4px 4px #888888;
     -webkit-box-shadow: 4px 4px 4px #888888;
     box-shadow: 4px 4px 4px #888888;
@@ -352,8 +327,8 @@ background-color: black;
 }
 
 #equipe h2{
-margin-bottom: 10px;
-text-align: center;
+    margin-bottom: 10px;
+    text-align: center;
     font-family: 'Indie Flower', cursive;
     color: crimson;
 }
@@ -394,7 +369,7 @@ footer p {
 
 /*************TABLETTE**************/
 @media screen and (min-width: 768px){
-        nav {
+    nav {
         margin: 0 auto;
         text-align: center;
     }
@@ -404,8 +379,7 @@ footer p {
         text-align: center;
         height: 90px;
         vertical-align: middle;
-        border-left: 1px solid grey;
-        width: 110px;
+        width: 150px;
         font-size: 100%;
     }
 
@@ -413,62 +387,55 @@ footer p {
         padding: 0;
         width: 170px;
         border: none;
-        border-bottom: 2px solid grey;
-       border-left: 1px solid grey;
+
         vertical-align: top;
 
 
     }
-
-    nav li:last-of-type{
-        border-right: 1px solid grey;;
-    }
-
 
     nav li a{
         font-weight: bold;
         display: block;
         height: 100%;
         padding-top: 30px;
+        font-size: 140%;
     }
 
     nav li:first-of-type a{
         padding: 0;
     }
 
-nav h1{
-    display: block;
-    font-size: 110%;
+    nav h1{
+        display: block;
+        font-size: 90%;
 
-}
+    }
 
     nav img {
         width: 70px;
         padding-top: 10px;
     }
-    #du_jour .button{
-        width: 220px;
-    }
 
     #button_connexion{
-       padding: 0 10px 0 10px;
+        padding: 0 10px 0 10px;
         margin: 0;
     }
 
- footer form {
+    footer form {
         margin: 20px;
     }
 
- footer label{
-     font-family: 'Indie Flower', cursive;
-     font-weight: bold;
-     color:black;
-     display: block;
- }
+    footer label{
+        font-family: 'Indie Flower', cursive;
+        font-weight: bold;
+        color:black;
+        display: block;
+    }
 
-   .input {
+    .input {
         width: 50%; !important;
-       margin: 0;
+        margin: 0;
+    }
 
     input.button{
         margin: 0;
@@ -479,40 +446,40 @@ nav h1{
     }
 
     .button {
-       margin: 20px;
-       font-size: 90%;
-       padding: 0;
+        margin: 20px;
+        font-size: 90%;
+        padding: 0;
     }
 
-   footer{
-       text-align: left;
-   }
+    footer{
+        text-align: left;
+    }
 
 
-#equipe .content_block img {
-   height: 200px;
-    width: inherit;
-    margin: 0;
-}
+    #equipe .content_block img {
+        height: 200px;
+        width: inherit;
+        margin: 0;
+    }
 
-#equipe article p{
-    font-size: 90%;
-    line-height: 20px;
-}
+    #equipe article p{
+        font-size: 90%;
+        line-height: 20px;
+    }
 
-#equipe article.content_block{
-    margin: 0;
-    margin-bottom: 20px;
-}
+    #equipe article.content_block{
+        margin: 0;
+        margin-bottom: 20px;
+    }
 
-#equipe article.content_block aside{
-display: inline-block;
-    width: 65%;
-    vertical-align: top;
-}
+    #equipe article.content_block aside{
+        display: inline-block;
+        width: 65%;
+        vertical-align: top;
+    }
 
     #equipe article.content_block img {
-   margin: 20px;
+        margin: 20px;
     }
 
     #equipe article.content_block h2 {
@@ -562,23 +529,237 @@ display: inline-block;
 
 
     #du_jour, #news{
-    display: inline-block;
+        display: inline-block;
         vertical-align: middle;
+    }
+
+    #du_jour {
+        width: 40%;
+    }
+
+    #news{
+        width: 55%;
+    }
+
+    .du_jour .button{
+        font-size: 90%;
+    }
+
 }
 
-#du_jour {
-    width: 40%;
+/*
+!*********CSS CONNEXION*********!
+#cadre{
+    background:white;
+    margin:0 auto;
+    border : 1px solid #aaa;
+    width : 1000px;
+    height : auto;
+    border-radius : 5px;
+    -webkit-border-radius : 5px;
+    -moz-border-radius : 5px;
+    padding:5px;
+    box-shadow: 8px 8px 12px #aaa;
+    -moz-box-shadow: 8px 8px 12px #aaa;
+    -webkit-box-shadow: 8px 8px 12px #aaa;
+    color:#000;
+    overflow:auto;
 }
-
-#news{
-    width: 55%;
+#cadre a{
+    color:#FF0096;
+    text-decoration:none;
 }
-
-.du_jour .button{
-    font-size: 90%;
+h1, h2{
+    text-align:center;
+    color:#CCC;
+    text-shadow:1px 1px 1px #666;
+}
+label,input,textarea{
+    display: block;
+    width: 350px;
+    float: left;
+    margin-bottom: 10px;
+}
+label{
+    text-align: right;
+    width: 300px;
+    padding-right: 20px;
+}
+br {
+    clear: left;
+}
+input[type=submit],input[type=reset]{
+    width: auto;
+    margin-right:5px;
+}
+.erreur{
+    background:#F11A57;
+    color : #FFF;
+    border : 1px solid #F11A57;
+    padding : 5px;
+    margin:5px;
+    border-radius : 5px;
+    -webkit-border-radius : 5px;
+    -moz-border-radius : 5px;
+}
+.ok{
+    background:#D6EFA1;
+    color:#4F7307;
+    border : 1px solid #C1D779;
+    padding : 5px;
+    margin:5px;
+    border-radius : 5px;
+    -webkit-border-radius : 5px;
+    -moz-border-radius : 5px;
+}
+.info{
+    background:#FFF4D6;
+    color:#4A3505;
+    border : 1px solid #EAC572;
+    padding : 5px;
+    margin:5px;
+    border-radius : 5px;
+    -webkit-border-radius : 5px;
+    -moz-border-radius : 5px;
+}
+li{
+    display:inline;
+    border:1px solid #BCE8F1;
+    background:white;
+    padding:5px;
+    margin:5px;
+    border-radius : 5px;
+    -webkit-border-radius : 5px;
+    -moz-border-radius : 5px;
+    box-shadow: 2px 2px 2px #aaa;
+    -moz-box-shadow: 2px 2px 2px #aaa;
+    -webkit-box-shadow: 2px 2px 2px #aaa;
+}
+li:hover{
+    background:#D9EDF7;
+}
+!*Formulaire d'upload*!
+#photo{
     width: 150px;
-    padding: 2px;
+    margin-left:-100px;
+}
+.avatar{
+    background:white;
+    margin:5px;
+    padding:5px;
+    border : 1px solid #aaa;
+    border-radius : 5px;
+    -webkit-border-radius : 5px;
+    -moz-border-radius : 5px;
+    box-shadow: 8px 8px 8px #aaa;
+    -moz-box-shadow: 8px 8px 8px #aaa;
+    -webkit-box-shadow: 8px 8px 8px #aaa;
 }
 
+!******* css2 connexion******!
+#cadre{
+    background:white;
+    margin:0 auto;
+    border : 1px solid #aaa;
+    width : 1000px;
+    height : auto;
+    border-radius : 5px;
+    -webkit-border-radius : 5px;
+    -moz-border-radius : 5px;
+    padding:5px;
+    box-shadow: 8px 8px 12px #aaa;
+    -moz-box-shadow: 8px 8px 12px #aaa;
+    -webkit-box-shadow: 8px 8px 12px #aaa;
+    color:#000;
+    overflow:auto;
 }
-
+#cadre a{
+    color:#FF0096;
+    text-decoration:none;
+}
+h1, h2{
+    text-align:center;
+    color:#CCC;
+    text-shadow:1px 1px 1px #666;
+}
+label,input,textarea{
+    display: block;
+    width: 350px;
+    float: left;
+    margin-bottom: 10px;
+}
+label{
+    text-align: right;
+    width: 300px;
+    padding-right: 20px;
+}
+br {
+    clear: left;
+}
+input[type=submit],input[type=reset]{
+    width: auto;
+    margin-right:5px;
+}
+.erreur{
+    background:#F11A57;
+    color : #FFF;
+    border : 1px solid #F11A57;
+    padding : 5px;
+    margin:5px;
+    border-radius : 5px;
+    -webkit-border-radius : 5px;
+    -moz-border-radius : 5px;
+}
+.ok{
+    background:#D6EFA1;
+    color:#4F7307;
+    border : 1px solid #C1D779;
+    padding : 5px;
+    margin:5px;
+    border-radius : 5px;
+    -webkit-border-radius : 5px;
+    -moz-border-radius : 5px;
+}
+.info{
+    background:#FFF4D6;
+    color:#4A3505;
+    border : 1px solid #EAC572;
+    padding : 5px;
+    margin:5px;
+    border-radius : 5px;
+    -webkit-border-radius : 5px;
+    -moz-border-radius : 5px;
+}
+li{
+    display:inline;
+    border:1px solid #BCE8F1;
+    background:white;
+    padding:5px;
+    margin:5px;
+    border-radius : 5px;
+    -webkit-border-radius : 5px;
+    -moz-border-radius : 5px;
+    box-shadow: 2px 2px 2px #aaa;
+    -moz-box-shadow: 2px 2px 2px #aaa;
+    -webkit-box-shadow: 2px 2px 2px #aaa;
+}
+li:hover{
+    background:#D9EDF7;
+}
+!*Formulaire d'upload*!
+#photo{
+    width: 150px;
+    margin-left:-100px;
+}
+.avatar{
+    background:white;
+    margin:5px;
+    padding:5px;
+    border : 1px solid #aaa;
+    border-radius : 5px;
+    -webkit-border-radius : 5px;
+    -moz-border-radius : 5px;
+    box-shadow: 8px 8px 8px #aaa;
+    -moz-box-shadow: 8px 8px 8px #aaa;
+    -webkit-box-shadow: 8px 8px 8px #aaa;
+}*/
