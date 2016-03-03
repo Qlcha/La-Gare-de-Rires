@@ -1,4 +1,10 @@
 <?php
+require_once '_defines.php';
+require_once 'data/_main_data.php';
+$site_data[PAGE_ID] = 'Bienvenue à la Gare de Rires';
+require_once 'view_parts/_header.php';
+?>
+<?php
 session_start();
 
 $bdd = new PDO('mysql:host=127.0.0.1;dbname=lagarederires', 'root', '');
@@ -62,3 +68,4 @@ else {
    header("Location: connexion.php");
 }
 ?>
+<?php require_once 'view_parts/_footer.php'; ?>
