@@ -5,13 +5,25 @@ require_once 'data/_main_data.php';
 $site_data[PAGE_ID] = 'Espace Admin';
 require_once 'view_parts/_header.php';
 
+
 var_dump($_POST);
 
 // Réception des valeurs (titre et le text)
 //post_add()
 
 
+// Connexion à la base de données
+try
+{
+    $bdd = new PDO('mysql:host=localhost;dbname=lagarederires;charset=utf8', 'root', '');
+}
+catch(Exception $e)
+{
+    die('Erreur : '.$e->getMessage());
+}
+
 ?>
+
 
 
 <div class="content_block" id="admin_content_block">
@@ -24,6 +36,11 @@ var_dump($_POST);
             <input type="submit" value="post" class="button">
         </form>
     </section>
+
+
+
+
+
 
 <section id="pdf_upload">
         <h2>Mise à jour de Calendrier: </h2>
