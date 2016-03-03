@@ -25,7 +25,7 @@ require_once 'view_parts/_header.php';
 </form>
 <br/>
  
-<p id="lien"><a href="index.php">Connexion</a> | <a href="auth-creer-compte.php">Créer un compte</a> | <a href="auth-identifiant-perdu.php">Identifiant perdu?</a></p>
+<p id="lien"><a href="auth.php">Connexion</a> | <a href="auth-creer-compte.php">Créer un compte</a> | <a href="auth-identifiant-perdu.php">Identifiant perdu?</a></p>
 </div>
  
 <noscript><div id="erreur"><b>Votre navigateur ne prend pas en charge JavaScript!</b> Veuillez activer JavaScript afin de profiter pleinement du site.</div></noscript>
@@ -76,7 +76,7 @@ if(isset($_POST['Envoyer'])){
                 //on envoie l'email
                 mail($a_qui_j_envoie, $subject, $msg, $mailheaders);
                 //on laisse un message de confirmation                
-                echo '<div id="ok">Vos identifiants ont été envoyé sur votre boite email.</div>                         <script type="text/javascript"> window.setTimeout("location=(\'index.php?recup=ok\');",3000) </script>';                
+                echo '<div id="ok">Vos identifiants ont été envoyé sur votre boite email.</div>                         <script type="text/javascript"> window.setTimeout("location=(\'auth.php?recup=ok\');",3000) </script>';
             }
         }
         close_bd();    

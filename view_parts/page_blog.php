@@ -26,6 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 </form>
 
 <?php
+
 // Connexion à la base de données
 try
 {

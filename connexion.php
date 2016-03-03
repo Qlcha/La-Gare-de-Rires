@@ -61,7 +61,7 @@ require_once 'view_parts/_header.php';
 
             <h1>Authentification</h1>
 			
-			<form method="POST" action="index.php">
+			<form method="POST" action="auth.php">
 
 				<label for="pseudo">Pseudo : </label><input type="text" name="pseudo" maxlength="20" value="<?php if (!empty($_POST["pseudo"])) { echo stripcslashes(htmlspecialchars($_POST["pseudo"],ENT_QUOTES)); } ?>" /><br/>
 			
@@ -77,7 +77,7 @@ require_once 'view_parts/_header.php';
 
 
 
-            <p id="lien"><a href="index.php">Connexion</a> | <a href="auth-creer-compte.php">Créer un compte</a> | <a href="auth-identifiant-perdu.php">Identifiant perdu?</a></p>
+            <p id="lien"><a href="auth.php">Connexion</a> | <a href="auth-creer-compte.php">Créer un compte</a> | <a href="auth-identifiant-perdu.php">Identifiant perdu?</a></p>
 
         </div>
 

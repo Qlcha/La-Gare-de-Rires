@@ -10,7 +10,7 @@ require_once 'view_parts/_header.php';
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Language" content="fr" />
-<title>Valider votre inscription</title>
+<title> Valider votre inscription </title>
 <link rel="stylesheet" href="auth-style-index.css" type="text/css" media="screen" />
 <body>
  
@@ -22,20 +22,30 @@ require_once 'view_parts/_header.php';
 if(isset($_GET['id']) && is_numeric($_GET['id'])){
     //on se connecte à la base de données
     include("auth-data_bd.php");
+
+    try
+    {
+        $bdd = new PDO('mysql:host=localhost;dbname=lagarederires;charset=utf8', 'root', '');
+
+    }
+    catch(Exception $e)
+    {
+        die('Erreur : '.$e->getMessage());
+    }
     connexion_bd();
     //vérification de l'identifiant
-    $verif = mysql_query("SELECT id,pseudo,email FROM LOGIN WHERE id='".mysql_real_escape_string($_GET['id'])."'");
+    $verif = mysqli_query("SELECT id,pseudo,email FROM LOGIN WHERE id='".mysqli_real_escape_string($_GET['id'])."'");
     //si l'identifiant n'existe pas
     if(mysql_num_rows($verif) == 0){
         echo '<div id="erreur">Aucunes données ne correspond à votre demande!</div>';
     }
     //tout est ok, on extrait les données
     else{
-        $result = mysql_fetch_assoc($verif);
+        $result = mysqli_fetch_assoc($verif);
     //http://php.net/manual/fr/function.extract.php
     extract($result);
     //on libère le résultat de la mémoire
-    mysql_free_result($verif);
+    mysqli_free_result($verif);
     //on envoie un email
                 //email de celui qui envoie
                 $webmaster = $email_webmaster;
@@ -54,12 +64,13 @@ if(isset($_GET['id']) && is_numeric($_GET['id'])){
                 //on envoie l'email
                 mail($a_qui_j_envoie, $subject, $msg, $mailheaders);
                 //on informe et on redirige
-                echo '<div id="ok">Un message vous a été envoyé sur votre boite email. Merci de cliquer sur le lien présent dans celui-ci pour valider votre inscription.</div>                         <script type="text/javascript"> window.setTimeout("location=(\'index.php?conf=ok\');",3000) </script>';
+                echo '<div id="ok">Un message vous a été envoyé sur votre boite email. Merci de cliquer sur le lien présent dans celui-ci pour valider votre inscription.</div>
+ <script type="text/javascript"> window.setTimeout("location=(\'auth.php?conf=ok\');",3000) </script>';
     }
     close_bd();
 }
 ?>
-<p id="lien"><a href="index.php">Connexion</a> | <a href="auth-creer-compte.php">Créer un compte</a> | <a href="auth-identifiant-perdu.php">Identifiant perdu?</a></p>
+<p id="lien"><a href="auth.php">Connexion</a> | <a href="auth-creer-compte.php">Créer un compte</a> | <a href="auth-identifiant-perdu.php">Identifiant perdu?</a></p>
 </div>
  
 <noscript><div id="erreur"><b>Votre navigateur ne prend pas en charge JavaScript!</b> Veuillez activer JavaScript afin de profiter pleinement du site.</div></noscript>

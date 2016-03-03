@@ -1,7 +1,7 @@
 <?php
 	function connexion_bd(){
 		$nom_du_serveur ="localhost";
-		$nom_de_la_base ="garederire";
+		$nom_de_la_base ="lagarederires";
 		$nom_utilisateur ="root";
 		$passe ="";
 		

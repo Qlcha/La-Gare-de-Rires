@@ -6,16 +6,16 @@ if(isset($_SESSION['pseudo']) && isset($_SESSION['pass'])){
     include("auth-data_bd.php");
     connexion_bd();
     //on va chercher tout ce qui correspond à l'utilisateur
-    $affiche = mysql_query("SELECT * FROM LOGIN WHERE pseudo='".mysql_real_escape_string(stripcslashes($_SESSION['pseudo']))."' AND pass='".mysql_real_escape_string($_SESSION['pass'])."' AND valide='".mysql_real_escape_string(1)."'");
-    $result = mysql_fetch_assoc($affiche);
+    $affiche = mysqli_query("SELECT * FROM LOGIN WHERE pseudo='".mysqli_real_escape_string(stripcslashes($_SESSION['pseudo']))."' AND pass='".mysqli_real_escape_string($_SESSION['pass'])."' AND valide='".mysql_real_escape_string(1)."'");
+    $result = mysqli_fetch_assoc($affiche);
     //http://php.net/manual/fr/function.extract.php
     extract($result);
     //si le membre est banni en cours de session
     if($valide==2){
-    echo '<div class="erreur">Votre compte a été blacklisté!</div><script type="text/javascript"> window.setTimeout("location=(\'index.php?dec=close&ban=ok\');",3000) </script>';
+    echo '<div class="erreur">Votre compte a été blacklisté!</div><script type="text/javascript"> window.setTimeout("location=(\'auth.php?dec=close&ban=ok\');",3000) </script>';
     }
     //on libère le résultat de la mémoire
-    mysql_free_result($affiche);
+    mysqli_free_result($affiche);
     ?>
 	
 	<?php
@@ -40,7 +40,10 @@ require_once 'view_parts/_header.php';
  
 <?php include('auth-menu.php');?>
  
-<p>Cyprum itidem insulam procul a continenti discretam et portuosam inter municipia crebra urbes duae faciunt claram Salamis et Paphus, altera Iovis delubris altera Veneris templo insignis. tanta autem tamque multiplici fertilitate abundat rerum omnium eadem Cyprus ut nullius externi indigens adminiculi indigenis viribus a fundamento ipso carinae ad supremos usque carbasos aedificet onerariam navem omnibusque armamentis instructam mari committat.</p>
+<p>Cyprum itidem insulam procul a continenti discretam et portuosam inter municipia crebra
+    urbes duae faciunt claram Salamis et Paphus, altera Iovis delubris altera Veneris templo insignis.
+    tanta autem tamque multiplici fertilitate abundat rerum omnium eadem Cyprus ut nullius externi indigens adminiculi
+    indigenis viribus a fundamento ipso carinae ad supremos usque carbasos aedificet onerariam navem omnibusque armamentis instructam mari committat.</p>
  
 </div>
  

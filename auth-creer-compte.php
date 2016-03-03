@@ -100,7 +100,7 @@ if(isset($_POST['Envoyer'])){
 				
 				
 				       //confirmation et redirection
-                echo '<div id="ok">Inscription réussit. Un message vous a été envoyé sur votre boîte email pour valider votre inscription.</div>                         <script type="text/javascript"> window.setTimeout("location=(\'index.php?conf=ok\');",3000) </script>';
+                echo '<div id="ok">Inscription réussit. Un message vous a été envoyé sur votre boîte email pour valider votre inscription.</div>                         <script type="text/javascript"> window.setTimeout("location=(\'auth.php?conf=ok\');",3000) </script>';
             }      
         }               
         close_bd();   
@@ -110,7 +110,7 @@ if(isset($_POST['Envoyer'])){
 
 
  
-<p id="lien"><a href="index.php">Connexion</a> | <a href="auth-creer-compte.php">Créer un compte</a> | <a href="auth-identifiant-perdu.php">Identifiant perdu?</a></p>
+<p id="lien"><a href="auth.php">Connexion</a> | <a href="auth-creer-compte.php">Créer un compte</a> | <a href="auth-identifiant-perdu.php">Identifiant perdu?</a></p>
 </div>
  
 <noscript><div id="erreur"><b>Votre navigateur ne prend pas en charge JavaScript!</b> Veuillez activer JavaScript afin de profiter pleinement du site.</div></noscript>

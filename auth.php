@@ -28,7 +28,7 @@ require_once 'view_parts/_header.php';
 		<div id="centre">
 			
 			<h1>Authentification</h1>
-				<form method="POST" action="index.php">
+				<form method="POST" action="auth.php">
 					<label for="pseudo">Pseudo : </label><input type="text" name="pseudo" maxlength="20" value="<?php if (!empty($_POST["pseudo"])) { echo stripcslashes(htmlspecialchars($_POST["pseudo"],ENT_QUOTES)); } ?>" /><br/>
 					<label for="pass">Mot de Passe : </label><input type="password" name="motdepass" maxlength="20" value="<?php if (!empty($_POST["motdepass"])) { echo stripcslashes(htmlspecialchars($_POST["motdepass"],ENT_QUOTES)); } ?>" /><br/>
 					<label for="action">Action : </label><input type="submit" name="Envoyer" value="Envoyer" />
