@@ -24,17 +24,17 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
    <body>
 		<a href="deconnexion.php" class="button" id="button_connexion">Déconnexion</a>
       <div align="center">
-         <h2>Profil de <?php echo $userinfo['pseudo']; ?></h2>
+         <h2> Profil de <?php echo $userinfo['prenom']; ?></h2>
          <br /><br />
-         Pseudo = <?php echo $userinfo['pseudo']; ?>
+         Prenom =<strong><?php echo $userinfo['prenom']; ?></strong>
          <br />
-         Mail = <?php echo $userinfo['mail']; ?>
+         Mail = <strong><?php echo $userinfo['mail']; ?></strong>
          <br />
          <?php
          if(isset($_SESSION['id']) AND $userinfo['id'] == $_SESSION['id']) {
          ?>
          <br />
-         <a href="editionprofil.php">Editer mon profil</a>
+         <a href="editionprofil.php">Editer mon profil </a> </br>
          <a href="deconnexion.php">Se déconnecter</a>
          <?php
          }

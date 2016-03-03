@@ -7,10 +7,10 @@ if(isset($_SESSION['id'])) {
    $requser = $bdd->prepare("SELECT * FROM membres WHERE id = ?");
    $requser->execute(array($_SESSION['id']));
    $user = $requser->fetch();
-   if(isset($_POST['newpseudo']) AND !empty($_POST['newpseudo']) AND $_POST['newpseudo'] != $user['pseudo']) {
-      $newpseudo = htmlspecialchars($_POST['newpseudo']);
-      $insertpseudo = $bdd->prepare("UPDATE membres SET pseudo = ? WHERE id = ?");
-      $insertpseudo->execute(array($newpseudo, $_SESSION['id']));
+   if(isset($_POST['newprenom']) AND !empty($_POST['newprenom']) AND $_POST['newprenom'] != $user['prenom']) {
+      $newprenom = htmlspecialchars($_POST['newprenom']);
+      $insertprenom = $bdd->prepare("UPDATE membres SET prenom = ? WHERE id = ?");
+      $insertprenom->execute(array($newprenom, $_SESSION['id']));
       header('Location: profil.php?id='.$_SESSION['id']);
    }
    if(isset($_POST['newmail']) AND !empty($_POST['newmail']) AND $_POST['newmail'] != $user['mail']) {
@@ -41,8 +41,8 @@ if(isset($_SESSION['id'])) {
          <h2>Edition de mon profil</h2>
          <div align="left">
             <form method="POST" action="" enctype="multipart/form-data">
-               <label>Pseudo :</label>
-               <input type="text" name="newpseudo" placeholder="Pseudo" value="<?php echo $user['pseudo']; ?>" /><br /><br />
+               <label>Prenom :</label>
+               <input type="text" name="newprenom" placeholder="Prenom" value="<?php echo $user['prenom']; ?>" /><br /><br />
                <label>Mail :</label>
                <input type="text" name="newmail" placeholder="Mail" value="<?php echo $user['mail']; ?>" /><br /><br />
                <label>Mot de passe :</label>
