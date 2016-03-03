@@ -68,6 +68,7 @@ if(!empty($_SESSION["user"])) {
      </form>
      --><?php /*} */?>
      <a href="connexion.php" class="button" id="button_connexion">Connexion</a>
+     <a href="inscription.php" class="button" id="button_connexion">Inscription</a>
  </div>
 
     </header>

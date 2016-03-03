@@ -1,5 +1,4 @@
 <?php
-require_once  'view_parts/Server_Conf.php';
 require_once 'data/_main_data.php';
 require_once '_defines.php';
 /*session_start();

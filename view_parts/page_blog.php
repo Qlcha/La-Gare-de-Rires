@@ -6,29 +6,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 ?>
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8" />
-    <title>Guestbook</title>
+    <title> Guestbook </title>
 </head>
-<style>
-    form
-    {
-        text-align:center;
-    }
-</style>
+
 <body>
 
-<form action="page_blog_post.php" method="post">
+<h1>Faites nous part de votre point de vue !</h1>
+
+<form action="page_blog.php" method="post">
     <p>
         <label for="prénom">Prénom</label> : <input type="text" name="prénom" id="prénom" /><br />
-        <label for="message">Message</label> :  <textarea cols="10" rows="8" class="form-control" id="commentaire" name="commentaire" ></textarea>
+        <label for="message">Message</label> :  <textarea cols="30" rows="8" id="commentaire" name="commentaire" ></textarea>
 
         <input type="submit" value="Envoyer" />
     </p>
 </form>
 
 <?php
+
 // Connexion à la base de données
 try
 {
@@ -41,15 +39,13 @@ catch(Exception $e)
 
 // Récupération des 20 derniers messages
 
-$reponse = $bdd->query('SELECT prénom, commentaire FROM lagarederires ORDER BY ID DESC LIMIT 0, 20');
-//var_dump($reponse);
+$reponse = $bdd->query('SELECT prénom, commentaire FROM message ORDER BY ID DESC LIMIT 0, 20');
+
 // Affichage de chaque message (toutes les données sont protégées par htmlspecialchars)
-
-
 
 while ($donnees = $reponse->fetch()) {
 
-    echo '<p>'.htmlspecialchars($donnees['prénom'].' a commenté : ').htmlspecialchars($donnees['commentaire']). '</p>';
+    echo '<p><strong>'.htmlspecialchars($donnees['prénom'].' a commenté : ').htmlspecialchars($donnees['commentaire']). '</strong></p>';
 
 }
 
