@@ -29,7 +29,6 @@ h1,h2,h3,h4,h5,h6{
 }
 
 a{    color: crimson;
-    text-decoration: none;
     /*cursor: default;*/
 }
 
@@ -74,7 +73,6 @@ input {
     color: crimson;
     font-size: 20px;
     font-weight: bold;
-    margin-top: 10px;
 }
 
 input.button {
@@ -351,8 +349,16 @@ nav h1{
 
 /********************************** PAGE DOCUMENTS & CONTACT*********************/
 
+#documents{
+    font-size: 70%;
+}
+
 #documents a{
     display: block;
+}
+
+#documents section{
+    margin-bottom: 20px;
 }
 
 #contact li{
@@ -567,9 +573,12 @@ footer p {
         margin: 0;
     }
 
+    #documents{
 
+    }
     #documents a{
         margin: 0;
+        font-size: 150%;
     }
 
     #documents section a:last-of-type {
