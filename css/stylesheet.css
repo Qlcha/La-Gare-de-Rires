@@ -364,7 +364,7 @@ nav h1{
 
 #contact li{
     color: red;
-font-size: 90%;
+    font-size: 90%;
 }
 
 #tel_list li.strong {
@@ -581,7 +581,6 @@ footer p {
         margin: 0;
         font-size: 150%;
     }
-
 
 
     #documents section a:last-of-type {

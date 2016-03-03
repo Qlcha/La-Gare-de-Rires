@@ -5,13 +5,13 @@ $site_data[PAGE_ID] = 'Contactez-nous';
 require_once 'view_parts/_header.php';
 ?>
 
-<div class="content_block" id="contact">
-<h3>Les numéros importants :</h3>
-    <ul id="tel_list"><!--
+    <div class="content_block" id="contact">
+        <h3>Les numéros importants :</h3>
+        <ul id="tel_list"><!--
        --><li class="strong"> <strong>CPE "La Gare de Rires" :</strong> </li><!--
        --><li>514 399-6087;
-       <span>address: 935, de la Gauchetière O.</span>
-            <span>6 étage, H3B 2M9</span></li><!--
+                <span>address: 935, de la Gauchetière O.</span>
+                <span>6 étage, H3B 2M9</span></li><!--
 
        --><li class="strong"><strong>Kim Menna, directrice</strong></li><!--
        --><li>ext. 8   où  514 399-6087</li><!--
@@ -36,8 +36,8 @@ require_once 'view_parts/_header.php';
        --></ul>
 
 
-    <h3>Conseil d'administration du CPE :</h3>
-    <ul id="conseil_administration"><!--
+        <h3>Conseil d'administration du CPE :</h3>
+        <ul id="conseil_administration"><!--
 
        --><li>Président :</li><!--
 
@@ -64,6 +64,6 @@ require_once 'view_parts/_header.php';
        --><li>Jennifer Power</li><!--
 
        --></ul>
-</div>
+    </div>
 
 <?php require_once 'view_parts/_footer.php'; ?>
