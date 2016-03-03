@@ -16,15 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 <h1>Faites nous part de votre point de vue !</h1>
 
-<form action="page_blog.php" method="post">
-    <p>
-        <label for="prénom">Prénom</label> : <input type="text" name="prénom" id="prénom" /><br />
-        <label for="message">Message</label> :  <textarea cols="30" rows="8" id="commentaire" name="commentaire" ></textarea>
-
-        <input type="submit" value="Envoyer" />
-    </p>
-</form>
-
 <?php
 
 // Connexion à la base de données
@@ -52,5 +43,13 @@ while ($donnees = $reponse->fetch()) {
 $reponse->closeCursor();
 
 ?>
+<form action="#" method="post">
+    <p>
+        <label for="prénom">Prénom</label> : <input type="text" name="prénom" id="prénom" /><br />
+        <label for="message">Message</label> :  <textarea cols="30" rows="8" id="commentaire" name="commentaire" ></textarea>
+
+        <input type="submit" value="Envoyer" />
+    </p>
+</form>
 </body>
 </html>
