@@ -24,11 +24,11 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
    <body>
 		<a href="deconnexion.php" class="button" id="button_connexion">Déconnexion</a>
       <div align="center">
-         <h2> Profil de <?php echo $userinfo['prenom']; ?></h2>
+         <h2> Bienvenue <?php echo $userinfo['prenom']; ?></h2>
          <br /><br />
-         Prenom =<strong><?php echo $userinfo['prenom']; ?></strong>
-         <br />
-         Mail = <strong><?php echo $userinfo['mail']; ?></strong>
+         <p>Parametre de connexion</p>
+         <!--<p><strong><?php /*echo $userinfo['prenom']; */?></strong></p>-->
+         <p><strong><?php echo $userinfo['mail']; ?></strong></p>
          <br />
          <?php
          if(isset($_SESSION['id']) AND $userinfo['id'] == $_SESSION['id']) {
@@ -45,7 +45,6 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
 <?php   
 }
 ?>
-
 
 
 <?php require_once 'view_parts/_footer.php'; ?>

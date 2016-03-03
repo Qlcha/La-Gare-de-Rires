@@ -54,11 +54,12 @@ ul {
 
 /************************** BUTTONS et INPUTS ***********************/
 
-input {
+input , textarea {
     display: block;
     margin: 0 auto;
     background-color:rgba(255,255,255,0.7);
     text-decoration: underline;
+    -webkit-border-radius:5px; -moz-border-radius:5px; -ms-border-radius:5px; -o-border-radius:5px; border-radius: 5px;
 }
 
 .input {
