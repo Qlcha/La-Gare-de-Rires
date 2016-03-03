@@ -17,5 +17,5 @@ $req = $bdd->prepare('INSERT INTO message (prénom , commentaire ) VALUES(?, ?))
 
 // execution du message
 $req->execute(array($_POST['prénom'], $_POST['commentaire']));
-header('Location: page_blog_post.php');
+
 ?>
