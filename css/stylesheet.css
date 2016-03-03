@@ -47,6 +47,7 @@ ul {
     background-color:rgba(255,255,255,0.7);
     border: 2px solid grey;
     margin: 10px;
+    padding: 10px;
 }
 
 
@@ -205,7 +206,7 @@ nav h1{
     font-size: 80%;
 }
 
-/**************** MENU & ACTIVITÉ section****************************/
+/**************** INDEX:   MENU & ACTIVITÉ section****************************/
 .du_jour h3{
     color: crimson;
 }
@@ -347,7 +348,32 @@ nav h1{
 /********* FIN PAGE ÉQUIPE *********/
 
 
+/********************************** PAGE DOCUMENTS & CONTACT*********************/
 
+#documents a{
+    display: block;
+}
+
+#contact td{
+    color: red;
+    font-size: 85%;
+   }
+
+#tel_list td{
+
+}
+
+#tel_list tr:first-of-type td {
+    display: block;
+    text-align: center;
+}
+
+/*
+#tel_list tr:nth-of-type(2) td {
+    display: block;
+    text-align: center;
+}
+*/
 
 /******************** FOOTER *********************/
 footer {
@@ -369,10 +395,19 @@ footer p {
 
 /*************TABLETTE**************/
 @media screen and (min-width: 768px){
+
+    .content_block {
+        padding: 20px;
+    }
+
     nav {
         margin: 0 auto;
         text-align: center;
     }
+
+   nav ul{
+
+   }
 
     nav li {
         display: inline-block;
@@ -381,6 +416,8 @@ footer p {
         vertical-align: middle;
         width: 150px;
         font-size: 100%;
+        background-image: url("../images/rail1.png");
+        background-position: 100%;
     }
 
     nav li:first-of-type {
@@ -517,6 +554,15 @@ footer p {
 
     #equipe section.content_block article:first-of-type {
         margin: 0;
+    }
+
+
+    #documents a{
+        margin: 0;
+    }
+
+    #documents section a:last-of-type {
+        padding-bottom: 20px;
     }
 
 }

@@ -5,13 +5,13 @@ $site_data[PAGE_ID] = 'Contactez-nous';
 require_once 'view_parts/_header.php';
 ?>
 
-<div class="content_block">
+<div class="content_block" id="contact">
 <h3>Les numéros importants</h3>
-    <table>
+    <table id="tel_list">
         <tr>
-            <td>Tel. CPE général: </td>
-            <td>514 399-6087</td>
-            <td>935, de la Gauchetière O. 6 étage, H3B 2M9</td>
+            <td> CPE "La Gare de Rires": </td>
+            <td>tel generale: 514 399-6087</td>
+            <td>address: 935, de la Gauchetière O. 6 étage, H3B 2M9</td>
         </tr>
         <tr>
             <td>Kim Menna, directrice</td>
