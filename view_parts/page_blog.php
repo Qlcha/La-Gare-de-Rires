@@ -1,28 +1,25 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-    require_once 'page_blog.php';
+    require_once 'page_blog_post.php';
 }
 
 ?>
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8" />
-    <title>Guestbook</title>
+    <title> Guestbook </title>
 </head>
-<style>
-    form
-    {
-        text-align:center;
-    }
-</style>
+
 <body>
 
-<form action="page_blog_post.php" method="post">
+<h1>Faites nous part de votre point de vue !</h1>
+
+<form action="page_blog.php" method="post">
     <p>
         <label for="prénom">Prénom</label> : <input type="text" name="prénom" id="prénom" /><br />
-        <label for="message">Message</label> :  <textarea cols="50" rows="8" id="commentaire" name="commentaire" ></textarea>
+        <label for="message">Message</label> :  <textarea cols="30" rows="8" id="commentaire" name="commentaire" ></textarea>
 
         <input type="submit" value="Envoyer" />
     </p>
