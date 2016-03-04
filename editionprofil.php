@@ -5,7 +5,7 @@ $site_data[PAGE_ID] = 'Bienvenue à la Gare de Rires';
 require_once 'view_parts/_header.php';
 ?>
 <?php
-session_start();
+/*session_start();*/
 
 $bdd = new PDO('mysql:host=127.0.0.1;dbname=lagarederires', 'root', '');
 
@@ -19,6 +19,13 @@ if(isset($_SESSION['id'])) {
       $insertprenom->execute(array($newprenom, $_SESSION['id']));
       header('Location: profil.php?id='.$_SESSION['id']);
    }
+
+
+
+
+
+
+
    if(isset($_POST['newmail']) AND !empty($_POST['newmail']) AND $_POST['newmail'] != $user['mail']) {
       $newmail = htmlspecialchars($_POST['newmail']);
       $insertmail = $bdd->prepare("UPDATE membres SET mail = ? WHERE id = ?");
@@ -35,6 +42,12 @@ if(isset($_SESSION['id'])) {
       } else {
          $msg = "Vos deux mdp ne correspondent pas !";
       }
+
+
+
+
+
+
    }
 ?>
 <html>
@@ -49,6 +62,21 @@ if(isset($_SESSION['id'])) {
             <form method="POST" action="" enctype="multipart/form-data">
                <label>Prenom :</label>
                <input type="text" name="newprenom" placeholder="Prenom" value="<?php echo $user['prenom']; ?>" /><br /><br />
+               <label>Nom :</label>
+               <input type="text" name="newnom" placeholder="Nom" value="<?php echo $user['nom']; ?>" /><br /><br />
+               <label>Nom d'enfant :</label>
+               <input type="text" name="newenfant" placeholder="nom d'enfant" value="<?php echo $user['nom_enfant']; ?>" /><br /><br />
+               <label>No. d'employée :</label>
+               <input type="text" name="newemployer" placeholder="No. d'employée" value="<?php echo $user['numero_employer']; ?>" /><br /><br />
+               <label>Department :</label>
+               <input type="text" name="newdepartment" placeholder="department" value="<?php echo $user['departement']; ?>" /><br /><br />
+               <label>Étage :</label>
+               <input type="text" name="newetage" placeholder="etage" value="<?php echo $user['etage']; ?>" /><br /><br />
+               <label>Contact supplementaire:</label>
+               <input type="text" name="newcontact" placeholder="contact supplementaire" value="<?php echo $user['contact_supplementaire']; ?>" /><br /><br />
+               <label>Telephone :</label>
+               <input type="text" name="newtelephone" placeholder="telephone" value="<?php echo $user['telephone']; ?>" /><br /><br />
+
                <label>Mail :</label>
                <input type="text" name="newmail" placeholder="Mail" value="<?php echo $user['mail']; ?>" /><br /><br />
                <label>Mot de passe :</label>
@@ -56,6 +84,7 @@ if(isset($_SESSION['id'])) {
                <label>Confirmation - mot de passe :</label>
                <input type="password" name="newmdp2" placeholder="Confirmation du mot de passe" /><br /><br />
                <input type="submit" value="Mettre à jour mon profil !" />
+               <a href="deconnexion.php">Se déconnecter</a>
             </form>
             <?php if(isset($msg)) { echo $msg; } ?>
          </div>

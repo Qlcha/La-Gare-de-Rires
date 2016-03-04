@@ -16,13 +16,13 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
    $requser->execute(array($getid));
    $userinfo = $requser->fetch();
 ?>
-<html>
-   <head>
-      <title>Page de Profil</title>
-      <meta charset="utf-8">
-   </head>
-   <body>
-		<a href="deconnexion.php" class="button" id="button_connexion">Déconnexion</a>
+<!--<html>-->
+<!--   <head>-->
+<!--      <title>Page de Profil</title>-->
+<!--      <meta charset="utf-8">-->
+<!--   </head>-->
+<!--   <body>-->
+<!--		<a href="deconnexion.php" class="button" id="button_connexion">Déconnexion</a>-->
       <div align="center">
          <h2> Bienvenue <?php echo $userinfo['prenom']; ?></h2>
          <br /><br />
@@ -32,20 +32,14 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
          <br />
          <?php
          if(isset($_SESSION['id']) AND $userinfo['id'] == $_SESSION['id']) {
-         ?>
-         <br />
-         <a href="editionprofil.php">Editer mon profil </a> </br>
-         <a href="deconnexion.php">Se déconnecter</a>
-         <?php
-         }
-         ?>
-      </div>
-   </body>
-</html>
-<?php   
-}
-?>
 
+         }}
+
+         require_once 'editionprofil.php'
+         ?>
+
+
+      </div>
 
 <?php require_once 'view_parts/_footer.php'; ?>
 

@@ -47,15 +47,16 @@ require_once 'view_parts/_header.php';
       <meta charset="utf-8">
    </head>
    <body>
-      <div align="center">
+      <div>
          <h2>Connexion</h2>
          <br /><br />
          <form method="POST" action="">
+
             <input type="email" name="mailconnect" placeholder="Mail" />
             <input type="password" name="mdpconnect" placeholder="Mot de passe" />
             <br />
-            <input type="submit" name="formconnexion" value="Se connecter !" />
-			
+            <input type="submit" name="formconnexion" value="Se connecter!" class="button" />
+
          </form>
          <?php
          if(isset($erreur)) {
