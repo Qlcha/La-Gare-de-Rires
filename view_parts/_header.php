@@ -1,4 +1,18 @@
 <?php
+session_start();
+
+$button_connect = " <a href=\"connexion.php\" class=\"button\" id=\"button_connexion\">connexion</a>";
+$button_profil = "";
+
+if(isset($_SESSION['mail']))
+{
+
+    $button_connect = " <a href=\"deconnexion.php\" class=\"button\" id=\"button_connexion\">deconnexion</a>";
+    $button_profil = " <a href=\"profil.php\" class=\"button\" id=\"button_profil\">profil</a>";
+}
+
+
+
 
 if(!empty($_SESSION["user"])) {
     $user = $_SESSION["user"];   }
@@ -16,7 +30,6 @@ date_default_timezone_set('America/Montreal')?>
     <link rel="stylesheet" href="fancyapps/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="fancyapps/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="fancyapps/source/jquery.fancybox.css" type="text/css" media="screen" />
-
     <!--[if lt IE 9]>
     <script
         src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,9 +51,9 @@ date_default_timezone_set('America/Montreal')?>
 
 
 --><div id="principal"><!--
---><header><!--
+--><header>
 
---><nav><!--
+<nav><!--
 --><ul><li><a href="index.php"><img src="images/Train.png" alt="logo LaGareDeRires"><!--
                         --><h1>La Gare de Rires</h1></a></li><!--
                 --><li><a href="equipe.php">Notre équipe</a></li><!--
@@ -49,6 +62,7 @@ date_default_timezone_set('America/Montreal')?>
                 --><li><a href="documents.php">Documents</a></li><!--
                 --><li><a href="contact.php">Contact</a></li><!--
                 -->
+
             </ul>
         </nav>
 
@@ -67,7 +81,8 @@ date_default_timezone_set('America/Montreal')?>
 
      </form>
      --><?php /*} */?>
-     <a href="connexion.php" class="button" id="button_connexion">connexion</a>
+     <?php echo $button_connect   ?>
+     <?php  echo $button_profil?>
      <!--<a href="inscription.php" class="button" id="button_connexion">Inscription</a>-->
  </div>
 
@@ -75,3 +90,5 @@ date_default_timezone_set('America/Montreal')?>
 
 
     </header>
+
+

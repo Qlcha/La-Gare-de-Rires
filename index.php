@@ -1,4 +1,7 @@
 <?php
+
+
+
 require_once '_defines.php';
 require_once 'data/_main_data.php';
 require_once 'db/_post.php';
@@ -12,7 +15,7 @@ $posts = post_list();
 //var_dump($posts[0]);
 ?>
 
-<div id="update">
+<div class="update">
 <section class="content_block" id="news">
     <p><?php echo $posts[0]['submitdate'] ?></p>
     <h3><?php echo $posts[0]['title'] ?></h3>
@@ -33,7 +36,7 @@ $posts = post_list();
         <ul>
             <li>Collation du matin :</li>
             <li>CEREALES MULTI GRAIN, POMMES & LAI</li>
-            <li>Dîner :</li>
+            <li>Diner :</li>
             <li>GALETTES DE THON JARDINIERE, LEGUMES FRAIS & SALADE AUX EPINARDS; CANTELOUP & LAIT</li>
             <li>Collation aprés-midi : </li>
             <li>BAGELS MULTI-GRAIN AVEC FROMAGE CHEDDAR, POMMES, LAIT</li>

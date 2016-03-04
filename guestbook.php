@@ -1,26 +1,21 @@
 <?php
-session_start();
-
-
-    if($_SESSION['mail'] == null)
-    {
-        $afficherBouton = false;
-       header('Location: alert.php');
-        exit();
-    }
-
-else{
-    $affichierBouton = true;
-}
 
 require_once 'data/_main_data.php';
 require_once '_defines.php';
 require_once 'data/_main_data.php';
 $site_data[PAGE_ID] = 'Guestbook';
 require_once 'view_parts/_header.php';
-?>
 
+if($_SESSION['mail'] == null)
+{
+    header('Location: alert.php');
+    exit();
+}
+
+?>
+<div class="update">
 <h2>Blog : Faites part de vos points de vues ou articles ici !!!!</h2>
+<a href="formulaire_ajout.php" >Ajouter un article</a>
 <!--<hr />-->
 <?php
 
@@ -56,4 +51,29 @@ echo "</div>";
 <a href="formulaire_ajout.php" >Ajouter un article</a>
 
 
-<?php require_once 'view_parts/_footer.php'; ?>
+</div>
+
+<!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add fancyBox -->
+<script type="text/javascript" src="fancyapps/source/jquery.fancybox.pack.js"></script>
+
+
+<!-- script affichage PDF -->
+<script>
+    $(".fancybox").fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+        iframe : {
+            preload: false
+        }
+    });
+</script>
+
+
+</body>
+
+
+
+</html>

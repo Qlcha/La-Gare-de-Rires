@@ -129,7 +129,7 @@ nav h1{
     color: black;
 }
 
-#button_connexion {
+#button_connexion, #button_profil {
     color: black;
     font-weight: bold;
     border: 2px solid black;
@@ -466,15 +466,13 @@ footer p {
     }
 
 
-    #update {
+    .update {
         padding-top: 50px;
     }
 
     #button_connexion{
         border: none;
         font-size: 90%;
-        /* text-transform: uppercase; */
-        /* font-family: "Adobe Garamond Pro", Arial, sans-serif; */
         margin: 0;
         position: absolute;
         top: 20px;
@@ -485,6 +483,22 @@ footer p {
         padding-top: 10px;
         text-decoration: none;
     }
+
+    #button_profil  {
+        border: none;
+        font-size: 90%;
+        margin: 0;
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        height: 80px;
+        width: 80px;
+        text-align: center;
+        padding-top: 10px;
+        text-decoration: none;
+
+    }
+
 
     footer form {
         margin: 20px;
