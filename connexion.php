@@ -66,6 +66,6 @@ require_once 'view_parts/_header.php';
    </body>
 </html>
 
-
+<?php require_once 'inscription.php'?>
 
 <?php require_once 'view_parts/_footer.php'; ?>

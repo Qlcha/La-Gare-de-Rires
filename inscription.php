@@ -56,11 +56,11 @@
 ?>
 
 <?php
-require_once '_defines.php';
+/*require_once '_defines.php';
 require_once 'data/_main_data.php';
 $site_data[PAGE_ID] = 'Bienvenue à la Gare de Rires';
 require_once 'view_parts/_header.php';
-?>
+*/?>
 
 <div class="formulaire">
          <h2>Inscription</h2>
@@ -190,5 +190,5 @@ require_once 'view_parts/_header.php';
          ?>
       </div>
 
-<?php require_once 'view_parts/_footer.php'; ?>
+<?php /*require_once 'view_parts/_footer.php'; */?>
 
