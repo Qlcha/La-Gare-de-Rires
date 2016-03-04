@@ -69,7 +69,7 @@ else {
     echo "<br />Le commentaire n'a pas pu être ajouté.<br /><br />";
 }
 ?>
-<a href="formulaire_ajout.php" >retour à la page d'ajout d'articles</a>
+<a href="guestbook.php" >verifier votre commentaire</a>
 </body>
 </html>
 <?php require_once 'view_parts/_footer.php'; ?>

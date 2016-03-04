@@ -14,7 +14,7 @@ require_once 'view_parts/_header.php';
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
-<h2>Blog : Faites part de vos points de vues et articles ici !!!!</h2>
+<h2>Blog : Faites part de vos points de vues ou articles ici !!!!</h2>
 <hr />
 <?php
 $connect = mysqli_connect("127.0.0.1", "root", "", "lagarederires");
@@ -42,7 +42,7 @@ if ($resultat = mysqli_query($connect,$requete)) {
 }
 ?>
 <br />
-<a href="formulaire_ajout.php" >retour à la page d'insertion</a>
+<a href="formulaire_ajout.php" >retour à la page d'insertion d'article</a>
 </body>
 </html>
 
