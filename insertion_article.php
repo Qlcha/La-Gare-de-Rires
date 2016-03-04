@@ -45,14 +45,14 @@ else {
 //vaut 0
     echo "Aucune erreur dans le transfert du fichier.<br />";
     if ((isset($_FILES['photo']['name'])&&($_FILES['photo']['error'] == UPLOAD_ERR_OK))) {
-        $chemin_destination = 'photos/';
+        $chemin_destination = 'photo/';
         //déplacement du fichier du répertoire temporaire (stocké
         //par défaut) dans le répertoire de destination
         move_uploaded_file($_FILES['photo']['tmp_name'], $chemin_destination.$_FILES['photo']['name']);
         echo "Le fichier ".$_FILES['photo']['name']." a été copié dans le répertoire photos";
     }
     else {
-        echo "Le fichier n'a pas pu être copié dans le répertoire photos.";
+        echo "Le fichier n'a pas pu être copié dans le répertoire photo.";
     }
 }
 

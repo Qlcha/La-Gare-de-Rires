@@ -15,7 +15,7 @@ require_once 'view_parts/_header.php';
 </head>
 <body>
 <h2>Blog : Faites part de vos points de vues ou articles ici !!!!</h2>
-<hr />
+<!--<hr />-->
 <?php
 $connect = mysqli_connect("127.0.0.1", "root", "", "lagarederires");
 
@@ -37,12 +37,12 @@ if ($resultat = mysqli_query($connect,$requete)) {
         if ($ligne['photo'] != "") {
             echo "<img src='photo/".$ligne['photo']."' width='200px' height='200px'/>";
         }
-        echo "<hr />";
+       /* echo "<hr />";*/
     }
 }
 ?>
 <br />
-<a href="formulaire_ajout.php" >retour à la page d'insertion d'article</a>
+<a href="formulaire_ajout.php" >Ajouter un article</a>
 </body>
 </html>
 

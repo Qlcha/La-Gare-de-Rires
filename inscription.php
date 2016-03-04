@@ -31,7 +31,6 @@
                      $insertmbr->execute(array($prenom, $mail, $mdp, $nom, $nom_enfant, $numero_employer, $department, $etage, $contact_supplemantaire, $telephone));
 
 
-
                      $erreur = "Votre inscription a bien été validée ! <a href=\"connexion.php\">Veuillez vous connecter</a>";
                   } else {
                      $erreur = "Vos mots de passes ne correspondent pas !";
@@ -126,7 +125,7 @@ require_once 'view_parts/_header.php';
                         <label for="contact_supplementaire">Contact supplemenataire :</label>
                     </td>
                     <td>
-                        <input type="tel" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$" placeholder="Votre contact supplementaire" id="contact_supplementaire" name="contact_supplementaire" value="<?php if(isset($contact_supplementaire)) { echo $contact_supplementaire; } ?>" />
+                        <input type="tel" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$" placeholder="Votre contact supplumentaire" id="contact_supplementaire" name="contact_supplementaire" value="<?php if(isset($contact_supplementaire)) { echo $contact_supplemantaire; } ?>" />
                     </td>
                 </tr>
 

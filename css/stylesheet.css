@@ -680,4 +680,7 @@ width:35%;
     }
 
 }
-
+/***** PAGE ALERT *****/
+.alert{
+    background-color:deeppink;
+}
