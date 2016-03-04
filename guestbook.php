@@ -1,4 +1,18 @@
 <?php
+session_start();
+
+
+    if($_SESSION['mail'] == null)
+    {
+        $afficherBouton = false;
+       header('Location: alert.php');
+        exit();
+    }
+
+else{
+    $affichierBouton = true;
+}
+
 require_once 'data/_main_data.php';
 require_once '_defines.php';
 require_once 'data/_main_data.php';
