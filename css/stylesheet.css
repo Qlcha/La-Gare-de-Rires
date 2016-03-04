@@ -119,7 +119,8 @@ nav li a{
 nav li a:hover {
     /* background-color: rgba(206, 255, 5, 0.4);*/
     color: #cfff04;
-    text-shadow: 1px 1px 1px red;
+ /*   text-shadow: 1px 1px 1px black;*/
+    text-shadow: 0 0 10px #7e0013;
 }
 nav h1{
     font-size: 110%;
@@ -222,8 +223,16 @@ nav h1{
 .du_jour .button{
     display: block;
     text-align: center;
-     background-color: #cfff04;
+     background-color: lightgrey;
     margin: 0 auto;
+}
+
+.du_jour .button:hover{
+    background-color: #cfff04;
+}
+
+.du_jour .button:active{
+    background-color: lightgrey;
 }
 
 #repas li{
