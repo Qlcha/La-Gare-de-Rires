@@ -1,4 +1,18 @@
 <?php
+session_start();
+
+
+    if($_SESSION['mail'] == null)
+    {
+        $afficherBouton = false;
+       header('Location: alert.php');
+        exit();
+    }
+
+else{
+    $affichierBouton = true;
+}
+
 require_once 'data/_main_data.php';
 require_once '_defines.php';
 require_once 'data/_main_data.php';
@@ -43,6 +57,15 @@ if ($resultat = mysqli_query($connect,$requete)) {
 ?>
 <br />
 <a href="formulaire_ajout.php" >Ajouter un article</a>
+
+<?php
+if($afficherBouton)
+{
+    echo " <a href=\"connexion.php\" class=\"button\" id=\"button_connexion\">Connexion</a>";
+}
+
+?>
+
 </body>
 </html>
 
