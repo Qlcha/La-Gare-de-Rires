@@ -1,6 +1,7 @@
 <?php
 if(!empty($_SESSION["user"])) {
-    $user = $_SESSION["user"];   }?>
+    $user = $_SESSION["user"];   }
+date_default_timezone_set('America/Montreal')?>
 
 <!DOCTYPE html>
 <html>

@@ -20,7 +20,7 @@ if (!$connect) {
 
 $requete = "SELECT * FROM article_blog ORDER BY ID DESC ";
 if ($resultat = mysqli_query($connect,$requete)) {
-    date_default_timezone_set('america/montreal');
+    date_default_timezone_set('America/Montreal');
     /* fetch le tableau associatif */
     while ($ligne = mysqli_fetch_assoc($resultat)) {
         $dt_debut = date_create_from_format('Y-m-d H:i:s', $ligne['date']);
