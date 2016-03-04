@@ -25,7 +25,7 @@ if (!$connect) {
     exit();
 }
 
-$requete = "SELECT * FROM article_blog ORDER BY Date";
+$requete = "SELECT * FROM article_blog ORDER BY ID DESC ";
 if ($resultat = mysqli_query($connect,$requete)) {
     date_default_timezone_set('america/montreal');
     /* fetch le tableau associatif */
