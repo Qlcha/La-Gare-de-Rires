@@ -37,6 +37,8 @@ if(!empty($_SESSION["user"])) {
        --><li class="lang"><a href="index.php">Eng</a></li><!--
        --><li class="lang"><a href="index.php">Fr</a></li><!--
        --></ul><!--
+
+
 --><div id="principal"><!--
 --><header><!--
 
@@ -70,5 +72,8 @@ if(!empty($_SESSION["user"])) {
      <a href="connexion.php" class="button" id="button_connexion">Connexion</a>
      <a href="inscription.php" class="button" id="button_connexion">Inscription</a>
  </div>
+
+
+
 
     </header>

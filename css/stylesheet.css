@@ -82,6 +82,10 @@ input.button {
     padding: 0;
 }
 /************ HEADER & MENU NAVIGATION *******************/
+#train_light {
+    display: none;
+}
+
 nav img {
     width: 10%;
     padding: 3px 5px 0 ;
@@ -411,6 +415,17 @@ footer p {
 
 /********************** MEDIA QUERIES *********************/
 
+@media screen and (min-width: 1240px){
+  #train_light{
+      display: inline;
+      position: absolute;
+      width: 13%;
+      right: 1%;
+      top:20%
+  }
+}
+
+
 /*************TABLETTE**************/
 @media screen and (min-width: 768px){
 
@@ -432,7 +447,7 @@ footer p {
         text-align: center;
         height: 90px;
         vertical-align: middle;
-        width: 150px;
+        width: 119px;
         font-size: 100%;
         background-image: url("../images/rail1.png");
         background-position: 100%;
@@ -440,7 +455,7 @@ footer p {
 
     nav li:first-of-type {
         padding: 0;
-        width: 170px;
+        width: 150px;
         border: none;
 
         vertical-align: top;
@@ -634,6 +649,9 @@ width:35%;
         margin: 0 auto;
     }
 
+    nav li{
+        width: 150px;
+    }
 
     #du_jour, #news{
         display: inline-block;

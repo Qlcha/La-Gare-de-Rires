@@ -10,10 +10,11 @@
         <input type="submit" value="envoyer" class="button">
     </form>
 
-    <p> &copy; CN " La gare de rires" 2016 </p>
-</footer>
-</div>
+    <p> &copy; CN " La gare de rires" 2016 </p><!--
 
+--></footer>
+</div>
+<img src="images/railroad_crossing_43.png" alt="train_light" id="train_light">
 
 
 <!-- Add jQuery library -->
