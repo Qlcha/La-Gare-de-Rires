@@ -62,13 +62,13 @@ $site_data[PAGE_ID] = 'Bienvenue à la Gare de Rires';
 require_once 'view_parts/_header.php';
 ?>
 
-<div align="center">
+<div class="formulaire">
          <h2>Inscription</h2>
          <br /><br />
          <form method="POST" action="">
             <table>
                <tr>
-                  <td align="right">
+                  <td>
                      <label for="prenom">Prenom :</label>
                   </td>
                   <td>
@@ -77,7 +77,7 @@ require_once 'view_parts/_header.php';
                </tr>
 
                 <tr>
-                    <td align="right">
+                    <td>
                         <label for="nom">Nom :</label>
                     </td>
                     <td>
@@ -86,7 +86,7 @@ require_once 'view_parts/_header.php';
                 </tr>
 
                 <tr>
-                    <td align="right">
+                    <td>
                         <label for="nom_enfant">Nom enfant :</label>
                     </td>
                     <td>
@@ -95,7 +95,7 @@ require_once 'view_parts/_header.php';
                 </tr>
 
                 <tr>
-                    <td align="right">
+                    <td>
                         <label for="numero_employer">Numero employer :</label>
                     </td>
                     <td>
@@ -104,7 +104,7 @@ require_once 'view_parts/_header.php';
                 </tr>
 
                <tr>
-                    <td align="right">
+                    <td>
                         <label for="departement">Departement :</label>
                     </td>
                     <td>
@@ -113,7 +113,7 @@ require_once 'view_parts/_header.php';
                 </tr>
 
                 <tr>
-                    <td align="right">
+                    <td>
                         <label for="etage">Etage :</label>
                     </td>
                     <td>
@@ -122,7 +122,7 @@ require_once 'view_parts/_header.php';
                 </tr>
 
                 <tr>
-                    <td align="right">
+                    <td>
                         <label for="contact_supplementaire">Contact supplemenataire :</label>
                     </td>
                     <td>
@@ -133,7 +133,7 @@ require_once 'view_parts/_header.php';
                 <tr>
                 <!-- contrôle avec regex pour un numéro au format 123-123-1234 -->
 
-                    <td align="right">
+                    <td>
                         <label>Téléphone </label>
                     </td>
                     <td>
@@ -142,7 +142,7 @@ require_once 'view_parts/_header.php';
                 </tr>
 
                 <tr>
-                    <td align="right">
+                    <td>
                         <label for="mail">Mail :</label>
                     </td>
                     <td>
@@ -151,7 +151,7 @@ require_once 'view_parts/_header.php';
                 </tr>
 
                <tr>
-                  <td align="right">
+                  <td>
                      <label for="mail2">Confirmation du mail :</label>
                   </td>
                   <td>
@@ -159,7 +159,7 @@ require_once 'view_parts/_header.php';
                   </td>
                </tr>
                <tr>
-                  <td align="right">
+                  <td>
                      <label for="mdp">Mot de passe :</label>
                   </td>
                   <td>
@@ -167,7 +167,7 @@ require_once 'view_parts/_header.php';
                   </td>
                </tr>
                <tr>
-                  <td align="right">
+                  <td>
                      <label for="mdp2">Confirmation du mot de passe :</label>
                   </td>
                   <td>
@@ -176,9 +176,9 @@ require_once 'view_parts/_header.php';
                </tr>
                <tr>
                   <td></td>
-                  <td align="center">
+                  <td>
                      <br />
-                     <input type="submit" name="forminscription" value="Je m'inscris" />
+                     <input type="submit" name="forminscription" value="Je m'inscris" class="button"/>
                   </td>
                </tr>
             </table>
