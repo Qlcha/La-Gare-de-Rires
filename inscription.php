@@ -3,6 +3,13 @@
 	
 	if(isset($_POST['forminscription'])) {
    $prenom = htmlspecialchars($_POST['prenom']);
+   $nom = htmlspecialchars($_POST['nom']);
+        $nom_enfant = htmlspecialchars($_POST['nom_enfant']);
+        $numero_employer = htmlspecialchars($_POST['numero_employer']);
+        $department = htmlspecialchars($_POST['departement']);
+        $etage = htmlspecialchars($_POST['etage']);
+        $contact_supplemantaire = htmlspecialchars($_POST['contact_supplementaire']);
+        $telephone = htmlspecialchars($_POST['telephone']);
    $mail = htmlspecialchars($_POST['mail']);
    if(isset($_POST['mail2'])){
    $mail2 = htmlspecialchars($_POST['mail2']);
@@ -20,8 +27,11 @@
                $mailexist = $reqmail->rowCount();
                if($mailexist == 0) {
                   if($mdp == $mdp2) {
-                     $insertmbr = $bdd->prepare("INSERT INTO membres(prenom, mail, motdepasse) VALUES(?, ?, ?)");
-                     $insertmbr->execute(array($prenom, $mail, $mdp));
+                     $insertmbr = $bdd->prepare("INSERT INTO membres(prenom, mail, motdepasse, nom, nom_enfant, numero_employer, departement, etage, contact_supplementaire, telephone) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                     $insertmbr->execute(array($prenom, $mail, $mdp, $nom, $nom_enfant, $numero_employer, $department, $etage, $contact_supplemantaire, $telephone));
+
+
+
                      $erreur = "Votre inscription a bien été validée ! <a href=\"connexion.php\">Veuillez vous connecter</a>";
                   } else {
                      $erreur = "Vos mots de passes ne correspondent pas !";
@@ -107,7 +117,7 @@ require_once 'view_parts/_header.php';
                         <label for="etage">Etage :</label>
                     </td>
                     <td>
-                        <input type="text" placeholder="Votre etage" id="etage" name="etaget" value="<?php if(isset($etage)) { echo $etage; } ?>" />
+                        <input type="text" placeholder="Votre etage" id="etage" name="etage" value="<?php if(isset($etage)) { echo $etage; } ?>" />
                     </td>
                 </tr>
 
@@ -116,7 +126,7 @@ require_once 'view_parts/_header.php';
                         <label for="contact_supplementaire">Contact supplemenataire :</label>
                     </td>
                     <td>
-                        <input type="tel" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$" placeholder="Votre contact supplumentaire" id="contact_supplementaire" name="contact_supplementaire" value="<?php if(isset($contact_supplementaire)) { echo $contact_supplemantaire; } ?>" />
+                        <input type="tel" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$" placeholder="Votre contact supplementaire" id="contact_supplementaire" name="contact_supplementaire" value="<?php if(isset($contact_supplementaire)) { echo $contact_supplementaire; } ?>" />
                     </td>
                 </tr>
 
