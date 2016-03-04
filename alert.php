@@ -6,7 +6,7 @@ require_once 'view_parts/_header.php';
 ?>
 
 <div class="alert">
-    Oufff! Veuillez vous connectez pour accéder à cette page.
+    <p>Oufff! Veuillez vous connectez pour accéder à cette page.</p>
 </div>
 
 <?php require_once 'view_parts/_footer.php'; ?>
