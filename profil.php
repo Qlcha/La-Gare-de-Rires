@@ -1,11 +1,4 @@
 <?php
-require_once '_defines.php';
-require_once 'data/_main_data.php';
-$site_data[PAGE_ID] = 'Bienvenue à la Gare de Rires';
-require_once 'view_parts/_header.php';
-?>
-
-<?php
 session_start();
 
 $bdd = new PDO('mysql:host=127.0.0.1;dbname=lagarederires', 'root', '');
@@ -15,14 +8,14 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
    $requser = $bdd->prepare('SELECT * FROM membres WHERE id = ?');
    $requser->execute(array($getid));
    $userinfo = $requser->fetch();
+
+require_once '_defines.php';
+require_once 'data/_main_data.php';
+$site_data[PAGE_ID] = 'Profil de '.  $userinfo['prenom'];
+require_once 'view_parts/_header.php';
+
 ?>
-<!--<html>-->
-<!--   <head>-->
-<!--      <title>Page de Profil</title>-->
-<!--      <meta charset="utf-8">-->
-<!--   </head>-->
-<!--   <body>-->
-<!--		<a href="deconnexion.php" class="button" id="button_connexion">Déconnexion</a>-->
+
       <div align="center">
          <h2> Bienvenue <?php echo $userinfo['prenom']; ?></h2>
          <br /><br />

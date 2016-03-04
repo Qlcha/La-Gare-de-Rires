@@ -1,4 +1,5 @@
 <?php
+
 if(!empty($_SESSION["user"])) {
     $user = $_SESSION["user"];   }
 date_default_timezone_set('America/Montreal')?>
@@ -34,10 +35,6 @@ date_default_timezone_set('America/Montreal')?>
 
 </head>
 <body><!--
---><ul><!--
-       --><li class="lang"><a href="index.php">Eng</a></li><!--
-       --><li class="lang"><a href="index.php">Fr</a></li><!--
-       --></ul><!--
 
 
 --><div id="principal"><!--
@@ -70,7 +67,7 @@ date_default_timezone_set('America/Montreal')?>
 
      </form>
      --><?php /*} */?>
-     <a href="connexion.php" class="button" id="button_connexion">Connexion</a>
+     <a href="connexion.php" class="button" id="button_connexion">connexion</a>
      <!--<a href="inscription.php" class="button" id="button_connexion">Inscription</a>-->
  </div>
 

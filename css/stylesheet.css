@@ -130,46 +130,16 @@ nav h1{
 }
 
 #button_connexion {
-    background-color: black;
-    color: #cfff04;
-    border: 2px solid #cfff04;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
     box-shadow: none;
     border-radius: 10px;
 
 }
 
 /************************INDEX*********************************/
-/*****ENG / FR   ***/
-.lang{
-    display: inline-block;
-    font-weight: bold;
-    font-size: 130%;
-}
 
-.lang a{
-    color: white;
-    text-shadow: 2px 2px 2px crimson;
-    display: block;
-}
-
-
-.lang a:hover{
-    color: #cfff04;
-}
-
-.lang:first-of-type{
-    position: absolute;
-    top: 10px;
-    left: 20px;
-}
-
-.lang:last-of-type{
-    text-align: right;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-}
-/**********************************************************/
 
 /************************* TABLES ******************************/
 .table {
@@ -228,7 +198,7 @@ nav h1{
 }
 
 .du_jour .button:hover{
-    background-color: #cfff04;
+    background-color: #feb82e;
 }
 
 .du_jour .button:active{
@@ -491,13 +461,29 @@ footer p {
     }
 
     nav img {
-        width: 70px;
+        width: 100px;
         padding-top: 10px;
     }
 
+
+    #update {
+        padding-top: 50px;
+    }
+
     #button_connexion{
-        padding: 0 10px 0 10px;
+        border: none;
+        font-size: 90%;
+        /* text-transform: uppercase; */
+        /* font-family: "Adobe Garamond Pro", Arial, sans-serif; */
         margin: 0;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        height: 80px;
+        width: 80px;
+        text-align: center;
+        padding-top: 10px;
+        text-decoration: none;
     }
 
     footer form {

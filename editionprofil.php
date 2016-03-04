@@ -19,13 +19,48 @@ if(isset($_SESSION['id'])) {
       $insertprenom->execute(array($newprenom, $_SESSION['id']));
       header('Location: profil.php?id='.$_SESSION['id']);
    }
-
-
-
-
-
-
-
+   if(isset($_POST['newnom']) AND !empty($_POST['newnom']) AND $_POST['newnom'] != $user['nom']) {
+      $newnom = htmlspecialchars($_POST['newnom']);
+      $insertnom = $bdd->prepare("UPDATE membres SET nom = ? WHERE id = ?");
+      $insertnom->execute(array($newnom, $_SESSION['id']));
+      header('Location: profil.php?id='.$_SESSION['id']);
+   }
+   if(isset($_POST['newenfant']) AND !empty($_POST['newenfant']) AND $_POST['newenfant'] != $user['nom_enfant']) {
+      $newenfant = htmlspecialchars($_POST['newenfant']);
+      $insertenfant = $bdd->prepare("UPDATE membres SET nom_enfant = ? WHERE id = ?");
+      $insertenfant->execute(array($newenfant, $_SESSION['id']));
+      header('Location: profil.php?id='.$_SESSION['id']);
+   }
+   if(isset($_POST['newemployer']) AND !empty($_POST['newemployer']) AND $_POST['newemployer'] != $user['numero_employer']) {
+      $newemployer = htmlspecialchars($_POST['newemployer']);
+      $insertemployer = $bdd->prepare("UPDATE membres SET numero_employer = ? WHERE id = ?");
+      $insertemployer->execute(array($newemployer, $_SESSION['id']));
+      header('Location: profil.php?id='.$_SESSION['id']);
+   }
+   if(isset($_POST['newdepartment']) AND !empty($_POST['newdepartment']) AND $_POST['newdepartment'] != $user['departement']) {
+      $newdepartment = htmlspecialchars($_POST['newdepartment']);
+      $insertdepartment = $bdd->prepare("UPDATE membres SET departement = ? WHERE id = ?");
+      $insertdepartment->execute(array( $newdepartment, $_SESSION['id']));
+      header('Location: profil.php?id='.$_SESSION['id']);
+   }
+   if(isset($_POST['newetage']) AND !empty($_POST['newetage']) AND $_POST['newetage'] != $user['etage']) {
+      $newetage = htmlspecialchars($_POST['newetage']);
+      $insertetage = $bdd->prepare("UPDATE membres SET etage = ? WHERE id = ?");
+      $insertetage->execute(array($newetage, $_SESSION['id']));
+      header('Location: profil.php?id='.$_SESSION['id']);
+   }
+   if(isset($_POST['newcontact']) AND !empty($_POST['newcontact']) AND $_POST['newcontact'] != $user['contact_supplementaire']) {
+      $newcontact = htmlspecialchars($_POST['newcontact']);
+      $insertcontact = $bdd->prepare("UPDATE membres SET contact_supplementaire = ? WHERE id = ?");
+      $insertcontact->execute(array($newcontact, $_SESSION['id']));
+      header('Location: profil.php?id='.$_SESSION['id']);
+   }
+   if(isset($_POST['newtelephone']) AND !empty($_POST['newtelephone']) AND $_POST['newtelephone'] != $user['telephone']) {
+      $newtelephone = htmlspecialchars($_POST['newtelephone']);
+      $inserttel = $bdd->prepare("UPDATE membres SET telephone = ? WHERE id = ?");
+      $inserttel->execute(array($newtelephone, $_SESSION['id']));
+      header('Location: profil.php?id='.$_SESSION['id']);
+   }
    if(isset($_POST['newmail']) AND !empty($_POST['newmail']) AND $_POST['newmail'] != $user['mail']) {
       $newmail = htmlspecialchars($_POST['newmail']);
       $insertmail = $bdd->prepare("UPDATE membres SET mail = ? WHERE id = ?");
