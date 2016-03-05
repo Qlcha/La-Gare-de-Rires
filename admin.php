@@ -70,6 +70,9 @@ if ('POST' == $_SERVER['REQUEST_METHOD']) {
         <input type="file" id="fichier_calendrier">
     </section>
 
+
+
+<!--Tableau d'utilisateurs-->
     <section>
         <h2>Utilisateurs inscrits au site:</h2>
         <table class="table" id="table_users">
@@ -85,18 +88,36 @@ if ('POST' == $_SERVER['REQUEST_METHOD']) {
                 <th>Téléphone</th>
                 <th>Courrier</th>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>Olga</td>
-                <td>Paquette</td>
-                <td>Simon</td>
-                <td>3016</td>
-                <td>Development WEB</td>
-                <td>12</td>
-                <td>514-343-18-43</td>
-                <td>514-515-11-46</td>
-                <td>olga.sphere@gmail.com</td>
-            </tr>
+
+    <?php
+
+    $connect = mysqli_connect("127.0.0.1", "root", "", "lagarederires");
+
+    /* Vérification de la connexion */
+    if (!$connect) {
+        echo "Échec de la connexion : ".mysqli_connect_error();
+        exit();
+    }
+
+    $requete = "SELECT * FROM membres ORDER BY ID ASC ";
+    if ($resultat = mysqli_query($connect,$requete)) {
+
+        /* fetch le tableau associatif */
+        while ($ligne = mysqli_fetch_assoc($resultat)) {
+
+          echo " <tr> <td>". $ligne['id'] ."</td>";
+                echo "<td>".$ligne['prenom']."</td>";
+            echo "<td>".$ligne['nom']."</td>";
+            echo "<td>".$ligne['nom_enfant']."</td>";
+            echo "<td>".$ligne['numero_employer']."</td>";
+            echo "<td>".$ligne['departement']."</td>";
+            echo "<td>".$ligne['etage']."</td>";
+            echo "<td>".$ligne['contact_supplementaire']."</td>";
+            echo "<td>".$ligne['telephone']."</td>";
+            echo "<td>".$ligne['mail']."</td></tr>";
+                    }
+    }
+    ?>
         </table>
 
     </section>

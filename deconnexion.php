@@ -6,7 +6,6 @@ require_once 'view_parts/_header.php';
 ?>
 
 <?php
-session_start();
 $_SESSION = array();
 session_destroy();
 header("Location: index.php");
