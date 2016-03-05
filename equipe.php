@@ -394,4 +394,32 @@ require_once 'view_parts/_header.php';
         --></section>
 
 
-    <?php require_once 'view_parts/_footer.php'; ?>
+    <?php /*require_once 'view_parts/_footer.php'; */?>
+    </div>
+
+
+
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- Add fancyBox -->
+    <script type="text/javascript" src="fancyapps/source/jquery.fancybox.pack.js"></script>
+
+
+    <!-- script affichage PDF -->
+    <script>
+        $(".fancybox").fancybox({
+            openEffect  : 'none',
+            closeEffect : 'none',
+            iframe : {
+                preload: false
+            }
+        });
+    </script>
+
+
+    </body>
+
+
+
+    </html>

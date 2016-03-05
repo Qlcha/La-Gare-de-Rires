@@ -5,8 +5,8 @@ $site_data[PAGE_ID] = 'Menu 2016';
 require_once 'view_parts/_header.php';
 ?>
 <div class="content_block">
-    <h2>Menu de 1 Janvier 2016 à 1 Septembre 2016</h2>
-    <table class="menu_table">
+    <h2 id="headline_table_menu">Menu de 1 Janvier 2016 à 1 Septembre 2016 :</h2>
+    <table class="menu table">
         <caption>Semaine 1</caption>
         <tr>
             <th>Journée</th>
@@ -46,7 +46,7 @@ require_once 'view_parts/_header.php';
         </tr>
     </table>
 
-    <table class="menu_table">
+    <table class="menu table">
         <caption>Semaine 2</caption>
         <tr>
             <th>Journée</th>
@@ -87,7 +87,7 @@ require_once 'view_parts/_header.php';
         </tr>
     </table>
 
-    <table class="menu_table">
+    <table class="menu table">
         <caption>Semaine 3</caption>
         <tr>
             <th>Journée</th>

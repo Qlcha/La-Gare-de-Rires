@@ -1,20 +1,19 @@
 <footer class="content_block">
-    <h2>Contactez-Nous</h2>
+    <h4>Contactez-Nous</h4>
     <form action="#">
 <label for="name">Nom: </label>
         <input type="text" class="input" name="name" placeholder="Votre nom">
         <label for="name">E-mail: </label>
         <input type="email" class="input" name="email" placeholder="courriel@courriel.com">
-        <label for="message">Message: </label>
         <textarea name="message" placeholder="Votre message ici" class="input" rows="5"></textarea>
         <input type="submit" value="envoyer" class="button">
     </form>
 
-    <p> &copy; CN " La gare de rires" 2016 </p><!--
-
---></footer>
-</div>
+    <p> &copy; CN " La gare de rires" 2016 </p>
 <img src="images/railroad_crossing_43.png" alt="train_light" id="train_light">
+</footer>
+</div>
+
 
 
 <!-- Add jQuery library -->

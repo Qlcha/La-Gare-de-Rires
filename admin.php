@@ -2,9 +2,9 @@
 <?php
 require_once '_defines.php';
 require_once 'data/_main_data.php';
-require_once 'db/_post.php';
 $site_data[PAGE_ID] = 'Espace Admin';
 require_once 'view_parts/_header.php';
+require_once 'db/_post.php';
 
 if ('POST' == $_SERVER['REQUEST_METHOD']) {
     //var_dump($_POST);

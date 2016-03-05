@@ -76,11 +76,7 @@ input , textarea {
     font-weight: bold;
 }
 
-input.button {
-    border-style: none;
-    font-size: 120%;
-    padding: 0;
-}
+
 /************ HEADER & MENU NAVIGATION *******************/
 #train_light {
     display: none;
@@ -118,9 +114,13 @@ nav li a{
 
 nav li a:hover {
     /* background-color: rgba(206, 255, 5, 0.4);*/
-    color: #cfff04;
+    color: crimson;
  /*   text-shadow: 1px 1px 1px black;*/
-    text-shadow: 0 0 10px #7e0013;
+    text-shadow:
+            -2px -2px 0 #cfff04,
+            2px -2px 0 #cfff04,
+            -2px 2px 0 #cfff04,
+            2px 2px 0 #cfff04;
 }
 nav h1{
     font-size: 110%;
@@ -130,9 +130,7 @@ nav h1{
 }
 
 #button_connexion, #button_profil {
-    color: black;
     font-weight: bold;
-    border: 2px solid black;
     box-shadow: none;
     border-radius: 10px;
 
@@ -145,12 +143,23 @@ nav h1{
 .table {
     border: 1px solid black;
     border-collapse: collapse;
-    margin: 20px;
+  /*  margin: 20px;*/
     font-size: 90%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .table td, .table th{
     border: 1px solid black;
+
+}
+
+.menu td, .menu th {
+    display: block;
+}
+
+.table th {
+    font-family: 'Indie Flower', cursive;
 }
 
 .menu td{
@@ -158,26 +167,36 @@ nav h1{
     padding: 10px;
 }
 
-#menu_3_semaines h2{
-    color: red;
-    font-family: 'Indie Flower', cursive;
-    text-align: center;
-}
 
 .menu caption{
+    color: red;
     font-family: 'Indie Flower', cursive;
     padding: 5px;
-    text-align: left;
+    text-align: center;
     font-weight: bold;
     font-size: 150%;
 }
 
-#table_users{
-    width: 100%;
-    margin: 0 auto;
+#headline_table_menu {
+    font-size: 90%;
 }
 
-#table_users td, #table_users th{
+.menu tr:first-of-type th{
+    display: none;
+}
+
+.menu:first-of-type {
+    background-color: rgba(255, 255, 0, 0.2);
+}
+.menu:nth-last-of-type(2) {
+    background-color: rgba(54, 180, 255, 0.2);
+}
+
+.menu:last-of-type {
+    background-color: rgba(0, 252, 60, 0.2);
+}
+
+#table_users td{
     font-size: 80%;
 }
 
@@ -190,15 +209,19 @@ nav h1{
     padding: 10px;
 }
 
-.du_jour .button{
+.button{
     display: block;
     text-align: center;
      background-color: lightgrey;
     margin: 0 auto;
+    border: 2px solid lightgrey;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
-.du_jour .button:hover{
-    background-color: #feb82e;
+.button:hover{
+    background-color: #cfff04;
+
 }
 
 .du_jour .button:active{
@@ -339,6 +362,8 @@ nav h1{
 
 #documents a{
     display: block;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
 }
 
 #documents section{
@@ -348,14 +373,17 @@ nav h1{
 #contact li{
     color: red;
     font-size: 90%;
+    font-family: 'Indie Flower', cursive;
 }
 
 #tel_list li.strong {
     padding-top: 10px;
+
 }
 
 #tel_list strong{
     font-weight: normal;
+    font-family: 'Raleway', sans-serif;
 }
 
 #tel_list li span {
@@ -370,11 +398,19 @@ nav h1{
 #conseil_administration li{
     display: inline-block;
     width: 50%;
+    font-family: 'Raleway', sans-serif;
 }
 
 #conseil_administration li:nth-of-type(even){
     font-weight: bold;
+    font-family: 'Indie Flower', cursive;
 }
+
+#contact h3:last-of-type {
+    margin-top: 40px;
+}
+
+/******************* TABLEAU MENU************************/
 
 /******************** FOOTER *********************/
 footer {
@@ -383,14 +419,19 @@ footer {
     color: crimson;
 }
 
-footer form {
-    margin-top: 20px  ;
-}
 
 footer p {
     padding-top: 20px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
 }
 
+footer label{
+    display: inline-block;
+    color: black;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+}
 
 /********************** MEDIA QUERIES *********************/
 
@@ -400,7 +441,7 @@ footer p {
       position: absolute;
       width: 13%;
       right: 1%;
-      top:20%
+     top: 170%;
   }
 }
 
@@ -466,10 +507,6 @@ footer p {
     }
 
 
-    .update {
-        padding-top: 50px;
-    }
-
     #button_connexion{
         border: none;
         font-size: 90%;
@@ -500,10 +537,6 @@ footer p {
     }
 
 
-    footer form {
-        margin: 20px;
-    }
-
     footer label{
         font-family: 'Indie Flower', cursive;
         font-weight: bold;
@@ -516,13 +549,7 @@ footer p {
         margin: 0;
     }
 
-    input.button{
-        margin: 0;
-    }
 
-    input.button:active {
-        color: black;
-    }
 
     .button {
         margin: 20px;
@@ -611,9 +638,6 @@ footer p {
         padding-bottom: 20px;
     }
 
-    #contact li{
-        font-size: 100%;
-    }
 
     #tel_list li{
         text-align: left;
@@ -635,14 +659,17 @@ footer p {
     }
 
     #tel_list li.strong {
-width:35%;
+width:29%;
         padding-top: 0;
         margin-bottom: 10px;
+    }
 
+    #contact h3:first-of-type {
+        margin-bottom: 20px;
     }
 
        #conseil_administration li:nth-of-type(odd){
-           width: 35%;
+           width: 20%;
     }
 
     #conseil_administration li:nth-of-type(even) {
@@ -650,6 +677,23 @@ width:35%;
         padding-top: 10px;
     }
 
+    #admin_content_block {
+        margin-top: 40px;
+    }
+
+    header {
+        margin-bottom: 50px;
+    }
+
+    .menu td, .menu th {
+        display: table-cell;
+        }
+    .menu tr:first-of-type th{
+        display: table-cell;
+    }
+    #headline_table_menu {
+        font-size: 130%;
+    }
 }
 /*************DESKTOP***********/
 @media screen and (min-width: 1024px){
