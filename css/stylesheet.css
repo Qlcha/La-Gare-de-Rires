@@ -424,6 +424,7 @@ footer p {
     padding-top: 20px;
     font-family: 'Indie Flower', cursive;
     font-weight: bold;
+    text-align: right;
 }
 
 footer label{
@@ -683,11 +684,11 @@ width:29%;
     }
 
        #conseil_administration li:nth-of-type(odd){
-           width: 20%;
+           width: 15%;
     }
 
     #conseil_administration li:nth-of-type(even) {
-        width: 65%;
+        width: 85%;
         padding-top: 10px;
     }
 
@@ -753,19 +754,19 @@ width:29%;
 }
 /***** PAGE ALERT *****/
 .alert{
-    background-color:deeppink;
     -webkit-border-radius:10px;
     -moz-border-radius:10px;
     -ms-border-radius:10px;
     -o-border-radius:10px;
     border-radius: 10px;
-    height: 50px;
+    height: 40px;
     vertical-align: top;
     line-height: 50px;
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
     margin-top: 7%;
     }
 .alert p{
     font-weight: bold;
+    font-family: 'Indie Flower', cursive;
 }

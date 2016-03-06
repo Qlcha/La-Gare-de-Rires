@@ -15,7 +15,7 @@ require_once 'view_parts/_header.php';
 
 ?>
 
-      <div align="center">
+      <div align="center" class="formulaire">
          <h2> Bienvenue <?php echo $userinfo['prenom']; ?></h2>
          <br /><br />
          <p>Parametre de connexion</p>
