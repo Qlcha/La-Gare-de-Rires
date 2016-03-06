@@ -1,14 +1,14 @@
 <?php
 session_start();
 
-$button_connect = " <a href=\"connexion.php\" class=\"button\" id=\"button_connexion\">connexion</a>";
+$button_connect = " <a href=\"connexion.php\"  id=\"button_connexion\">connexion</a>";
 $button_profil = "";
 
 if(isset($_SESSION['mail']))
 {
 
-    $button_connect = " <a href=\"deconnexion.php\" class=\"button\" id=\"button_connexion\">deconnexion</a>";
-    $button_profil = " <a href=\"profil.php\" class=\"button\" id=\"button_profil\">profil</a>";
+    $button_connect = " <a href=\"deconnexion.php\"  id=\"button_connexion\">deconnexion</a>";
+    $button_profil = " <a href=\"profil.php\"  id=\"button_profil\">profil</a>";
 }
 
 

@@ -433,6 +433,20 @@ footer label{
     font-weight: bold;
 }
 
+
+.hidden {
+    display: none;
+}
+
+.galerie{
+    text-align: center;
+}
+
+
+
+.preview img {
+    width: 100%;
+}
 /********************** MEDIA QUERIES *********************/
 
 @media screen and (min-width: 1240px){
@@ -694,6 +708,19 @@ width:29%;
     #headline_table_menu {
         font-size: 130%;
     }
+
+    .preview {
+        display: inline-block;
+        width: 33%;
+        padding: 20px;
+        box-sizing: border-box;
+        vertical-align: middle;
+    }
+
+    .galerie {
+        padding: 0;
+    }
+
 }
 /*************DESKTOP***********/
 @media screen and (min-width: 1024px){

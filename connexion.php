@@ -46,7 +46,7 @@ require_once 'view_parts/_header.php';
       <meta charset="utf-8">
    </head>
    <body>
-      <div>
+      <div class="formulaire">
          <h2>Connexion</h2>
          <br /><br />
          <form method="POST" action="">

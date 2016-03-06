@@ -28,6 +28,7 @@
     $(".fancybox").fancybox({
         openEffect  : 'none',
         closeEffect : 'none',
+        padding : 0,
         iframe : {
             preload: false
         }
