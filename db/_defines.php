@@ -8,4 +8,5 @@ define('TB_POST', 'post');
 define('COLON_CAR', ':');
 define('ACCENT_GRAVE_CAR', '`');
 //define('LIKE_OP', 'LIKE');
+
 ?>
