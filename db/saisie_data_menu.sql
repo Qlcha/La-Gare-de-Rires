@@ -1,0 +1,16 @@
+INSERT INTO `lagarederires`.`repas` (`semaine`, `jour_semaine`, `matin`, `midi`, `apresmidi`) VALUES 
+('semaine1', 'lundi', 'sdfsdf', 'sdfsdfsd', 'sdfsdffsdf'),
+('semaine1', 'lundi', 'sdfsdf', 'sdfsdfsd', 'sdfsdffsdf'),
+('semaine1', 'lundi', 'sdfsdf', 'sdfsdfsd', 'sdfsdffsdf'),
+('semaine1', 'lundi', 'sdfsdf', 'sdfsdfsd', 'sdfsdffsdf'),
+('semaine1', 'lundi', 'sdfsdf', 'sdfsdfsd', 'sdfsdffsdf'),
+('semaine2', 'lundi', 'sdfsdf', 'sdfsdfsd', 'sdfsdffsdf'),
+('semaine2', 'lundi', 'sdfsdf', 'sdfsdfsd', 'sdfsdffsdf'),
+('semaine2', 'lundi', 'sdfsdf', 'sdfsdfsd', 'sdfsdffsdf'),
+('semaine2', 'lundi', 'sdfsdf', 'sdfsdfsd', 'sdfsdffsdf'),
+('semaine2', 'lundi', 'sdfsdf', 'sdfsdfsd', 'sdfsdffsdf'),
+('semaine3', 'lundi', 'sdfsdf', 'sdfsdfsd', 'sdfsdffsdf'),
+('semaine3', 'lundi', 'sdfsdf', 'sdfsdfsd', 'sdfsdffsdf'),
+('semaine3', 'lundi', 'sdfsdf', 'sdfsdfsd', 'sdfsdffsdf'),
+('semaine3', 'lundi', 'sdfsdf', 'sdfsdfsd', 'sdfsdffsdf'),
+('semaine3', 'lundi', 'sdfsdf', 'sdfsdfsd', 'sdfsdffsdf');

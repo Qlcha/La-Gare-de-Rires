@@ -6,3 +6,5 @@ define('PAGE_ID', 'page_id');
 define('PAGE_IS_PUBLIC', 'page_is_public'); // La page est publique ou pas
 define('HOME_PAGE', 'index.php');
 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);

@@ -5,9 +5,7 @@ require_once 'data/_main_data.php';
 $site_data[PAGE_ID] = 'Bienvenue à la Gare de Rires';
 require_once 'view_parts/_header.php';
 require_once 'db/_post.php';
-
 $posts = post_list();
-//var_dump($posts[0]);
 ?>
 
 <div class="update">

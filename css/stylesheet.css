@@ -115,7 +115,7 @@ nav li a{
 nav li a:hover {
     /* background-color: rgba(206, 255, 5, 0.4);*/
     color: crimson;
- /*   text-shadow: 1px 1px 1px black;*/
+    /*   text-shadow: 1px 1px 1px black;*/
     text-shadow:
             -2px -2px 0 #cfff04,
             2px -2px 0 #cfff04,
@@ -133,6 +133,9 @@ nav h1{
     font-weight: bold;
     box-shadow: none;
     border-radius: 10px;
+}
+
+#button_connexion{
 
 }
 
@@ -143,7 +146,7 @@ nav h1{
 .table {
     border: 1px solid black;
     border-collapse: collapse;
-  /*  margin: 20px;*/
+    /*  margin: 20px;*/
     font-size: 90%;
     width: 100%;
     margin: 0 auto;
@@ -185,6 +188,10 @@ nav h1{
     display: none;
 }
 
+.menu tr:hover{
+    background-color: rgba(212, 208, 200, 0.5);
+}
+
 .menu:first-of-type {
     background-color: rgba(255, 255, 0, 0.2);
 }
@@ -212,7 +219,7 @@ nav h1{
 .button{
     display: block;
     text-align: center;
-     background-color: lightgrey;
+    background-color: lightgrey;
     margin: 0 auto;
     border: 2px solid lightgrey;
     box-sizing: border-box;
@@ -447,21 +454,14 @@ footer label{
 
 .preview img {
     width: 100%;
-    /* ombre portée*/
-    -moz-box-shadow: 5px 5px 5px #888888;
-    -webkit-box-shadow: 5px 5px 5px #888888;
-    box-shadow: 5px 5px 5px #888888;
 }
 /********************** MEDIA QUERIES *********************/
 
 @media screen and (min-width: 1240px){
-  #train_light{
-      display: inline;
-      position: absolute;
-      width: 13%;
-      right: 1%;
-     top: 170%;
-  }
+    #train_light{
+        display: inline;
+        width: 13%;
+
 }
 
 
@@ -477,9 +477,9 @@ footer label{
         text-align: center;
     }
 
-   nav ul{
+    nav ul{
 
-   }
+    }
 
     nav li {
         display: inline-block;
@@ -531,12 +531,9 @@ footer label{
         font-size: 90%;
         margin: 0;
         position: absolute;
-        top: 20px;
-        left: 20px;
-        height: 80px;
-        width: 80px;
+        top: 90px;
+        right: 90px;
         text-align: center;
-        padding-top: 10px;
         text-decoration: none;
     }
 
@@ -545,12 +542,9 @@ footer label{
         font-size: 90%;
         margin: 0;
         position: absolute;
-        top: 50px;
-        left: 20px;
-        height: 80px;
-        width: 80px;
+        top: 90px;
+        right: 20px;
         text-align: center;
-        padding-top: 10px;
         text-decoration: none;
 
     }
@@ -563,11 +557,11 @@ footer label{
         display: block;
     }
 
-    .input {
-        width: 50%; !important;
-        margin: 0;
-    }
 
+form, .formulaire{
+ display: inline-block;
+    width: 50%;
+}
 
 
     .button {
@@ -678,7 +672,7 @@ footer label{
     }
 
     #tel_list li.strong {
-width:29%;
+        width:29%;
         padding-top: 0;
         margin-bottom: 10px;
     }
@@ -687,8 +681,8 @@ width:29%;
         margin-bottom: 20px;
     }
 
-       #conseil_administration li:nth-of-type(odd){
-           width: 15%;
+    #conseil_administration li:nth-of-type(odd){
+        width: 15%;
     }
 
     #conseil_administration li:nth-of-type(even) {
@@ -706,7 +700,7 @@ width:29%;
 
     .menu td, .menu th {
         display: table-cell;
-        }
+    }
     .menu tr:first-of-type th{
         display: table-cell;
     }
@@ -769,7 +763,7 @@ width:29%;
     text-align: center;
     margin-bottom: 7%;
     margin-top: 7%;
-    }
+}
 .alert p{
     font-weight: bold;
     font-family: 'Indie Flower', cursive;

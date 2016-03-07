@@ -5,7 +5,6 @@
  * 	- lister les catégories de produits
  * 	- lister les produits, tous ou par catégorie
  */
-
 require_once('_conn.php');
 require_once('_common.php');
 
@@ -38,11 +37,13 @@ function post_add($title, $text) {
         COLON_CAR . POST_TP_COL_TEXT => $text,
     );
     $res = $sth->execute($params);
-    //$sth->debugDumpParams();
-    //var_dump($params);
-    //var_dump($res);
+//    $sth->debugDumpParams();
+//    var_dump($params);
+//    var_dump($res);
     if ( ! $res || ($sth->rowCount()  == 0)) {
-        throw new Exception("Echec lors de la tentative d'ajout du post $title : (" . $sth->errorInfo()[0] . ")<br/>");
+        $errorInfo = $sth->errorInfo();
+        $errorInfo = $errorInfo[0];
+        throw new Exception("Echec lors de la tentative d'ajout du post $title : (" . $errorInfo . ")<br/>");
     }
     $inserted_post_id = $pdo->lastInsertId();
     if ($res) {

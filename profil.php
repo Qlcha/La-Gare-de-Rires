@@ -18,8 +18,6 @@ require_once 'view_parts/_header.php';
       <div align="center" class="formulaire">
          <h2> Bienvenue <?php echo $userinfo['prenom']; ?></h2>
          <br /><br />
-         <p>Parametre de connexion</p>
-         <!--<p><strong><?php /*echo $userinfo['prenom']; */?></strong></p>-->
          <p><strong><?php echo $userinfo['mail']; ?></strong></p>
          <br />
          <?php

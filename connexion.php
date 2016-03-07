@@ -32,21 +32,8 @@ if(isset($_POST['formconnexion'])) {
 }
 
 ?>
-
-<?php
-require_once '_defines.php';
-require_once 'data/_main_data.php';
-$site_data[PAGE_ID] = 'Bienvenue à la Gare de Rires';
-require_once 'view_parts/_header.php';
-?>
-
-<html>
-   <head>
-      <title>Page de Connexion</title>
-      <meta charset="utf-8">
-   </head>
-   <body>
-      <div class="formulaire">
+   <body><!---
+     --><div class="formulaire">
          <h2>Connexion</h2>
          <br /><br />
          <form method="POST" action="">
@@ -57,15 +44,15 @@ require_once 'view_parts/_header.php';
             <input type="submit" name="formconnexion" value="Se connecter!" class="button" />
 
          </form>
+      </div><!--
+
          <?php
          if(isset($erreur)) {
             echo '<font color="red">'.$erreur."</font>";
          }
          ?>
-      </div>
-   </body>
-</html>
 
-<?php require_once 'inscription.php'?>
+--><div class="formulaire">
+<?php require_once 'inscription.php'?></div>
 
 <?php require_once 'view_parts/_footer.php'; ?>
