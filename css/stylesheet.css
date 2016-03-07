@@ -367,6 +367,10 @@ margin: 0 auto;
     box-shadow: 4px 4px 4px #888888;
 }
 
+#equipe .content_block {
+    border-radius: 0;
+}
+
 #equipe article{
     margin-top: 5%;
 }
