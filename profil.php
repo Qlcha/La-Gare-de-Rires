@@ -1,6 +1,6 @@
 <?php
-require_once 'db/_defines.php';
-$bdd = new PDO('mysql:host=127.0.0.1;dbname='.DBNAME, CONN_USER, CONN_PWD);
+
+$bdd = new PDO('mysql:host=127.0.0.1;dbname=lagarederires', 'root', '');
 
 if(isset($_GET['id']) AND $_GET['id'] > 0) {
    $getid = intval($_GET['id']);
@@ -14,9 +14,6 @@ $site_data[PAGE_ID] = 'Profil de '.  $userinfo['prenom'];
 require_once 'view_parts/_header.php';
 
 ?>
-
-
-
 
          <h2> Bienvenue <?php echo $userinfo['prenom']; ?></h2>
          <p><strong><?php echo $userinfo['mail']; ?></strong></p>
