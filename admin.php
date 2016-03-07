@@ -70,8 +70,6 @@ if ('POST' == $_SERVER['REQUEST_METHOD']) {
         <input type="file" id="fichier_calendrier">
     </section>
 
-
-
 <!--Tableau d'utilisateurs-->
     <section>
         <h2>Utilisateurs inscrits au site:</h2>
