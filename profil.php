@@ -28,7 +28,6 @@ require_once 'view_parts/_header.php';
          require_once 'editionprofil.php'
          ?>
 
-
       </div>
 
 <?php require_once 'view_parts/_footer.php'; ?>
