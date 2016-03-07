@@ -56,7 +56,7 @@ else {
     }
 }
 
-$requete = "INSERT INTO article_blog (titre, Date, Commentaire, Photo , id_membre) VALUES ('".htmlentities(addslashes($_POST['titre']), ENT_QUOTES)."','".date("Y-m-d H:i:s")."','".htmlentities (addslashes($_POST['commentaire']), ENT_QUOTES)."', '".$_FILES['photo']['name']."')";
+$requete = "INSERT INTO article_blog (titre, Date, Commentaire, Photo /*, id_membre*/) VALUES ('".htmlentities(addslashes($_POST['titre']), ENT_QUOTES)."','".date("Y-m-d H:i:s")."','".htmlentities (addslashes($_POST['commentaire']), ENT_QUOTES)."', '".$_FILES['photo']['name']."')";
 $resultat = mysqli_query($connect,$requete);
 $identifiant = mysqli_insert_id($connect);
 /* Fermeture de la connexion */

@@ -15,7 +15,7 @@ if($_SESSION['mail'] == null)
 ?>
 <div class="update">
 <h2>Blog : Faites part de vos points de vues ou articles ici !!!!</h2>
-<a href="formulaire_ajout.php" >Ajouter un article</a>
+<!--<a href="formulaire_ajout.php" >Ajouter un article</a>-->
 <!--<hr />-->
 <?php
 

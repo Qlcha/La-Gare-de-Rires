@@ -46,7 +46,7 @@ require_once 'view_parts/_header.php';
     </div>
 
     <article class="preview">
-        <h3>Au pay du Père Noël</h3>
+        <h3>Au pays du Père Noël</h3>
         <a class="fancybox" rel="gallery1" title="Au pay du Père Noël - 1" href="images/galerie/sorti%20au%20pay%20du%20Pere%20Noel/705.jpg"><img  src="images/galerie/sorti%20au%20pay%20du%20Pere%20Noel/705.jpg" alt=""/></a>
     </article>
     <div class="hidden">
