@@ -46,6 +46,7 @@ ul {
 .content_block {
     background-color:rgba(255,255,255,0.7);
     border: 2px solid grey;
+    border-radius: 15px;
     margin: 10px;
     padding: 10px;
 }
@@ -78,9 +79,6 @@ input , textarea {
 
 
 /************ HEADER & MENU NAVIGATION *******************/
-#train_light {
-    display: none;
-}
 
 nav img {
     width: 10%;
@@ -205,6 +203,44 @@ nav h1{
 
 #table_users td{
     font-size: 80%;
+    padding: 7px 0;
+}
+
+#table_users tr:nth-of-type(even){
+    background-color: rgba(212, 208, 200, 0.5);
+}
+
+
+.connexion label{
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+}
+
+.connexion {
+    width: 100%;
+margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.connexion form h2{
+   text-align: center;
+    padding-bottom: 10px;
+    color: crimson;
+}
+
+#connexion input:first-of-type {
+    margin-bottom: 15px;
+}
+
+#inscription label{
+   text-align: center;
+    display: block;
+    padding-right: 10px;
+
+}
+
+#inscription input{
+    margin-bottom: 15px;
 }
 
 /**************** INDEX:   MENU & ACTIVITÉ section****************************/
@@ -299,8 +335,7 @@ nav h1{
 
 #admin_content_block form .button{
     display: block;
-    margin: 0 auto;
-    font-size: 150%;
+ padding: 0 20px;
 }
 
 #admin_content_block form label{
@@ -426,6 +461,10 @@ footer {
     color: crimson;
 }
 
+footer .button {
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 10px;}
 
 footer p {
     padding-top: 20px;
@@ -435,12 +474,19 @@ footer p {
 }
 
 footer label{
-    display: inline-block;
+    display: block;
     color: black;
     font-family: 'Indie Flower', cursive;
     font-weight: bold;
 }
 
+footer textarea{
+    margin-top: 10px;
+}
+
+footer img {
+    display: none;
+}
 
 .hidden {
     display: none;
@@ -456,14 +502,6 @@ footer label{
     width: 100%;
 }
 /********************** MEDIA QUERIES *********************/
-
-@media screen and (min-width: 1240px){
-    #train_light{
-        display: inline;
-        width: 13%;
-
-}
-
 
 /*************TABLETTE**************/
 @media screen and (min-width: 768px){
@@ -549,23 +587,14 @@ footer label{
 
     }
 
-
-    footer label{
-        font-family: 'Indie Flower', cursive;
-        font-weight: bold;
-        color:black;
-        display: block;
-    }
-
-
-form, .formulaire{
+.formulaire{
  display: inline-block;
     width: 50%;
+
 }
 
 
     .button {
-        margin: 20px;
         font-size: 90%;
         padding: 0;
     }
@@ -574,6 +603,45 @@ form, .formulaire{
         text-align: left;
     }
 
+    footer .input {
+        padding: 5px;
+    }
+
+    footer label, footer .input, footer textarea{
+    display: inline-block;
+        vertical-align: top;
+    }
+
+    footer label {
+        width:18% ;
+        margin-top: 10px;
+    }
+
+    footer .input, footer textarea {
+        width: 75%;
+    }
+
+    footer h4 {
+        text-align: center;
+    }
+
+    footer img{
+        width: 40%;
+        display: inline;
+    }
+
+
+    footer p{
+        padding: 0;
+        display: inline-block;
+        width: 49%;
+        text-align: right;
+    }
+
+    .footer_div {
+        width: 49%;
+        display: inline-block;
+    }
 
     #equipe .content_block img {
         height: 200px;
@@ -718,6 +786,34 @@ form, .formulaire{
 
     .galerie {
         padding: 0;
+    }
+
+    .connexion {
+        margin: 0;
+        text-align: center;
+        vertical-align: top;
+    }
+
+    #connexion {
+        margin-right: 10%;
+        margin-left: 5%;
+        width: 30%;
+    }
+
+    #inscription {
+        width: 100%;
+    }
+
+    #inscription label{
+        display: inline-block;
+        width: 50%;
+        text-align: right;
+
+    }
+
+    #inscription input{
+        display: inline-block;
+        width: 50%;
     }
 
 }

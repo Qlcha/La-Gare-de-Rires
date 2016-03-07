@@ -55,7 +55,7 @@ if ('POST' == $_SERVER['REQUEST_METHOD']) {
         <form action="#" method="post">
             <label for="title_add">Titre du post: </label>
             <input type="text" name="title_add" id="title_add"  value="<?php echo array_key_exists('title_add', $_POST) ? $_POST['title_add'] : '' ?>">
-            <textarea id="post_admin" name="post_add" rows="35" value="<?php echo array_key_exists('post_add', $_POST) ? $_POST['post_add'] : '' ?>"></textarea>
+            <textarea id="post_admin" name="post_add" rows="10" value="<?php echo array_key_exists('post_add', $_POST) ? $_POST['post_add'] : '' ?>"></textarea>
             <input type="submit" value="post" name="postsubmit" class="button">
         </form>
     </section>

@@ -1,17 +1,19 @@
 <footer class="content_block">
     <div class="formulaire">
-    <h4>Contactez-Nous</h4>
+    <h4>Contactez-Nous :</h4>
     <form action="#">
 <label for="name">Nom: </label>
         <input type="text" class="input" name="name" placeholder="Votre nom">
-        <label for="name">E-mail: </label>
+        <label for="name">E-mail : </label>
         <input type="email" class="input" name="email" placeholder="courriel@courriel.com">
+        <label for="message">Message : </label>
         <textarea name="message" placeholder="Votre message ici" class="input" rows="5"></textarea>
         <input type="submit" value="envoyer" class="button">
     </form>
     </div>
-    <img src="images/railroad_crossing_43.png" alt="train_light" id="train_light">
-    <p> &copy; CN " La gare de rires" 2016 </p>
+    <div class="footer_div">
+    <img src="images/children play sign.png" alt="children_sign">
+    <p> &copy; CN " La gare de rires" 2016 </p></div>
 
 </footer>
 </div>

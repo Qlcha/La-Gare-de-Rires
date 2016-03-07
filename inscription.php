@@ -61,127 +61,62 @@ $site_data[PAGE_ID] = 'Bienvenue à la Gare de Rires';
 require_once 'view_parts/_header.php';
 */?>
 
-<div class="formulaire">
-         <h2>Inscription</h2>
-         <br /><br />
-         <form method="POST" action="">
-            <table>
-               <tr>
-                  <td>
-                     <label for="prenom">Prenom :</label>
-                  </td>
-                  <td>
-                     <input type="text" placeholder="Votre prenom" id="prenom" name="prenom" value="<?php if(isset($prenom)) { echo $prenom; } ?>" />
-                  </td>
-               </tr>
+<div class="formulaire connexion content_block" id="inscription">
 
-                <tr>
-                    <td>
-                        <label for="nom">Nom :</label>
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Votre nom" id="nom" name="nom" value="<?php if(isset($nom)) { echo $nom; } ?>" />
-                    </td>
-                </tr>
+         <form method="POST" action=""><!--
+         --><h2>Inscription</h2><!--
 
-                <tr>
-                    <td>
-                        <label for="nom_enfant">Nom enfant :</label>
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Nom de votre enfant" id="nom_enfant" name="nom_enfant" value="<?php if(isset($nom_enfant)) { echo $nom_enfant; } ?>" />
-                    </td>
-                </tr>
+                     --><label for="prenom">Prenom :</label><!--
 
-                <tr>
-                    <td>
-                        <label for="numero_employer">Numero employer :</label>
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Numero employer" id="numero_employer" name="numero_employer" value="<?php if(isset($numero_employer)) { echo $numero_employer; } ?>" />
-                    </td>
-                </tr>
+                     --><input type="text" placeholder="Votre prenom" id="prenom" name="prenom" value="<?php if(isset($prenom)) { echo $prenom; } ?>" /><!--
 
-               <tr>
-                    <td>
-                        <label for="departement">Departement :</label>
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Votre departement" id="departement" name="departement" value="<?php if(isset($departement)) { echo $departement; } ?>" />
-                    </td>
-                </tr>
+                     --><label for="nom">Nom :</label><!--
 
-                <tr>
-                    <td>
-                        <label for="etage">Etage :</label>
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Votre etage" id="etage" name="etage" value="<?php if(isset($etage)) { echo $etage; } ?>" />
-                    </td>
-                </tr>
+                     --><input type="text" placeholder="Votre nom" id="nom" name="nom" value="<?php if(isset($nom)) { echo $nom; } ?>" /><!--
 
-                <tr>
-                    <td>
-                        <label for="contact_supplementaire">Contact supplemenataire :</label>
-                    </td>
-                    <td>
-                        <input type="tel" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$" placeholder="Votre contact supplumentaire" id="contact_supplementaire" name="contact_supplementaire" value="<?php if(isset($contact_supplementaire)) { echo $contact_supplemantaire; } ?>" />
-                    </td>
-                </tr>
+                     --><label for="nom_enfant">Nom enfant :</label><!--
 
-                <tr>
-                <!-- contrôle avec regex pour un numéro au format 123-123-1234 -->
+                     --><input type="text" placeholder="Nom de votre enfant" id="nom_enfant" name="nom_enfant" value="<?php if(isset($nom_enfant)) { echo $nom_enfant; } ?>" /><!--
 
-                    <td>
-                        <label>Téléphone </label>
-                    </td>
-                    <td>
-                        <input type="tel" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$" placeholder="Telephone" id="telephone" name="telephone" value="<?php if(isset($telephone)) { echo $telephone; } ?>" />
-                    </td>
-                </tr>
+                     --><label for="numero_employer">Numero employer :</label><!--
 
-                <tr>
-                    <td>
-                        <label for="mail">Mail :</label>
-                    </td>
-                    <td>
-                        <input type="email" placeholder="Votre mail" id="mail" name="mail" value="<?php if(isset($mail)) { echo $mail; } ?>" />
-                    </td>
-                </tr>
+                     --><input type="text" placeholder="Numero employer" id="numero_employer" name="numero_employer" value="<?php if(isset($numero_employer)) { echo $numero_employer; } ?>" /><!--
 
-               <tr>
-                  <td>
-                     <label for="mail2">Confirmation du mail :</label>
-                  </td>
-                  <td>
-                     <input type="email" placeholder="Confirmez votre mail" id="mail2" name="mail2" value="<?php if(isset($mail2)) { echo $mail2; } ?>" />
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     <label for="mdp">Mot de passe :</label>
-                  </td>
-                  <td>
-                     <input type="password" placeholder="Votre mot de passe" id="mdp" name="mdp" />
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     <label for="mdp2">Confirmation du mot de passe :</label>
-                  </td>
-                  <td>
-                     <input type="password" placeholder="Confirmez votre mdp" id="mdp2" name="mdp2" />
-                  </td>
-               </tr>
-               <tr>
-                  <td></td>
-                  <td>
-                     <br />
-                     <input type="submit" name="forminscription" value="Je m'inscris" class="button"/>
-                  </td>
-               </tr>
-            </table>
-         </form>
+                     --><label for="departement">Departement :</label><!--
+
+                     --><input type="text" placeholder="Votre departement" id="departement" name="departement" value="<?php if(isset($departement)) { echo $departement; } ?>" /><!--
+
+                     --><label for="etage">Etage :</label><!--
+
+                     --><input type="text" placeholder="Votre etage" id="etage" name="etage" value="<?php if(isset($etage)) { echo $etage; } ?>" /><!--
+
+                     --><label for="contact_supplementaire">Contact supplemenataire :</label><!--
+
+                     --><input type="tel" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$" placeholder="Votre contact supplumentaire" id="contact_supplementaire" name="contact_supplementaire" value="<?php if(isset($contact_supplementaire)) { echo $contact_supplemantaire; } ?>" /><!--
+
+                     --><label>Téléphone </label><!--
+
+                     --><input type="tel" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$" placeholder="Telephone" id="telephone" name="telephone" value="<?php if(isset($telephone)) { echo $telephone; } ?>" /><!--
+
+                     --><label for="mail">Mail :</label><!--
+
+                     --><input type="email" placeholder="Votre mail" id="mail" name="mail" value="<?php if(isset($mail)) { echo $mail; } ?>" /><!--
+
+                     --><label for="mail2">Confirmation du mail :</label><!--
+
+                     --><input type="email" placeholder="Confirmez votre mail" id="mail2" name="mail2" value="<?php if(isset($mail2)) { echo $mail2; } ?>" /><!--
+
+                     --><label for="mdp">Mot de passe :</label><!--
+
+                     --><input type="password" placeholder="Votre mot de passe" id="mdp" name="mdp" /><!--
+
+                     --><label for="mdp2">Confirmation du mot de passe :</label><!--
+
+                     --><input type="password" placeholder="Confirmez votre mdp" id="mdp2" name="mdp2" /><!--
+
+                     --><input type="submit" name="forminscription" value="Je m'inscris" class="button"/><!--
+
+                     --></form>
          <?php
          if(isset($erreur)) {
             echo '<font color="red">'.$erreur."</font>";

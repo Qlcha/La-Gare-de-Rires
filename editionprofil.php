@@ -78,11 +78,6 @@ if(isset($_SESSION['id'])) {
          $msg = "Vos deux mdp ne correspondent pas !";
       }
 
-
-
-
-
-
    }
 ?>
 <html>
@@ -119,7 +114,7 @@ if(isset($_SESSION['id'])) {
                <label>Confirmation - mot de passe :</label>
                <input type="password" name="newmdp2" placeholder="Confirmation du mot de passe" /><br /><br />
                <input type="submit" value="Mettre à jour mon profil !" />
-               <a href="deconnexion.php">Se déconnecter</a>
+            <!--   <a href="deconnexion.php">Se déconnecter</a>-->
             </form>
             <?php if(isset($msg)) { echo $msg; } ?>
          </div>
