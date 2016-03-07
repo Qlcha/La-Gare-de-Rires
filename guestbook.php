@@ -15,8 +15,7 @@ if($_SESSION['mail'] == null)
 ?>
 <div class="update">
 <h2>Blog : Faites part de vos points de vues ou articles ici !!!!</h2>
-<!--<a href="formulaire_ajout.php" >Ajouter un article</a>-->
-<!--<hr />-->
+
 <?php
 
 $connect = mysqli_connect("127.0.0.1", "root", "", "lagarederires");
