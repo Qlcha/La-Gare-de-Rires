@@ -78,6 +78,11 @@ if(isset($_SESSION['id'])) {
          $msg = "Vos deux mdp ne correspondent pas !";
       }
 
+
+
+
+
+
    }
 ?>
 
