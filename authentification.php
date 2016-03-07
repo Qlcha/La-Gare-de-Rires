@@ -32,15 +32,8 @@ $site_data[PAGE_ID] = 'Bienvenue à la Gare de Rires';
 require_once 'view_parts/_header.php';
 ?>
 
-<html>
-   <head>
-      <title>Page de Connexion</title>
-      <meta charset="utf-8">
-   </head>
-   <body>
-      <div align="center">
+      <div>
          <h2>Connexion</h2>
-         <br /><br />
          <form method="POST" action="">
             <input type="email" name="mailconnect" placeholder="Mail" />
             <input type="password" name="mdpconnect" placeholder="Mot de passe" />
@@ -53,8 +46,7 @@ require_once 'view_parts/_header.php';
          }
          ?>
       </div>
-   </body>
-</html>
+
 
 
 <?php require_once 'view_parts/_footer.php'; ?>

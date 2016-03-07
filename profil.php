@@ -15,11 +15,9 @@ require_once 'view_parts/_header.php';
 
 ?>
 
-      <div align="center" class="formulaire content_block">
+      <div align="center" class="formulaire content_block" id="profil">
          <h2> Bienvenue <?php echo $userinfo['prenom']; ?></h2>
-         <br /><br />
          <p><strong><?php echo $userinfo['mail']; ?></strong></p>
-         <br />
          <?php
          if(isset($_SESSION['id']) AND $userinfo['id'] == $_SESSION['id']) {
 
@@ -28,7 +26,6 @@ require_once 'view_parts/_header.php';
          require_once 'editionprofil.php'
          ?>
 
-      </div>
 
 <?php require_once 'view_parts/_footer.php'; ?>
 

@@ -18,11 +18,17 @@ if(isset($_POST['formconnexion'])) {
       $userexist = $requser->rowCount();
       if($userexist == 1) {
          $userinfo = $requser->fetch();
-         /* $_SESSION["mail"]="admin@admin.com";*/
+
+
+
+        /* /* $_SESSION["mail"]="admin@admin.com";*/
          $_SESSION['id'] = $userinfo['id'];
          $_SESSION['prenom'] = $userinfo['prenom'];
          $_SESSION['mail'] = $userinfo['mail'];
-         header("Location: profil.php?id=".$_SESSION['id']);
+          header("Location: profil.php?id=".$_SESSION['id']);
+
+
+          exit;
       } else {
          $erreur = "Mauvais mail ou mot de passe !";
       }

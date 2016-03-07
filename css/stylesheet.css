@@ -325,8 +325,14 @@ margin: 0 auto;
     color: crimson;
 }
 
+#profil h3{
+    color: crimson;
+}
 
-
+#profil {
+    margin: 0;
+    margin-bottom: 20px;
+}
 /*********************** ADMIN ******************/
 
 #admin_content_block {
@@ -464,6 +470,12 @@ footer {
     text-align: center;
     color: crimson;
 }
+
+footer.content_block{
+    margin: 0 auto;
+
+}
+
 
 footer .button {
     margin: 0 auto;
@@ -818,6 +830,30 @@ footer img {
     #inscription input{
         display: inline-block;
         width: 50%;
+    }
+
+    #profil {
+        width: 100%;
+        text-align: left;
+    }
+
+    #profil h2, #profil strong{
+        display: block;
+        text-align: center;
+    }
+
+
+
+    #profil label{
+        display: inline-block;
+        width: 30%;
+        font-family: 'Indie Flower', cursive;
+        font-weight: bold;
+    }
+
+    #profil input{
+        display: inline-block;
+        width: 60%;
     }
 
 }

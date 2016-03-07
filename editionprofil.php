@@ -80,51 +80,41 @@ if(isset($_SESSION['id'])) {
 
    }
 ?>
-<html>
-   <head>
-      <title>Edition du profil</title>
-      <meta charset="utf-8">
-   </head>
-   <body>
-      <div align="center">
-         <h2>Edition de mon profil</h2>
-         <div align="left">
+
+
+         <h3>Edition du profil :</h3>
             <form method="POST" action="" enctype="multipart/form-data">
                <label>Prenom :</label>
-               <input type="text" name="newprenom" placeholder="Prenom" value="<?php echo $user['prenom']; ?>" /><br /><br />
+               <input type="text" name="newprenom" placeholder="Prenom" value="<?php echo $user['prenom']; ?>" />
                <label>Nom :</label>
-               <input type="text" name="newnom" placeholder="Nom" value="<?php echo $user['nom']; ?>" /><br /><br />
+               <input type="text" name="newnom" placeholder="Nom" value="<?php echo $user['nom']; ?>" />
                <label>Nom d'enfant :</label>
-               <input type="text" name="newenfant" placeholder="nom d'enfant" value="<?php echo $user['nom_enfant']; ?>" /><br /><br />
+               <input type="text" name="newenfant" placeholder="nom d'enfant" value="<?php echo $user['nom_enfant']; ?>" />
                <label>No. d'employée :</label>
-               <input type="text" name="newemployer" placeholder="No. d'employée" value="<?php echo $user['numero_employer']; ?>" /><br /><br />
+               <input type="text" name="newemployer" placeholder="No. d'employée" value="<?php echo $user['numero_employer']; ?>" />
                <label>Department :</label>
-               <input type="text" name="newdepartment" placeholder="department" value="<?php echo $user['departement']; ?>" /><br /><br />
+               <input type="text" name="newdepartment" placeholder="department" value="<?php echo $user['departement']; ?>" />
                <label>Étage :</label>
-               <input type="text" name="newetage" placeholder="etage" value="<?php echo $user['etage']; ?>" /><br /><br />
+               <input type="text" name="newetage" placeholder="etage" value="<?php echo $user['etage']; ?>" />
                <label>Contact supplementaire:</label>
-               <input type="text" name="newcontact" placeholder="contact supplementaire" value="<?php echo $user['contact_supplementaire']; ?>" /><br /><br />
+               <input type="text" name="newcontact" placeholder="contact supplementaire" value="<?php echo $user['contact_supplementaire']; ?>" />
                <label>Telephone :</label>
-               <input type="text" name="newtelephone" placeholder="telephone" value="<?php echo $user['telephone']; ?>" /><br /><br />
-
+               <input type="text" name="newtelephone" placeholder="telephone" value="<?php echo $user['telephone']; ?>" />
                <label>Mail :</label>
-               <input type="text" name="newmail" placeholder="Mail" value="<?php echo $user['mail']; ?>" /><br /><br />
+               <input type="text" name="newmail" placeholder="Mail" value="<?php echo $user['mail']; ?>" />
                <label>Mot de passe :</label>
-               <input type="password" name="newmdp1" placeholder="Mot de passe"/><br /><br />
+               <input type="password" name="newmdp1" placeholder="Mot de passe"/>
                <label>Confirmation - mot de passe :</label>
-               <input type="password" name="newmdp2" placeholder="Confirmation du mot de passe" /><br /><br />
-               <input type="submit" value="Mettre à jour mon profil !" />
-            <!--   <a href="deconnexion.php">Se déconnecter</a>-->
-            </form>
+               <input type="password" name="newmdp2" placeholder="Confirmation du mot de passe" />
+               <input type="submit" value="Sauvegarder" class="button"/>
+            </form></div>
             <?php if(isset($msg)) { echo $msg; } ?>
-         </div>
-      </div>
-   </body>
-</html>
+
+
 <?php   
 }
 else {
    header("Location: connexion.php");
 }
 ?>
-<?php require_once 'view_parts/_footer.php'; ?>
+
