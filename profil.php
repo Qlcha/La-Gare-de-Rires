@@ -1,6 +1,6 @@
 <?php
-
-$bdd = new PDO('mysql:host=127.0.0.1;dbname=lagarederires', 'root', '');
+require_once 'db/_defines.php';
+$bdd = new PDO('mysql:host=127.0.0.1;dbname='.DBNAME, CONN_USER, CONN_PWD);
 
 if(isset($_GET['id']) AND $_GET['id'] > 0) {
    $getid = intval($_GET['id']);
@@ -15,7 +15,9 @@ require_once 'view_parts/_header.php';
 
 ?>
 
-      <div align="center" class="formulaire content_block" id="profil">
+
+
+
          <h2> Bienvenue <?php echo $userinfo['prenom']; ?></h2>
          <p><strong><?php echo $userinfo['mail']; ?></strong></p>
          <?php

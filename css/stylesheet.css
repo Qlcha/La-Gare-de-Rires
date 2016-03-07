@@ -332,6 +332,7 @@ margin: 0 auto;
 #profil {
     margin: 0;
     margin-bottom: 20px;
+    text-align: center;
 }
 /*********************** ADMIN ******************/
 
@@ -834,7 +835,6 @@ footer img {
 
     #profil {
         width: 100%;
-        text-align: left;
     }
 
     #profil h2, #profil strong{
@@ -842,13 +842,17 @@ footer img {
         text-align: center;
     }
 
-
+#profil .button{
+    width: 20%;
+}
 
     #profil label{
         display: inline-block;
         width: 30%;
         font-family: 'Indie Flower', cursive;
         font-weight: bold;
+        text-align: right;
+        padding-right: 10px;
     }
 
     #profil input{
