@@ -20,22 +20,18 @@ if(isset($_POST['formconnexion'])) {
          $userinfo = $requser->fetch();
 
 
-
         /* /* $_SESSION["mail"]="admin@admin.com";*/
          $_SESSION['id'] = $userinfo['id'];
          $_SESSION['prenom'] = $userinfo['prenom'];
          $_SESSION['mail'] = $userinfo['mail'];
           header("Location: profil.php?id=".$_SESSION['id']);
-
-
           exit;
       } else {
          $erreur = "Mauvais mail ou mot de passe !";
       }
    } else {
       $erreur = "Tous les champs doivent être complétés !";
-   }
-}
+   }}
 
 ?>
    <body><!---
