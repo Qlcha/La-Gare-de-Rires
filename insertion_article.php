@@ -1,13 +1,15 @@
 <?php
 require_once 'data/_main_data.php';
 require_once '_defines.php';
-require_once 'data/_main_data.php';
+require_once 'db/_defines.php';
 $site_data[PAGE_ID] = 'Insertion_article';
 require_once 'view_parts/_header.php';
 ?>
 <div class="insertion_post">
 <?php
-$connect = mysqli_connect("127.0.0.1", "root", "", "lagarederires");
+
+
+$connect = mysqli_connect(CONN_HOST, CONN_USER,CONN_PWD,DBNAME);
 
 /* Vérification de la connexion */
 if (!$connect) {

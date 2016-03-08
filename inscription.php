@@ -1,5 +1,6 @@
-<?php 
-	$bdd = new PDO('mysql:host=127.0.0.1;dbname=lagarederires','root', '');
+<?php
+require_once 'db/_defines.php';
+$bdd = new PDO('mysql:host='.CONN_HOST.';dbname='.DBNAME, CONN_USER,CONN_PWD);
 	
 	if(isset($_POST['forminscription'])) {
    $prenom = htmlspecialchars($_POST['prenom']);
