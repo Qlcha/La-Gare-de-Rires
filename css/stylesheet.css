@@ -232,6 +232,10 @@ margin: 0 auto;
     margin-bottom: 15px;
 }
 
+#inscription {
+    margin-bottom: 20px;
+}
+
 #inscription label{
    text-align: center;
     display: block;
