@@ -5,15 +5,7 @@ require_once 'data/_main_data.php';
 $site_data[PAGE_ID] = 'Insertion_article';
 require_once 'view_parts/_header.php';
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
-<head>
-    <title>Blog</title>
-    <meta http-equiv="Content-Type" content="text/html;
-charset=utf-8" />
-</head>
-<body>
+<div class="insertion_post">
 <?php
 $connect = mysqli_connect("127.0.0.1", "root", "", "lagarederires");
 
@@ -69,7 +61,4 @@ else {
     echo "<br />Le commentaire n'a pas pu être ajouté.<br /><br />";
 }
 ?>
-<a href="guestbook.php" >verifier votre commentaire</a>
-</body>
-</html>
-<?php require_once 'view_parts/_footer.php'; ?>
+<a href="guestbook.php" >verifier votre commentaire</a></div>

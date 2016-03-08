@@ -325,6 +325,25 @@ margin: 0 auto;
     color: crimson;
 }
 
+#button_connexion, #button_profil {
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+#button_connexion:hover, #button_profil:hover{
+    color: crimson;
+
+}
+
+.profil_head {
+    display: block;
+    text-align: center;
+}
+
 #profil h3{
     color: crimson;
 }
@@ -332,6 +351,65 @@ margin: 0 auto;
 #profil {
     margin: 0;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+#profil input{
+    width: 95%;
+    margin-bottom: 10px;
+}
+
+#profil label{
+    width: 35%;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+}
+
+.insertion_post {
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    text-align: center;
+}
+
+.update h2{
+    text-align: center;
+}
+.img_gb{
+    display: block;
+    margin-left: 15%;
+}
+
+#post_guestbook{
+    text-align: center;
+   width: 95%;
+    margin: 0 auto;
+}
+
+.post_gb {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#post_guestbook label{
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+}
+
+#post_guestbook input {
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+#post_guestbook textarea {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+#post_guestbook .button {
+    padding: 0;
+    width: 50%;
+    margin-top: 20px;
 }
 /*********************** ADMIN ******************/
 
@@ -830,29 +908,51 @@ footer img {
     }
 
     #profil {
-        width: 100%;
-        text-align: left;
-    }
-
-    #profil h2, #profil strong{
+        width: 70%;
         display: block;
-        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 30px;
     }
 
-
-
-    #profil label{
+    #profil label {
         display: inline-block;
-        width: 30%;
-        font-family: 'Indie Flower', cursive;
-        font-weight: bold;
+        text-align: right;
     }
 
     #profil input{
         display: inline-block;
-        width: 60%;
+        width: 40%;
+        margin-right: 20%;
     }
 
+    #profil .button{
+        margin: 0;
+        width: 20%;
+    }
+
+    #post_guestbook input, #post_guestbook label, #post_guestbook textarea{
+        display: inline-block;
+    }
+#post_guestbook{
+    text-align: left;
+    width: 40%;
+    margin: 0;
+}
+
+#post_guestbook input{
+    width: 40%;
+}
+
+
+#post_guestbook textarea{
+    width: 100%;
+}
+
+#post_guestbook .button{
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
 }
 /*************DESKTOP***********/
 @media screen and (min-width: 1024px){

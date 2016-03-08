@@ -14,9 +14,8 @@ if($_SESSION['mail'] == null)
 
 ?>
 <div class="update">
-<h2>Blog : Faites part de vos points de vues ou articles ici !!!!</h2>
-<!--<a href="formulaire_ajout.php" >Ajouter un article</a>-->
-<!--<hr />-->
+<h2>Bienvenue a notre communité!</h2>
+<?php require_once 'formulaire_ajout.php'?>
 <?php
 
 $connect = mysqli_connect("127.0.0.1", "root", "", "lagarederires");
@@ -38,16 +37,15 @@ if ($resultat = mysqli_query($connect,$requete)) {
 
 
         echo "<h3>".' Titre article : '.$ligne['titre']."</h3>";
-        echo "<div style='width:400px'>".$ligne['commentaire']." </div> ";
+        echo "<div class='post_gb'>".$ligne['commentaire']." </div> ";
         if ($ligne['photo'] != "") {
-            echo "<img src='photo/".$ligne['photo']."' width='200px'/>";
+            echo "<img src='photo/".$ligne['photo']."' class=\"img_gb\" width='200px'/>";
         }
 echo "</div>";
-       /* echo "<hr />";*/
+
     }
 }
 ?>
-<br />
 <a href="formulaire_ajout.php" >Ajouter un article</a>
 
 

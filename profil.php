@@ -14,8 +14,8 @@ $site_data[PAGE_ID] = 'Profil de '.  $userinfo['prenom'];
 require_once 'view_parts/_header.php';
 
 ?>
-         <h2> Bienvenue <?php echo $userinfo['prenom']; ?></h2>
-         <p><strong><?php echo $userinfo['mail']; ?></strong></p>
+         <h2 class="profil_head"> Bienvenue, <?php echo $userinfo['prenom']; ?></h2>
+         <p class="profil_head"><strong><?php echo $userinfo['mail']; ?></strong></p>
          <?php
          if(isset($_SESSION['id']) AND $userinfo['id'] == $_SESSION['id']) {
          }}
