@@ -1,5 +1,6 @@
 <?php
 require_once '_defines.php';
+require_once 'db/_defines.php';
 require_once 'data/_main_data.php';
 $site_data[PAGE_ID] = 'Connexion';
 require_once 'view_parts/_header.php';
@@ -7,7 +8,8 @@ require_once 'view_parts/_header.php';
 
 	<?php
 
-$bdd = new PDO('mysql:host=127.0.0.1;dbname=lagarederires', 'root', '');
+$bdd = new PDO('mysql:host='.CONN_HOST.';dbname='.DBNAME, CONN_USER,CONN_PWD);
+
 
 if(isset($_POST['formconnexion'])) {
    $mailconnect = htmlspecialchars($_POST['mailconnect']);
