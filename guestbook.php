@@ -43,7 +43,7 @@ if ($resultat = mysqli_query($connect,$requete)) {
             echo "<img src='photo/".$ligne['photo']."' width='200px'/>";
         }
 echo "</div>";
-       /* echo "<hr />";*/
+
     }
 }
 ?>
