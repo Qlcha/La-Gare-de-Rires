@@ -1,5 +1,4 @@
 <?php
-
 require_once '_defines.php';
 require_once 'data/_main_data.php';
 $site_data[PAGE_ID] = 'Bienvenue à la Gare de Rires';
