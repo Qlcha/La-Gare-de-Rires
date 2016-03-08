@@ -65,7 +65,6 @@ require_once 'view_parts/_header.php';
             <p>Bonne année scolaire à tous !</p></aside>
 
     </article>
-</section>
 
 
     <section class="content_block"><!--

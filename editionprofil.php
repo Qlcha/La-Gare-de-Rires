@@ -77,9 +77,11 @@ if(isset($_SESSION['id'])) {
       } else {
          $msg = "Vos deux mdp ne correspondent pas !";
       }
+
    }
 ?>
-<div class="formulaire content_block" id="profil">
+
+
          <h3>Edition du profil :</h3>
             <form method="POST" action="" enctype="multipart/form-data">
                <label>Prenom :</label>

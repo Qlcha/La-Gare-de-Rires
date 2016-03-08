@@ -15,6 +15,7 @@ require_once 'view_parts/_header.php';
 
 ?>
 
+      <div align="center" class="formulaire content_block" id="profil">
          <h2> Bienvenue <?php echo $userinfo['prenom']; ?></h2>
          <p><strong><?php echo $userinfo['mail']; ?></strong></p>
          <?php
