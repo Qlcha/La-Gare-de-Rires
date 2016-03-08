@@ -89,7 +89,8 @@ if ('POST' == $_SERVER['REQUEST_METHOD']) {
 
     <?php
 
-    $connect = mysqli_connect("127.0.0.1", "root", "", "lagarederires");
+    //$connect = mysqli_connect("127.0.0.1", "p71h16flavyolga", "p71h16flavyolga", "p71h16flavyolga_lagarederires");
+	$connect = mysqli_connect(CONN_HOST, CONN_USER,CONN_PWD,DBNAME);
 
     /* Vérification de la connexion */
     if (!$connect) {
