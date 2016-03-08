@@ -81,7 +81,7 @@ if(isset($_SESSION['id'])) {
    }
 ?>
 
-
+   <div align="center" class="formulaire content_block" id="profil">
          <h3>Edition du profil :</h3>
             <form method="POST" action="" enctype="multipart/form-data">
                <label>Prenom :</label>
@@ -109,7 +109,6 @@ if(isset($_SESSION['id'])) {
                <input type="submit" value="Sauvegarder" class="button"/>
             </form></div>
             <?php if(isset($msg)) { echo $msg; } ?>
-
 
 <?php   
 }
