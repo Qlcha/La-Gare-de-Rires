@@ -26,6 +26,5 @@ require_once 'view_parts/_header.php';
          require_once 'editionprofil.php'
          ?>
 
-
 <?php require_once 'view_parts/_footer.php'; ?>
 
